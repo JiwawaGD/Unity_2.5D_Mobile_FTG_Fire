@@ -2,5 +2,3 @@ Base path: 'A:/UnityHub/date/Unity/Editor/Data', plugins path 'A:/UnityHub/date/
 Cmd: initializeCompiler
 
 Cmd: shutdown
-
-Quitting shader compiler process
