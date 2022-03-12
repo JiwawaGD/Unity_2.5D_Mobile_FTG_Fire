@@ -1,4 +1,4 @@
-Base path: 'A:/UnityHub/date/Unity/Editor/Data', plugins path 'A:/UnityHub/date/Unity/Editor/Data/PlaybackEngines'
+Base path: 'D:/unity/2017.4.40f1/Editor/Data', plugins path 'D:/unity/2017.4.40f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
 Cmd: shutdown
