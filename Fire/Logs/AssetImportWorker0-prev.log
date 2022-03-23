@@ -1,16 +1,25 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 10 Home; OS build 19044.1586; Version 2009; 64bit' Language: 'zh' Physical Memory: 24397 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
 D:\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+=======
+OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'zh' Physical Memory: 16215 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+>>>>>>> 紹威_0313
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 D:/Unity_2.5D_Mobile_FTG_Fire/Fire
 -logFile
 Logs/AssetImportWorker0.log
@@ -48,11 +57,53 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (970ms)
 		BeginReloadAssembly (53ms)
+=======
+D:/unityClone/2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60247
+Successfully changed project path to: D:/unityClone/2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
+D:/unityClone/2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 36.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unityClone/2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   
+    VRAM:     6023 MB
+    Driver:   30.0.14.9613
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002230 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 55.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.771 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2771ms)
+		BeginReloadAssembly (77ms)
+>>>>>>> 紹威_0313
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (341ms)
 			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,12 +118,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (14ms)
 				ProcessInitializeOnLoadAttributes (65ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
+=======
+		EndReloadAssembly (739ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (264ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+>>>>>>> 紹威_0313
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001899 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -106,6 +174,42 @@ Domain Reload Profiling:
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
+=======
+Registered in 0.002580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.616 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1617ms)
+		BeginReloadAssembly (255ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1283ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (403ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (518ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (357ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+>>>>>>> 紹威_0313
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -117,7 +221,11 @@ System memory in use before: 64.8 MB.
 System memory in use after: 64.9 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1832.
+<<<<<<< HEAD
 Total: 3.060200 ms (FindLiveObjects: 0.198200 ms CreateObjectMapping: 0.105700 ms MarkObjects: 2.670100 ms  DeleteObjects: 0.085000 ms)
+=======
+Total: 4.501500 ms (FindLiveObjects: 0.433400 ms CreateObjectMapping: 0.088600 ms MarkObjects: 3.814800 ms  DeleteObjects: 0.163700 ms)
+>>>>>>> 紹威_0313
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,6 +239,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/陶宇/陶宇的測試場景.unity
   artifactKey: Guid(7e66fb964add40f46acb094bc03b35fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/陶宇/陶宇的測試場景.unity using Guid(7e66fb964add40f46acb094bc03b35fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecec0135c3339db600309ccff9bddeaa') in 0.024323 seconds 
@@ -175,10 +284,49 @@ Received Import Request.
   artifactKey: Guid(07f3d57e490adb44ba8090a647c67b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/陶宇/1_Scripts/scr_PlayerManager.cs using Guid(07f3d57e490adb44ba8090a647c67b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2003069932b9ed616090ef8a7b1fb8') in 0.026182 seconds 
   Import took 0.028212 seconds .
+=======
+  path: Assets/紹威資料/紹威場景1.unity
+  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/紹威場景1.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9484f2180a9102facc9352739cd1ab9') in 0.017025 seconds 
+  Import took 0.019673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.350491 seconds.
+  path: Assets/紹威資料
+  artifactKey: Guid(9ed1461867a74e0449174e92ba680685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料 using Guid(9ed1461867a74e0449174e92ba680685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1a4400a78fab5776ad5cc08231eecd') in 0.012257 seconds 
+  Import took 0.017750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.063338 seconds.
+  path: Assets/紹威資料/選單.unity
+  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99ad166cba675ef1cdda68858872a19') in 0.015944 seconds 
+  Import took 0.021043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.668159 seconds.
+  path: Assets/紹威資料/紹威選單.unity
+  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/紹威選單.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9376f8b62bde5c8e613580a708f902c7') in 0.019394 seconds 
+  Import took 0.025427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.528103 seconds.
+  path: Assets/紹威資料/選單物件
+  artifactKey: Guid(600f7edbc2dbac746a2cdb42ee5d4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單物件 using Guid(600f7edbc2dbac746a2cdb42ee5d4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f198e027c150647db06bf33dbb86745') in 0.012846 seconds 
+  Import took 0.018894 seconds .
+>>>>>>> 紹威_0313
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.003492 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -221,6 +369,51 @@ System memory in use after: 64.8 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1835.
 Total: 2.782900 ms (FindLiveObjects: 0.238100 ms CreateObjectMapping: 0.091000 ms MarkObjects: 2.431600 ms  DeleteObjects: 0.021200 ms)
+=======
+Registered in 0.003435 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.374 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1375ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1129ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1391 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.6 MB.
+System memory in use after: 64.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1834.
+Total: 5.786800 ms (FindLiveObjects: 0.348800 ms CreateObjectMapping: 0.190100 ms MarkObjects: 5.189500 ms  DeleteObjects: 0.056700 ms)
+>>>>>>> 紹威_0313
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -233,6 +426,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.002086 seconds.
@@ -6897,3 +7091,125 @@ C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFDC3380000), size: 1982464 (r
 
 A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
  * C:/Users/user/AppData/Local/Temp/Unity/Editor/Crashes
+=======
+Received Import Request.
+  Time since last request: 1895.133887 seconds.
+  path: Assets/紹威資料/選單範例
+  artifactKey: Guid(600f7edbc2dbac746a2cdb42ee5d4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例 using Guid(600f7edbc2dbac746a2cdb42ee5d4769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89192d2a055a2e69ba6d51c3c5f1f34') in 0.014846 seconds 
+  Import took 0.018415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.839598 seconds.
+  path: Assets/紹威資料/選單範例/UI_2.jpg
+  artifactKey: Guid(b034f85701dff6d4bad82a12033d1ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_2.jpg using Guid(b034f85701dff6d4bad82a12033d1ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b145591a123354ac9ffface38899aa9a') in 0.128126 seconds 
+  Import took 0.132128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.536692 seconds.
+  path: Assets/紹威資料/選單範例/UI_1.jpg
+  artifactKey: Guid(ce4b408679616a7499b4f482c5647754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1.jpg using Guid(ce4b408679616a7499b4f482c5647754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9633dc0b10fb808d30766df7641130') in 0.026488 seconds 
+  Import took 0.032456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000598 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_4.jpg
+  artifactKey: Guid(664e7e87c41ad3743a4ecf53f503707c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_4.jpg using Guid(664e7e87c41ad3743a4ecf53f503707c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a51abec1078913b4263ccf39cbbf7e') in 0.036925 seconds 
+  Import took 0.040629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_1.jpg
+  artifactKey: Guid(dc41db0efe928dc4388b86c0c7b8efdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_1.jpg using Guid(dc41db0efe928dc4388b86c0c7b8efdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0146883eac56df73c17bef4e8d8fd2') in 0.027020 seconds 
+  Import took 0.030336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/紹威資料/選單範例/UI_2_1.jpg
+  artifactKey: Guid(ecb30e56ee1e1ea4688495b52ffdec41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_2_1.jpg using Guid(ecb30e56ee1e1ea4688495b52ffdec41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8224037745581029407cd7ae45a9e9') in 0.022407 seconds 
+  Import took 0.027967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_5.jpg
+  artifactKey: Guid(224c0268dd644fe49bf4b8955d1e46e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_5.jpg using Guid(224c0268dd644fe49bf4b8955d1e46e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c47e3091065cff866698cdcacd72c0e') in 0.027826 seconds 
+  Import took 0.031755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_3.jpg
+  artifactKey: Guid(3232e4ba003f10f49bc74489bcb20701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_3.jpg using Guid(3232e4ba003f10f49bc74489bcb20701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b4c593e93b686aab78db7e416e5197') in 0.021640 seconds 
+  Import took 0.026915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/紹威資料/選單範例/UI_2_2.jpg
+  artifactKey: Guid(120ac4695e5524c4b9ba8b9d14d1a818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_2_2.jpg using Guid(120ac4695e5524c4b9ba8b9d14d1a818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bcbd87becce6ad5a6f6160f68e8d3c1') in 0.026117 seconds 
+  Import took 0.031120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_2.jpg
+  artifactKey: Guid(1b557ae479ba98b48aa4811ddfcb8e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_2.jpg using Guid(1b557ae479ba98b48aa4811ddfcb8e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37e421b6df67246b5335f68aed288a2') in 0.025840 seconds 
+  Import took 0.032075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000714 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_6.jpg
+  artifactKey: Guid(61d6935e847f9574f92e2a15ccca25ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_6.jpg using Guid(61d6935e847f9574f92e2a15ccca25ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cf6934ec7592a23fa138306aaae4ae') in 0.026571 seconds 
+  Import took 0.031885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/紹威資料/選單範例/UI_1_7.jpg
+  artifactKey: Guid(ef88b56e4d793d44bb5f9e1258821b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/UI_1_7.jpg using Guid(ef88b56e4d793d44bb5f9e1258821b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343ac7a70c079e443a1dc7714ad85718') in 0.019975 seconds 
+  Import took 0.023314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1014.057963 seconds.
+  path: Assets/紹威資料/選單範例/Kidsco.otf
+  artifactKey: Guid(5a45186edebfab94983afec9c982b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/Kidsco.otf using Guid(5a45186edebfab94983afec9c982b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df413ef1faea774c3b2b1570c248093') in 0.216980 seconds 
+  Import took 0.227989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/紹威資料/選單範例/Kidsco.ttf
+  artifactKey: Guid(c7bb4d608fa2a7344b3e72e1e957504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/Kidsco.ttf using Guid(c7bb4d608fa2a7344b3e72e1e957504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d99607013c1df7d35a2b2ccf60a0690') in 0.048066 seconds 
+  Import took 0.058065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.836337 seconds.
+  path: Assets/紹威資料/選單範例/BD_Cartoon_Shout.ttf
+  artifactKey: Guid(b76d02c5a44177741a370d430c4563be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/BD_Cartoon_Shout.ttf using Guid(b76d02c5a44177741a370d430c4563be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9505f89a6b674484e86f8035b3fa9cfe') in 0.058231 seconds 
+  Import took 0.063398 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> 紹威_0313
