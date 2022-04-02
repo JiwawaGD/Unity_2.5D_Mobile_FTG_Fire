@@ -13,7 +13,7 @@ public class scr_CameraController : MonoBehaviour
     #region - Monobehaviour -
     void Awake()
     {
-        player = GameObject.Find("player").transform;
+        player = FindObjectOfType<scr_PlayerController>().transform;
     }
 
     void LateUpdate()

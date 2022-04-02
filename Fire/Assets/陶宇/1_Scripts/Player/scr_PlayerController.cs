@@ -4,19 +4,23 @@ using UnityEngine.UI;
 public class scr_PlayerController : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("移動速度")] float moveSpeed;
-    [SerializeField] [Header("跳躍力道")] float jumpForce;
-    [SerializeField] [Header("跳躍高度限制")] float jumpHeight;
+    [SerializeField] [Header("角色資料")] scr_PlayerData data;
+
     [SerializeField] [Header("地心引力")] float gravity;
 
-    [SerializeField] [Header("跳躍 - 按鈕")] Button jump_btn;
+    float moveSpeed;             // 移動速度
+    float jumpHeight;            // 跳躍高度限制
+    float jumpForce;             // 跳躍力道
+    float hp;                    // 生命值
 
-    bool holding_left = false;
-    bool holding_Right = false;
-    public bool isGrounded;
+    bool holding_left = false;   // 按下左鍵
+    bool holding_Right = false;  // 按下左鍵
 
-    Vector3 moveDir;
-    Rigidbody rig;
+    Button jump_btn;             // 跳躍 - 按鈕
+    Vector3 moveDir;             // 移動座標
+    Rigidbody rig;               // 剛體
+
+    [HideInInspector] public bool isGrounded;
     #endregion
 
     #region - Monobehaviour -
@@ -31,15 +35,28 @@ public class scr_PlayerController : MonoBehaviour
         holding_left = false;
         holding_Right = false;
         isGrounded = true;
+
+        moveSpeed = data.moveSpeed;
+        jumpForce = data.jumpForce;
+        jumpHeight = data.jumpHeight;
+        hp = data.hp;
     }
 
     void FixedUpdate()
     {
         Movement();
     }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "可使玩家受傷")
+        {
+            Hurt(1);
+        }
+    }
     #endregion
 
-    #region - Methods -
+    #region - Button trigger -
     /// <summary>
     /// 按著左鍵
     /// </summary>
@@ -57,24 +74,35 @@ public class scr_PlayerController : MonoBehaviour
     {
         holding_Right = press;
     }
+    #endregion
 
+    #region - Methods -
     /// <summary>
     /// 所有與鋼體有關移動
     /// </summary>
     void Movement()
     {
-        // 移動
-        if (holding_left) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
-
-        if (holding_Right) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
-
-        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
-
-        // 跳躍
-        jump_btn.onClick.AddListener(Jump);
-
         // 增加下墜速度
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
+
+        // 等待
+        Idle();
+
+        // 移動
+        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
+        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
+
+        // 跳躍
+        if (Input.GetKey(KeyCode.Space)) Jump();
+        jump_btn.onClick.AddListener(Jump);
+    }
+
+    /// <summary>
+    /// 等待
+    /// </summary>
+    void Idle()
+    {
+        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
     }
 
     /// <summary>
@@ -98,6 +126,35 @@ public class scr_PlayerController : MonoBehaviour
     {
         if (isGrounded) rig.velocity = new Vector3(0, jumpForce, 0);
         else return;
+    }
+
+    /// <summary>
+    /// 受傷
+    /// </summary>
+    /// <param name="damage">傷害值</param>
+    void Hurt(float damage)
+    {
+        hp -= damage;
+        Debug.Log(hp);
+
+        // 生命值歸零 > 死亡
+        if (hp <= 0) Die();
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    void Die()
+    {
+        this.enabled = false;
+    }
+
+    /// <summary>
+    /// 攻擊
+    /// </summary>
+    void Attack()
+    {
+
     }
     #endregion
 }
