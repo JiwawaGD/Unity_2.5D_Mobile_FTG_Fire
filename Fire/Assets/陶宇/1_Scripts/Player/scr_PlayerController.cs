@@ -17,8 +17,9 @@ public class scr_PlayerController : MonoBehaviour
     bool holding_Right = false;  // 按下左鍵
 
     Button jump_btn;             // 跳躍 - 按鈕
-    Vector3 moveDir;             // 移動座標
+    [SerializeField] Vector3 moveDir;             // 移動座標
     Rigidbody rig;               // 剛體
+    [SerializeField] Animator ani;
 
     [HideInInspector] public bool isGrounded;
     #endregion
@@ -27,6 +28,7 @@ public class scr_PlayerController : MonoBehaviour
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
+        ani = GetComponentInChildren<Animator>();
         jump_btn = GameObject.Find("跳_btn").GetComponent<Button>();
     }
 
@@ -86,11 +88,14 @@ public class scr_PlayerController : MonoBehaviour
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
 
         // 等待
-        Idle();
+        if (!holding_left && !holding_Right) Idle();
 
         // 移動
-        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
-        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
+        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1f, 1, 1));
+        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+
+        // 移動動畫
+        ani.SetBool("移動 - Bool", moveDir != Vector3.zero);
 
         // 跳躍
         if (Input.GetKey(KeyCode.Space)) Jump();
@@ -102,7 +107,7 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Idle()
     {
-        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
+        moveDir = Vector3.zero;
     }
 
     /// <summary>
