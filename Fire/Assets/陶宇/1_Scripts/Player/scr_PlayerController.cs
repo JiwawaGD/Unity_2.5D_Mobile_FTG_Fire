@@ -17,9 +17,9 @@ public class scr_PlayerController : MonoBehaviour
     bool holding_Right = false;  // 按下左鍵
 
     Button jump_btn;             // 跳躍 - 按鈕
-    [SerializeField] Vector3 moveDir;             // 移動座標
+    Vector3 moveDir;             // 移動座標
     Rigidbody rig;               // 剛體
-    [SerializeField] Animator ani;
+    Animator ani;
 
     [HideInInspector] public bool isGrounded;
     #endregion
@@ -51,6 +51,7 @@ public class scr_PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
+        // 受傷
         if (col.tag == "可使玩家受傷")
         {
             Hurt(1);
@@ -94,8 +95,7 @@ public class scr_PlayerController : MonoBehaviour
         if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1f, 1, 1));
         if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
 
-        // 移動動畫
-        ani.SetBool("移動 - Bool", moveDir != Vector3.zero);
+        if (Input.GetKey(KeyCode.T)) ani.SetTrigger("受傷 - Trigger");
 
         // 跳躍
         if (Input.GetKey(KeyCode.Space)) Jump();
@@ -141,6 +141,8 @@ public class scr_PlayerController : MonoBehaviour
     {
         hp -= damage;
         Debug.Log(hp);
+
+        ani.SetTrigger("受傷 - Trigger");
 
         // 生命值歸零 > 死亡
         if (hp <= 0) Die();

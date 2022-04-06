@@ -334,8 +334,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: f09ee41a37d9bf34385751bc21ff829e, type: 2}
   gravity: 90
-  moveDir: {x: 0, y: 0, z: 0}
-  ani: {fileID: 0}
   isGrounded: 0
 --- !u!1 &338385991
 GameObject:
