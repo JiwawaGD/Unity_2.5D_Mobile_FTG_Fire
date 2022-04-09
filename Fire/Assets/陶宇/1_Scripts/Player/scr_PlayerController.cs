@@ -95,8 +95,6 @@ public class scr_PlayerController : MonoBehaviour
         if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1f, 1, 1));
         if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
 
-        if (Input.GetKey(KeyCode.T)) ani.SetTrigger("受傷 - Trigger");
-
         // 跳躍
         if (Input.GetKey(KeyCode.Space)) Jump();
         jump_btn.onClick.AddListener(Jump);
@@ -108,6 +106,8 @@ public class scr_PlayerController : MonoBehaviour
     void Idle()
     {
         moveDir = Vector3.zero;
+
+        ani.SetBool("移動 - Bool", false);
     }
 
     /// <summary>
@@ -118,8 +118,9 @@ public class scr_PlayerController : MonoBehaviour
     void Move(Vector3 direction, Vector3 scale)
     {
         moveDir = direction;
-
         rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
+
+        ani.SetBool("移動 - Bool", true);
 
         transform.localScale = scale;
     }
@@ -129,7 +130,7 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Jump()
     {
-        if (isGrounded) rig.velocity = new Vector3(0, jumpForce, 0);
+        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 10f, 0);
         else return;
     }
 
@@ -139,13 +140,16 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="damage">傷害值</param>
     void Hurt(float damage)
     {
-        hp -= damage;
-        Debug.Log(hp);
+        if (hp > 0)
+        {
+            hp -= damage;
+            Debug.Log(hp);
 
-        ani.SetTrigger("受傷 - Trigger");
+            ani.SetTrigger("受傷 - Trigger");
+        }
 
         // 生命值歸零 > 死亡
-        if (hp <= 0) Die();
+        else if (hp <= 0) Die();
     }
 
     /// <summary>
@@ -153,6 +157,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Die()
     {
+        ani.SetBool("死亡 - Bool", true);
+
         this.enabled = false;
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charactorName: "\u5409\u5A03\u5A03"
   moveSpeed: 6
-  jumpForce: 20
+  jumpForce: 150
   jumpHeight: 5
   hp: 10
   mp: 10
