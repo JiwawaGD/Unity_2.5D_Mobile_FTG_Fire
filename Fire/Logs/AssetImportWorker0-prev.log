@@ -15,11 +15,11 @@ D:/Unity_2.5D_Mobile_FTG_Fire/Fire
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-8227
+8545
 Successfully changed project path to: D:/Unity_2.5D_Mobile_FTG_Fire/Fire
 D:/Unity_2.5D_Mobile_FTG_Fire/Fire
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 60.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -36,144 +36,90 @@ Initialize mono
 Mono path[0] = 'D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001052 seconds.
+Registered in 0.001003 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.17 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.196 seconds
+- Completed reload, in  1.098 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1196ms)
+	ReloadAssembly (1098ms)
 		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (484ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (407ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (174ms)
+			SetupTypeCache (143ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (205ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (174ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
+				RefreshPlugins (47ms)
 				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (92ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002795 seconds.
+Registered in 0.002646 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000021670AA8020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AD621C0 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AEF4D50 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000021670AA8020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AD4DC70 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166F2F66B0 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AC3D440 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AC3D440 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AD4DC70 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166ADE7010 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166FD35230 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166F2F5BD0 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166FF0B020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AEFCD60 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000021665C7D490 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166FF0B020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166FD35230 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166F51F220 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000021665ABC1A0 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.ShaderGraph.Utilities.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166AEFCD60 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166B486010 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000021670DAEE40 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166F545010 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166B432020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166F332020 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000021665C7D490 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002166FFFFDA0 doesn't match image D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 48.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.075 seconds
+- Completed reload, in  1.105 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1075ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (1106ms)
+		BeginReloadAssembly (144ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (874ms)
-			LoadAssemblies (101ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (910ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
+			SetupTypeCache (294ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (323ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (48ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2518 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 127.7 MB.
-System memory in use after: 127.9 MB.
+System memory in use before: 127.8 MB.
+System memory in use after: 128.0 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2981.
-Total: 3.040900 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.176300 ms MarkObjects: 2.498000 ms  DeleteObjects: 0.021400 ms)
+Total: 4.454300 ms (FindLiveObjects: 0.388700 ms CreateObjectMapping: 0.257800 ms MarkObjects: 3.779900 ms  DeleteObjects: 0.026700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -187,33 +133,82 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/阿夜/阿夜的場景/阿夜的場景.unity
-  artifactKey: Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/阿夜的場景/阿夜的場景.unity using Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e176f3091314059ce4983d82771f4213') in 0.018772 seconds 
-  Import took 0.022199 seconds .
+  path: Assets/紹威資料/遊戲開始.unity
+  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/遊戲開始.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4df79fd6a58f50a3850fb370b59d501') in 0.019573 seconds 
+  Import took 0.023813 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.747641 seconds.
-  path: Assets/阿夜/阿夜的場景
-  artifactKey: Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/阿夜的場景 using Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ceafefcb917a28ff44c150530b920ee') in 0.005634 seconds 
-  Import took 0.010956 seconds .
+  Time since last request: 0.000163 seconds.
+  path: Assets/紹威資料/紹威選單.unity
+  artifactKey: Guid(04d46a06c063e1440baf5cf1f0209f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/紹威選單.unity using Guid(04d46a06c063e1440baf5cf1f0209f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb71f4d9179a2bde9cc607e183b20c0') in 0.011238 seconds 
+  Import took 0.015360 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.076176 seconds.
-  path: Assets/陶宇/1_Scripts/Scene
-  artifactKey: Guid(ae04289807ab8e6419a99e21da2deec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/1_Scripts/Scene using Guid(ae04289807ab8e6419a99e21da2deec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1600c58f391990a7a930614d6c845e31') in 0.008344 seconds 
-  Import took 0.011923 seconds .
+  Time since last request: 2.336564 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/SparkSphere.mat
+  artifactKey: Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/SparkSphere.mat using Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed4848451718942765e011ada94bd5c') in 0.115478 seconds 
+  Import took 0.120252 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 3.856507 seconds.
-  path: Assets/陶宇/5_Characters/吉娃娃/Animations
-  artifactKey: Guid(582ddf48a938e904687d86df8e1254bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/5_Characters/吉娃娃/Animations using Guid(582ddf48a938e904687d86df8e1254bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b526b9a3647e3c3a9199cddb4f8f008d') in 0.007837 seconds 
-  Import took 0.011975 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Domain Reload Profiling:
+	ReloadAssembly (985ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2458 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.5 MB.
+System memory in use after: 125.7 MB.
 
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3023.
+Total: 2.852500 ms (FindLiveObjects: 0.303500 ms CreateObjectMapping: 0.149300 ms MarkObjects: 2.384800 ms  DeleteObjects: 0.013800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
