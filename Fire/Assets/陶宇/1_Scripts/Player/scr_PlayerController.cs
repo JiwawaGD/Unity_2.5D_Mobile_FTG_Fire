@@ -13,20 +13,22 @@ public class scr_PlayerController : MonoBehaviour
     float jumpForce;             // 跳躍力道
     float hp;                    // 生命值
 
-    bool holding_left = false;   // 按下左鍵
-    bool holding_Right = false;  // 按下左鍵
+    public bool holding_left;   // 按下左鍵
+    public bool holding_Right;  // 按下左鍵
 
     Button jump_btn;             // 跳躍 - 按鈕
     Vector3 moveDir;             // 移動座標
     Rigidbody rig;               // 剛體
+    Animator ani;                // 動畫
 
-    [HideInInspector] public bool isGrounded;
+    [HideInInspector] [Header("是否在地上")] public bool isGrounded;
     #endregion
 
     #region - Monobehaviour -
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
+        ani = GetComponentInChildren<Animator>();
         jump_btn = GameObject.Find("跳_btn").GetComponent<Button>();
     }
 
@@ -49,10 +51,7 @@ public class scr_PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "可使玩家受傷")
-        {
-            Hurt(1);
-        }
+        if (col.tag == "可使玩家受傷") Hurt(1);
     }
     #endregion
 
@@ -86,15 +85,17 @@ public class scr_PlayerController : MonoBehaviour
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
 
         // 等待
-        Idle();
+        if (!holding_left && !holding_Right) Idle();
 
         // 移動
-        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
-        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
+        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
 
         // 跳躍
-        if (Input.GetKey(KeyCode.Space)) Jump();
         jump_btn.onClick.AddListener(Jump);
+
+        // 測試用代碼
+        if (Input.GetKey(KeyCode.Space)) Jump();
     }
 
     /// <summary>
@@ -102,7 +103,9 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Idle()
     {
-        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
+        moveDir = Vector3.zero;
+
+        ani.SetBool("移動 - Bool", false);
     }
 
     /// <summary>
@@ -116,6 +119,8 @@ public class scr_PlayerController : MonoBehaviour
 
         rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
 
+        ani.SetBool("移動 - Bool", true);
+
         transform.localScale = scale;
     }
 
@@ -124,7 +129,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Jump()
     {
-        if (isGrounded) rig.velocity = new Vector3(0, jumpForce, 0);
+        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 60f, 0);
+
         else return;
     }
 
@@ -135,10 +141,12 @@ public class scr_PlayerController : MonoBehaviour
     void Hurt(float damage)
     {
         hp -= damage;
-        Debug.Log(hp);
 
-        // 生命值歸零 > 死亡
-        if (hp <= 0) Die();
+        if (hp > 0) ani.SetTrigger("受傷 - Trigger");
+
+        else if (hp <= 0) Die();
+
+        Debug.Log(hp);
     }
 
     /// <summary>
@@ -146,6 +154,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Die()
     {
+        ani.SetBool("死亡 - Bool", true);
+
         this.enabled = false;
     }
 
