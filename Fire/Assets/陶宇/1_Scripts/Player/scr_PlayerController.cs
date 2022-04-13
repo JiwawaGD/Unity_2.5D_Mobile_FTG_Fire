@@ -135,7 +135,7 @@ public class scr_PlayerController : MonoBehaviour
     void Hurt(float damage)
     {
         hp -= damage;
-        //Debug.Log(hp);
+        Debug.Log(hp);
 
         // ¥Í©R­ÈÂk¹s > ¦º¤`
         if (hp <= 0) Die();
