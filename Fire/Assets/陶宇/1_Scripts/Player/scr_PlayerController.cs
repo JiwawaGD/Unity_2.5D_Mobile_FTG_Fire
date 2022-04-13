@@ -13,15 +13,14 @@ public class scr_PlayerController : MonoBehaviour
     float jumpForce;             // 跳躍力道
     float hp;                    // 生命值
 
-    public bool holding_left;   // 按下左鍵
-    public bool holding_Right;  // 按下左鍵
-
     Button jump_btn;             // 跳躍 - 按鈕
     Vector3 moveDir;             // 移動座標
     Rigidbody rig;               // 剛體
     Animator ani;                // 動畫
 
-    [HideInInspector] [Header("是否在地上")] public bool isGrounded;
+    [HideInInspector] public bool holding_left;      // 按下左鍵
+    [HideInInspector] public bool holding_Right;     // 按下左鍵
+    [HideInInspector] public bool isGrounded;        // 是否在地上
     #endregion
 
     #region - Monobehaviour -
@@ -49,7 +48,7 @@ public class scr_PlayerController : MonoBehaviour
         Movement();
     }
 
-    private void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.tag == "可使玩家受傷") Hurt(1);
     }
