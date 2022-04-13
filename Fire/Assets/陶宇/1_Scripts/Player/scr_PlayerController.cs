@@ -4,25 +4,30 @@ using UnityEngine.UI;
 public class scr_PlayerController : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("移動速度")] float moveSpeed;
-    [SerializeField] [Header("跳躍力道")] float jumpForce;
-    [SerializeField] [Header("跳躍高度限制")] float jumpHeight;
+    [SerializeField] [Header("角色資料")] scr_PlayerData data;
+
     [SerializeField] [Header("地心引力")] float gravity;
 
-    [SerializeField] [Header("跳躍 - 按鈕")] Button jump_btn;
+    float moveSpeed;             // 移動速度
+    float jumpHeight;            // 跳躍高度限制
+    float jumpForce;             // 跳躍力道
+    float hp;                    // 生命值
 
-    bool holding_left = false;
-    bool holding_Right = false;
-    public bool isGrounded;
+    Button jump_btn;             // 跳躍 - 按鈕
+    Vector3 moveDir;             // 移動座標
+    Rigidbody rig;               // 剛體
+    Animator ani;                // 動畫
 
-    Vector3 moveDir;
-    Rigidbody rig;
+    [HideInInspector] public bool holding_left;      // 按下左鍵
+    [HideInInspector] public bool holding_Right;     // 按下左鍵
+    [HideInInspector] public bool isGrounded;        // 是否在地上
     #endregion
 
     #region - Monobehaviour -
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
+        ani = GetComponentInChildren<Animator>();
         jump_btn = GameObject.Find("跳_btn").GetComponent<Button>();
     }
 
@@ -31,15 +36,25 @@ public class scr_PlayerController : MonoBehaviour
         holding_left = false;
         holding_Right = false;
         isGrounded = true;
+
+        moveSpeed = data.moveSpeed;
+        jumpForce = data.jumpForce;
+        jumpHeight = data.jumpHeight;
+        hp = data.hp;
     }
 
     void FixedUpdate()
     {
         Movement();
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "可使玩家受傷") Hurt(1);
+    }
     #endregion
 
-    #region - Methods -
+    #region - Button trigger -
     /// <summary>
     /// 按著左鍵
     /// </summary>
@@ -57,24 +72,39 @@ public class scr_PlayerController : MonoBehaviour
     {
         holding_Right = press;
     }
+    #endregion
 
+    #region - Methods -
     /// <summary>
     /// 所有與鋼體有關移動
     /// </summary>
     void Movement()
     {
+        // 增加下墜速度
+        if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
+
+        // 等待
+        if (!holding_left && !holding_Right) Idle();
+
         // 移動
-        if (holding_left) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
-
-        if (holding_Right) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
-
-        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
+        if (holding_left || Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (holding_Right || Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
 
         // 跳躍
         jump_btn.onClick.AddListener(Jump);
 
-        // 增加下墜速度
-        if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
+        // 測試用代碼
+        if (Input.GetKey(KeyCode.Space)) Jump();
+    }
+
+    /// <summary>
+    /// 等待
+    /// </summary>
+    void Idle()
+    {
+        moveDir = Vector3.zero;
+
+        ani.SetBool("移動 - Bool", false);
     }
 
     /// <summary>
@@ -88,6 +118,8 @@ public class scr_PlayerController : MonoBehaviour
 
         rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
 
+        ani.SetBool("移動 - Bool", true);
+
         transform.localScale = scale;
     }
 
@@ -96,8 +128,42 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Jump()
     {
-        if (isGrounded) rig.velocity = new Vector3(0, jumpForce, 0);
+        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 60f, 0);
+
         else return;
+    }
+
+    /// <summary>
+    /// 受傷
+    /// </summary>
+    /// <param name="damage">傷害值</param>
+    void Hurt(float damage)
+    {
+        hp -= damage;
+
+        if (hp > 0) ani.SetTrigger("受傷 - Trigger");
+
+        else if (hp <= 0) Die();
+
+        Debug.Log(hp);
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    void Die()
+    {
+        ani.SetBool("死亡 - Bool", true);
+
+        this.enabled = false;
+    }
+
+    /// <summary>
+    /// 攻擊
+    /// </summary>
+    void Attack()
+    {
+
     }
     #endregion
 }
