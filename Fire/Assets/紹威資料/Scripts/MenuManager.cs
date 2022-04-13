@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,12 +7,17 @@ public class MenuManager : MonoBehaviour
 {
     public Button mybutton;
     public GameObject Gwawa;
+    public GameObject Gwawaimage;
     public GameObject MatchstickMen;
     public GameObject Goose;
+    [Header("無法離開畫面")]
+    public GameObject juck;
     [Header("分辨率物件")]
     public Toggle[] resolutioinToggles;
     [Header("尺寸宣告")]
     public int[] screenWidths;
+
+    private MenuGwawaA menugwawaa;
 
 
     [Header("索引質跟蹤")]
@@ -25,29 +28,30 @@ public class MenuManager : MonoBehaviour
     [Header("音效調節器")]
     public AudioMixer audioMixer;
 
+    public void Open()
+    {
+        juck.SetActive(true);
+    }
+    public void Close()
+    {
+        juck.SetActive(false);
+    }
     public void Start()
     {
         mybutton = GetComponent<Button>();
-        mybutton.onClick.AddListener(ButtonOnclick);
+        //mybutton.onClick.AddListener(ButtonOnclick);
     }
     /// <summary>
     /// 遊戲開始
     /// </summary>
     public void StartGame()
     {
-        SceneManager.LoadScene("紹威選單");
-    }
-    /// <summary>
-    /// 遊戲結束
-    /// </summary>
-    public void QuitGame()
-    {
-        Application.Quit();
+        SceneManager.LoadScene("角色選擇");
     }
     /// <summary>
     /// 前往下一關
     /// </summary>
-    private void ButtonOnclick()
+    /*private void ButtonOnclick()
     {
 
         lvIndex = SceneManager.GetActiveScene().buildIndex;
@@ -56,7 +60,7 @@ public class MenuManager : MonoBehaviour
 
         SceneManager.LoadScene(lvIndex);
 
-    }
+    }*/
     /// <summary>
     /// 吉娃娃選角
     /// </summary>
@@ -64,6 +68,7 @@ public class MenuManager : MonoBehaviour
     {
         if (Gwawa != null)
         {
+            //menugwawaa.StartGwawaM();
             Animator animator = Gwawa.GetComponent<Animator>();
             if (animator != null)
             {
