@@ -257,6 +257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: f09ee41a37d9bf34385751bc21ff829e, type: 2}
   gravity: 150
+  attackInterval: 6
+  attackCount: 0
+  attackTimer: 0
   holding_left: 0
   holding_Right: 0
   isGrounded: 0
