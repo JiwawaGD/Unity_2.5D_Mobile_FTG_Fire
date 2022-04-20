@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Fire/Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg.meta
 guid: f6eb9ec53f8e95d4dafbd30e1edcb21c
+========
+guid: 108d618ffadd71e48af3d64f01fb8f9a
+>>>>>>>> parent of ceb806d7 (0420):Fire/Library/PackageCache/com.unity.collab-proxy@1.9.0/Editor/PlasticSCM/Assets/Images/iconemptygravatar.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -23,7 +27,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,12 +35,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: -1
     aniso: 1
-    mipBias: 0
+    mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -55,12 +58,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -88,7 +88,34 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<<< HEAD:Fire/Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg.meta
+========
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+>>>>>>>> parent of ceb806d7 (0420):Fire/Library/PackageCache/com.unity.collab-proxy@1.9.0/Editor/PlasticSCM/Assets/Images/iconemptygravatar.png.meta
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1

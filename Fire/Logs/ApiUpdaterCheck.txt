@@ -250,6 +250,7 @@ C# parse time         : 196ms
 candidates check time : 52ms
 console write time    : 28ms
 
+<<<<<<< HEAD
 [api-updater (non-obsolete-error-filter)] 2022/4/14 上午 01:53:08 : Starting D:/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] Exception caught while loading types from D:\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
 	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
@@ -267,3 +268,5 @@ C# parse time         : 1636ms
 candidates check time : 595ms
 console write time    : 346ms
 
+=======
+>>>>>>> parent of ceb806d7 (0420)
