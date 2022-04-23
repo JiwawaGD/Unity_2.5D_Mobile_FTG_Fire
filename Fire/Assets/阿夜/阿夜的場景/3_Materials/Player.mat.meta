@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Fire/Assets/阿夜/陶宇/3_Materials/Player.mat.meta
+<<<<<<<< HEAD:Fire/Assets/阿夜/陶宇/3_Materials/Player.mat.meta
+guid: 253e3c48010a7fc4ba9405daf56cd74e
+=======
+guid: b833f6df90c34b141a58b26e07ce4c79
+>>>>>>> 阿夜_0414:Fire/Assets/阿夜/阿夜的場景/3_Materials/Player.mat.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+========
+guid: 9dfc825aed78fcd4ba02077103263b40
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>>> parent of ceb806d7 (0420):Fire/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1/Runtime/Materials/Sprite-Unlit-Default.mat.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
