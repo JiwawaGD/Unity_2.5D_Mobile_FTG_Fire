@@ -15,11 +15,11 @@ A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9876
+6048
 Successfully changed project path to: A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
 A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/Resources/UnitySubsystems
@@ -36,442 +36,90 @@ Initialize mono
 Mono path[0] = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/Managed'
 Mono path[1] = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001004 seconds.
+Registered in 0.000890 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.76 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 45.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.703 seconds
+- Completed reload, in  0.687 seconds
 Domain Reload Profiling:
-	ReloadAssembly (704ms)
-		BeginReloadAssembly (40ms)
+	ReloadAssembly (687ms)
+		BeginReloadAssembly (39ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (341ms)
+		EndReloadAssembly (333ms)
 			LoadAssemblies (39ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (119ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (146ms)
+			SetupLoadedEditorAssemblies (141ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (48ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001819 seconds.
+Registered in 0.001803 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 47.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 48.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.898 seconds
+- Completed reload, in  0.885 seconds
 Domain Reload Profiling:
-	ReloadAssembly (898ms)
-		BeginReloadAssembly (116ms)
+	ReloadAssembly (886ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (734ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (726ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (242ms)
+			SetupTypeCache (237ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (282ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (161ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (160ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2557 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.2 MB.
-System memory in use after: 108.4 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2992.
-Total: 3.071300 ms (FindLiveObjects: 0.256700 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.675100 ms  DeleteObjects: 0.077800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/紹威資料/UI/DEJAVULOGO-1.psd
-  artifactKey: Guid(1cb6bfc7fc54f174093783384f3a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/DEJAVULOGO-1.psd using Guid(1cb6bfc7fc54f174093783384f3a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf9ab80491c1141c210e18f763d47cc') in 0.082081 seconds 
-  Import took 0.085655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/紹威資料/UI/goose.psd
-  artifactKey: Guid(6618db79206de0d41904d85a8bc5d746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/goose.psd using Guid(6618db79206de0d41904d85a8bc5d746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a24b87427fc2532d8abd54c8329b499') in 0.044048 seconds 
-  Import took 0.048202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/紹威資料/UI/Giwawa1.psd
-  artifactKey: Guid(280faf33e6c2a9642bb795cea436539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/Giwawa1.psd using Guid(280faf33e6c2a9642bb795cea436539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d37d22beeb5215d7a86fef4650799a1') in 0.029826 seconds 
-  Import took 0.033781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/紹威資料/UI/DEJAVULOGO-1.png
-  artifactKey: Guid(20e0667fe2ac05f408249a513cd19a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/DEJAVULOGO-1.png using Guid(20e0667fe2ac05f408249a513cd19a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f939696fd2bfa2d801486331dc2981c') in 0.039193 seconds 
-  Import took 0.042833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/紹威資料/UI/螢幕擷取畫面 2022-04-02 141924.png
-  artifactKey: Guid(5822c213d1a919b49a83b8bdf046f77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/螢幕擷取畫面 2022-04-02 141924.png using Guid(5822c213d1a919b49a83b8bdf046f77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c2fb61264e76ab75553740fb31fa20') in 0.012123 seconds 
-  Import took 0.015165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/紹威資料/UI/Giwawa.psd
-  artifactKey: Guid(cd3816094327e3c4d9a19471d0c4d69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/UI/Giwawa.psd using Guid(cd3816094327e3c4d9a19471d0c4d69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4913d8dd0a7c7cfc2ecf3d2eb2acfdf6') in 0.016405 seconds 
-  Import took 0.019432 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.036926 seconds.
-  path: Assets/阿夜/陶宇
-  artifactKey: Guid(2ded5a85c0ef49e40991f09c7ebd2cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 using Guid(2ded5a85c0ef49e40991f09c7ebd2cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fb17d1c4b303a87d70b15f1a8ea691') in 0.007106 seconds 
-  Import took 0.010912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.127256 seconds.
-  path: Assets/阿夜/陶宇/0_Scene
-  artifactKey: Guid(7afaeff90f8be614986fbf9224ec3911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/0_Scene using Guid(7afaeff90f8be614986fbf9224ec3911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7981187e64a266bb3b05033bbda5913') in 0.004647 seconds 
-  Import took 0.008092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.211341 seconds.
-  path: Assets/阿夜/陶宇/0_Scene/陶宇的測試場景.unity
-  artifactKey: Guid(6ba2f8f92bdfe0d418ce99b04b21c862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/0_Scene/陶宇的測試場景.unity using Guid(6ba2f8f92bdfe0d418ce99b04b21c862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31ff78f1872dda3f71f1479dc9bb0b6d') in 0.004610 seconds 
-  Import took 0.008094 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.812797 seconds.
-  path: Assets/阿夜/阿夜的場景
-  artifactKey: Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/阿夜的場景 using Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ceafefcb917a28ff44c150530b920ee') in 0.003918 seconds 
-  Import took 0.007321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.780018 seconds.
-  path: Assets/阿夜/阿夜的場景/阿夜的場景.unity
-  artifactKey: Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/阿夜的場景/阿夜的場景.unity using Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d153642a6b534703b4c2bb9ef237f8b') in 0.004186 seconds 
-  Import took 0.007619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.420269 seconds.
-  path: Assets/阿夜/Materials/生成點.prefab
-  artifactKey: Guid(1c0b5abfa46b202489c96d01d2549402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Materials/生成點.prefab using Guid(1c0b5abfa46b202489c96d01d2549402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f95ad1e6d083eccd55e1630e7b6e626f') in 0.010205 seconds 
-  Import took 0.013775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 236.876173 seconds.
-  path: Assets/陶宇/1_Scripts/Player
-  artifactKey: Guid(610de8270080be440aca1c436358df51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/1_Scripts/Player using Guid(610de8270080be440aca1c436358df51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52dfe5938a11b46b4e465d55dbab302e') in 0.005063 seconds 
-  Import took 0.009162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.150821 seconds.
-  path: Assets/紹威資料/音效/Breakthrough.wav
-  artifactKey: Guid(79f7aca1281684f49ab662f5350238aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/Breakthrough.wav using Guid(79f7aca1281684f49ab662f5350238aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565785bacc5079e20d61dee507127cbf') in 0.054665 seconds 
-  Import took 0.058222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/紹威資料/音效/frozen_lands_short_loop.wav
-  artifactKey: Guid(0a1069c923eaad143aa6eda2873c21d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/frozen_lands_short_loop.wav using Guid(0a1069c923eaad143aa6eda2873c21d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3bbc1c6f75327d65c77e415d9e733b') in 0.014108 seconds 
-  Import took 0.017137 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/紹威資料/音效/hurry_percussion_only_loop.wav
-  artifactKey: Guid(2796785dad46f5e41a0d44a34abf326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/hurry_percussion_only_loop.wav using Guid(2796785dad46f5e41a0d44a34abf326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f19be6191e3c581a58c3dc71db1219') in 0.012404 seconds 
-  Import took 0.015684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/紹威資料/音效/cursed_krypta_minimum_loop.wav
-  artifactKey: Guid(6a07dc99e42ef3642b1081beddb5f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/cursed_krypta_minimum_loop.wav using Guid(6a07dc99e42ef3642b1081beddb5f417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea63eacf72332dd142cf687b0d10119d') in 0.012037 seconds 
-  Import took 0.015628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/紹威資料/音效/魔王魂 効果音 システム48.mp3
-  artifactKey: Guid(47203b8d33fd5c146afa31a748d8dc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/魔王魂 効果音 システム48.mp3 using Guid(47203b8d33fd5c146afa31a748d8dc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e04a5942f948d258843af92e6461a8') in 0.014470 seconds 
-  Import took 0.018161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/紹威資料/音效/natural_cave_loop.wav
-  artifactKey: Guid(8d87a71e43a441747914899c420b4826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/natural_cave_loop.wav using Guid(8d87a71e43a441747914899c420b4826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0f055d7c3891a49efb79187e1b3149') in 0.016389 seconds 
-  Import took 0.019732 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/紹威資料/音效/desert_solo_loop.wav
-  artifactKey: Guid(cfd57d8fcf1393b4dae3f368d9915357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/desert_solo_loop.wav using Guid(cfd57d8fcf1393b4dae3f368d9915357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e344ddab1f3dd39d6c9b34c2bc718be3') in 0.010872 seconds 
-  Import took 0.014561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/紹威資料/音效/tavern_loop.wav
-  artifactKey: Guid(fa12cfe749020c74aab8f5e147582c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/tavern_loop.wav using Guid(fa12cfe749020c74aab8f5e147582c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913454a6bcf7a3607bf351a3f60da9f7') in 0.011752 seconds 
-  Import took 0.014984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/紹威資料/音效/encounter_loop.wav
-  artifactKey: Guid(58373c397420bf243b32d274a38f72c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/encounter_loop.wav using Guid(58373c397420bf243b32d274a38f72c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650d04d031311160518303c5d7d3fee4') in 0.017244 seconds 
-  Import took 0.020314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/紹威資料/音效/lower_cavern_loop.wav
-  artifactKey: Guid(3fc0fc27ebf04834baa4edb20a405aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/lower_cavern_loop.wav using Guid(3fc0fc27ebf04834baa4edb20a405aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b22c64232116e80c67fc82592ced586') in 0.014105 seconds 
-  Import took 0.017653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/紹威資料/音效/tension_loop.wav
-  artifactKey: Guid(dd69f5094c94c524caa27e947585ff73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/tension_loop.wav using Guid(dd69f5094c94c524caa27e947585ff73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d846eeeb5ca939b264f2228d7e2481') in 0.010239 seconds 
-  Import took 0.013327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/紹威資料/音效/Search Everywhere.wav
-  artifactKey: Guid(dcfe8b7b841534f1cadd7c5ec432e5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/Search Everywhere.wav using Guid(dcfe8b7b841534f1cadd7c5ec432e5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13892b00087c8dd4870ca2a5ed8f9406') in 0.023267 seconds 
-  Import took 0.026656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/紹威資料/音效/【魔王魂公式】フリーBGM素材 ネオロック75 『Skull heart』.mp3
-  artifactKey: Guid(704da15909cabd640a9d880320e31e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/【魔王魂公式】フリーBGM素材 ネオロック75 『Skull heart』.mp3 using Guid(704da15909cabd640a9d880320e31e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60524a07840953bc3403a3b81af6085') in 0.012108 seconds 
-  Import took 0.015394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/紹威資料/音效/grassland_short_loop.wav
-  artifactKey: Guid(bead0199fb2cd8d40832fcf68aeefc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/音效/grassland_short_loop.wav using Guid(bead0199fb2cd8d40832fcf68aeefc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39831c5801aa98d5741e9c192893f535') in 0.016535 seconds 
-  Import took 0.019713 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.297297 seconds.
-  path: Assets/阿夜/Materials
-  artifactKey: Guid(2bffab96a49a7e64f92ca57b72fb2544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Materials using Guid(2bffab96a49a7e64f92ca57b72fb2544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbb8727c49070be71819754534da42b') in 0.004254 seconds 
-  Import took 0.007861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.128567 seconds.
-  path: Assets/阿夜/Script/mobsMove.cs
-  artifactKey: Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Script/mobsMove.cs using Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ffad4e8f7a5ee9f93d13e80d24aed0') in 0.028601 seconds 
-  Import took 0.032208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.069705 seconds.
-  path: Assets/阿夜/Script/Player.cs
-  artifactKey: Guid(d65707aa62d55734e9d121bed2e415f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Script/Player.cs using Guid(d65707aa62d55734e9d121bed2e415f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68495131096dd573d952c5bdd1c02de') in 0.001548 seconds 
-  Import took 0.005813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.139853 seconds.
-  path: Assets/阿夜/陶宇/3_Materials
-  artifactKey: Guid(a7c03de39abe9ff4789b075e57ba6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials using Guid(a7c03de39abe9ff4789b075e57ba6f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3809517f0ade0a00b47714fd436b83') in 0.006363 seconds 
-  Import took 0.010036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.068022 seconds.
-  path: Assets/阿夜/陶宇/3_Materials/Ground.mat
-  artifactKey: Guid(5713704ef34996648ba8f5d858e398d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials/Ground.mat using Guid(5713704ef34996648ba8f5d858e398d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b81162b1c2010716aa1f7613470112') in 0.184113 seconds 
-  Import took 0.187799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/阿夜/陶宇/3_Materials/Player.mat
-  artifactKey: Guid(253e3c48010a7fc4ba9405daf56cd74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials/Player.mat using Guid(253e3c48010a7fc4ba9405daf56cd74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55e980502ee225875236a9add32f29d') in 0.031057 seconds 
-  Import took 0.034177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/阿夜/陶宇/3_Materials/Walls.mat
-  artifactKey: Guid(d76878ccefca24742ba06bac38852d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials/Walls.mat using Guid(d76878ccefca24742ba06bac38852d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4961e1de975331b0c6e6c1ea5a1dad64') in 0.068485 seconds 
-  Import took 0.071981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/阿夜/陶宇/3_Materials/walls.physicMaterial
-  artifactKey: Guid(01b486847ef251848b80a36cada0d139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials/walls.physicMaterial using Guid(01b486847ef251848b80a36cada0d139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cf580554b160b88cda288434656d44') in 0.005977 seconds 
-  Import took 0.009030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/阿夜/陶宇/3_Materials/player.physicMaterial
-  artifactKey: Guid(ce140c0f6a8eb1644bdafdc1a214004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Materials/player.physicMaterial using Guid(ce140c0f6a8eb1644bdafdc1a214004b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284d7264f1fb0f8cd36fdfba61a3cd42') in 0.004599 seconds 
-  Import took 0.008240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.188122 seconds.
-  path: Assets/阿夜/Script
-  artifactKey: Guid(e366da6967cd00547ad6a53e6a0e75ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Script using Guid(e366da6967cd00547ad6a53e6a0e75ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57c1efdf435b3dc52af125e113cd33a') in 0.004796 seconds 
-  Import took 0.008382 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002000 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
-Domain Reload Profiling:
-	ReloadAssembly (780ms)
-		BeginReloadAssembly (92ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (641ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (233ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (233ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 106.0 MB.
-System memory in use after: 106.2 MB.
+Unloading 2557 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.3 MB.
+System memory in use after: 108.5 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3044.
-Total: 2.947400 ms (FindLiveObjects: 0.260700 ms CreateObjectMapping: 0.061400 ms MarkObjects: 2.607600 ms  DeleteObjects: 0.016900 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 3.050900 ms (FindLiveObjects: 0.274600 ms CreateObjectMapping: 0.106300 ms MarkObjects: 2.597600 ms  DeleteObjects: 0.071800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -485,700 +133,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 75.340500 seconds.
-  path: Assets/阿夜/小怪圖片/Susuwatari_03.png
-  artifactKey: Guid(5fdd1bb67d530784d87cd961314d726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/小怪圖片/Susuwatari_03.png using Guid(5fdd1bb67d530784d87cd961314d726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94613c3407e9fb7505d780921269d159') in 0.043915 seconds 
-  Import took 0.047765 seconds .
+  path: Assets/紹威資料/遊戲選單.unity
+  artifactKey: Guid(00e8a9fa866fc534e965cfa63fc1cb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/遊戲選單.unity using Guid(00e8a9fa866fc534e965cfa63fc1cb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba60fcc0e5cb5749d9d335f0ced34c9b') in 0.015898 seconds 
+  Import took 0.019351 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.571480 seconds.
-  path: Assets/阿夜/陶宇/2_Datas/吉娃娃.asset
-  artifactKey: Guid(017dbeb81b1c235439745ece2f31b58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/2_Datas/吉娃娃.asset using Guid(017dbeb81b1c235439745ece2f31b58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad438dbb2ef9daeb2aab38dd3ed4beb3') in 0.006586 seconds 
-  Import took 0.010449 seconds .
+  Time since last request: 0.000263 seconds.
+  path: Assets/紹威資料/紹威選單.unity
+  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/紹威選單.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45188a92c3a5fe63f622f663aeda63f3') in 0.005603 seconds 
+  Import took 0.009144 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.350775 seconds.
-  path: Assets/阿夜/陶宇/2_Images/Giwawa.jpg
-  artifactKey: Guid(39bdd6c7534a6094f843b1c4f324350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/2_Images/Giwawa.jpg using Guid(39bdd6c7534a6094f843b1c4f324350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a1c4bbe3c44e9b665ced0103d79ee1') in 0.008641 seconds 
-  Import took 0.012255 seconds .
+  Time since last request: 0.000163 seconds.
+  path: Assets/紹威資料/遊戲開始.unity
+  artifactKey: Guid(052cfc15a938c13459626c8a9d25313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/遊戲開始.unity using Guid(052cfc15a938c13459626c8a9d25313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699bf72aaa434ab20b273f20d5a869ef') in 0.006021 seconds 
+  Import took 0.009126 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.422522 seconds.
-  path: Assets/阿夜/陶宇/2_Images/Materials/Giwawa.mat
-  artifactKey: Guid(c5c2270f74a8f0d45bd7d15462941cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/2_Images/Materials/Giwawa.mat using Guid(c5c2270f74a8f0d45bd7d15462941cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0719f157b57b53a579a89a6872522f02') in 0.023741 seconds 
-  Import took 0.027366 seconds .
+  Time since last request: 0.000223 seconds.
+  path: Assets/紹威資料/角色選擇.unity
+  artifactKey: Guid(7bf673d307711954bb6428bfbbfd7454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色選擇.unity using Guid(7bf673d307711954bb6428bfbbfd7454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a170f14dd33d74703f58f5dc11fc67a') in 0.005960 seconds 
+  Import took 0.010164 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.354530 seconds.
-  path: Assets/阿夜/陶宇/2_Images/Materials
-  artifactKey: Guid(b5618f37e7a96ae49a9866c469874383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/2_Images/Materials using Guid(b5618f37e7a96ae49a9866c469874383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a947a539b46eaed6c787d0064d76b804') in 0.001607 seconds 
-  Import took 0.005227 seconds .
+  Time since last request: 0.463499 seconds.
+  path: Assets/紹威資料/難易度選擇.unity
+  artifactKey: Guid(08ca158d6093cb44c969be5140b254b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/難易度選擇.unity using Guid(08ca158d6093cb44c969be5140b254b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85518fe53fecfd20ca953333d92b391') in 0.004626 seconds 
+  Import took 0.008151 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.205965 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Icons/attack.png
-  artifactKey: Guid(2bbd8aad456555f4ab232d3314af56d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Icons/attack.png using Guid(2bbd8aad456555f4ab232d3314af56d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4efa0f6b93120a1e697ace2d93f085b') in 0.009864 seconds 
-  Import took 0.013577 seconds .
+  Time since last request: 1.142324 seconds.
+  path: Assets/紹威資料/地圖選擇.unity
+  artifactKey: Guid(411c99869ed51a64aa05d533a3ed3df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/地圖選擇.unity using Guid(411c99869ed51a64aa05d533a3ed3df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6658399fac23fecee1990eb6663220be') in 0.004567 seconds 
+  Import took 0.008074 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Icons/right.png
-  artifactKey: Guid(74f05988c9a800b4399809fa194ebcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Icons/right.png using Guid(74f05988c9a800b4399809fa194ebcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36043854ee31e1b305324f135abc6015') in 0.010270 seconds 
-  Import took 0.013467 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Icons/shield.png
-  artifactKey: Guid(8fd79aa8c42d19e41830702c3af4b459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Icons/shield.png using Guid(8fd79aa8c42d19e41830702c3af4b459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7521aed2868a3f0494747586db030af') in 0.011323 seconds 
-  Import took 0.014485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Icons/jump.png
-  artifactKey: Guid(69a923a4b6ec9554c9acbe504ffcd673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Icons/jump.png using Guid(69a923a4b6ec9554c9acbe504ffcd673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7bd8f5f82eb87bf4c3ed90d509c9b2') in 0.010570 seconds 
-  Import took 0.013717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Icons/left.png
-  artifactKey: Guid(cba5a37aa2840b146813050c84d461f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Icons/left.png using Guid(cba5a37aa2840b146813050c84d461f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61577d7671eaa23c6e64987efb85e33') in 0.011607 seconds 
-  Import took 0.015237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.930049 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background.psd
-  artifactKey: Guid(38f30c1b9dfb63f4a8f65b707011613e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background.psd using Guid(38f30c1b9dfb63f4a8f65b707011613e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c763a574970ed48c6a94510707d57309') in 0.009230 seconds 
-  Import took 0.012935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/前景.png
-  artifactKey: Guid(0620c3de2f4b5cd42ad92e3a522ff963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/前景.png using Guid(0620c3de2f4b5cd42ad92e3a522ff963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f8e8a7a6fdfbea3c44719f63aba673') in 0.087909 seconds 
-  Import took 0.097733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_level4.psd
-  artifactKey: Guid(6abf71a19d842b643ab259b6d2ef1cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_level4.psd using Guid(6abf71a19d842b643ab259b6d2ef1cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3033918b2461e0aa59905ac32f76eef5') in 0.011720 seconds 
-  Import took 0.015813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/中景.png
-  artifactKey: Guid(3ac5bf752f1b2654cb49d8d1ed4e5058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/中景.png using Guid(3ac5bf752f1b2654cb49d8d1ed4e5058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc23fd217b9aef9d3171458026924e2c') in 0.093405 seconds 
-  Import took 0.103728 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/地板.psd
-  artifactKey: Guid(70597985d2940644cacade90d290f5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/地板.psd using Guid(70597985d2940644cacade90d290f5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b63ef01f4300cfcfffc603cb6aab41') in 0.011157 seconds 
-  Import took 0.015071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_level2.psd
-  artifactKey: Guid(779929bce7fb03b42a7444392fa26653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_level2.psd using Guid(779929bce7fb03b42a7444392fa26653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332e01ee8df61c4c6312baef98632548') in 0.013116 seconds 
-  Import took 0.016470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/大前景.png
-  artifactKey: Guid(947b6e6160c95a340a1f016886f4d492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/大前景.png using Guid(947b6e6160c95a340a1f016886f4d492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb43930bbc1f9d5adbe5afe498731d8') in 0.010987 seconds 
-  Import took 0.014751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/後景.jpg
-  artifactKey: Guid(23df8738f3d53f54d9280bf8dfc52f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/後景.jpg using Guid(23df8738f3d53f54d9280bf8dfc52f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebee4d449592aeb959b89db906d1bfa0') in 0.011309 seconds 
-  Import took 0.014987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg
-  artifactKey: Guid(f6eb9ec53f8e95d4dafbd30e1edcb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg using Guid(f6eb9ec53f8e95d4dafbd30e1edcb21c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362969b0719de977ce41c15cb20ac9b6') in 0.073315 seconds 
-  Import took 0.077790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.656374 seconds.
-  path: Assets/阿夜/陶宇/4_Materials/Ball.mat
-  artifactKey: Guid(a995e44c63b4c49498f482f77998b7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/4_Materials/Ball.mat using Guid(a995e44c63b4c49498f482f77998b7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3798d452b9fabbe93d756e1ac1cfdd') in 0.008378 seconds 
-  Import took 0.012062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/阿夜/陶宇/4_Materials/player - physics.physicMaterial
-  artifactKey: Guid(569a6c8252567694a91607594a43a352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/4_Materials/player - physics.physicMaterial using Guid(569a6c8252567694a91607594a43a352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a2eabdeab740d144f999ac8937b7f8') in 0.004886 seconds 
-  Import took 0.007988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/阿夜/陶宇/4_Materials/walls - physics.physicMaterial
-  artifactKey: Guid(b9638e6a457ca5346b06e9601b688155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/4_Materials/walls - physics.physicMaterial using Guid(b9638e6a457ca5346b06e9601b688155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40459dafc0fd55a744a5bd775363700') in 0.004448 seconds 
-  Import took 0.007547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/阿夜/陶宇/4_Materials/Walls.mat
-  artifactKey: Guid(7e9e832c7b46f81488ad494096764446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/4_Materials/Walls.mat using Guid(7e9e832c7b46f81488ad494096764446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b24bb52b27d5e39c0e85e7245153b8') in 0.009817 seconds 
-  Import took 0.013273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/阿夜/陶宇/4_Materials/Ground.mat
-  artifactKey: Guid(333f3f13a720aa34384d718d0abda1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇/4_Materials/Ground.mat using Guid(333f3f13a720aa34384d718d0abda1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117c417c0e40544ac7d78009acd61b7f') in 0.011059 seconds 
-  Import took 0.014212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 106.374439 seconds.
-  path: Assets/陶宇/4_Materials/Ball.mat
-  artifactKey: Guid(1c8862af1a4dc294bbebdee9419c63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/4_Materials/Ball.mat using Guid(1c8862af1a4dc294bbebdee9419c63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c669f9b852dc26ce682466e3743821') in 0.022720 seconds 
-  Import took 0.026381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/陶宇/4_Materials/walls - physics.physicMaterial
-  artifactKey: Guid(f4cb0271424d4334db19e2ddcb4ec2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/4_Materials/walls - physics.physicMaterial using Guid(f4cb0271424d4334db19e2ddcb4ec2b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0fa445f410f4d0877876cfc76657c0') in 0.001885 seconds 
-  Import took 0.004987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/陶宇/4_Materials/player - physics.physicMaterial
-  artifactKey: Guid(52f0b2f52f2b4994b9549481bd7c8b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/4_Materials/player - physics.physicMaterial using Guid(52f0b2f52f2b4994b9549481bd7c8b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3380d303f17dec7f305e2577a2c61b3f') in 0.001769 seconds 
-  Import took 0.005290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/陶宇/4_Materials/Ground.mat
-  artifactKey: Guid(f067e31e84d6dcc4e97b31a21874a619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/4_Materials/Ground.mat using Guid(f067e31e84d6dcc4e97b31a21874a619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a637aa9f08a9b986f5fddc299de40b07') in 0.013963 seconds 
-  Import took 0.017391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/陶宇/4_Materials/Walls.mat
-  artifactKey: Guid(d26323becc12ef345b83e64391c780e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/4_Materials/Walls.mat using Guid(d26323becc12ef345b83e64391c780e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1605c2b69d53735fb4e3ba6c756926dd') in 0.011052 seconds 
-  Import took 0.014272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 268.579786 seconds.
-  path: Assets/阿夜/陶宇 1/0_Scene/陶宇的測試場景.unity
-  artifactKey: Guid(7af74fab587db0847b47a233c0f8fabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/0_Scene/陶宇的測試場景.unity using Guid(7af74fab587db0847b47a233c0f8fabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6526ca130136bcc3c9bd811cee0555a2') in 0.001929 seconds 
-  Import took 0.005805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.703069 seconds.
-  path: Assets/阿夜/陶宇 1/4_Materials/Ball.mat
-  artifactKey: Guid(50246a8b5e8791a459aacd4b55a7b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/4_Materials/Ball.mat using Guid(50246a8b5e8791a459aacd4b55a7b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5786e2815f45ac43100ae103669e11') in 0.011302 seconds 
-  Import took 0.014992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/阿夜/陶宇 1/4_Materials/player - physics.physicMaterial
-  artifactKey: Guid(477843396a06bff428600e22d492afd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/4_Materials/player - physics.physicMaterial using Guid(477843396a06bff428600e22d492afd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66497fc67e01959f788b63b8a787c38b') in 0.001775 seconds 
-  Import took 0.004534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/阿夜/陶宇 1/4_Materials/Ground.mat
-  artifactKey: Guid(8306e23b120d1e44399555aa2d9beb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/4_Materials/Ground.mat using Guid(8306e23b120d1e44399555aa2d9beb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265dd0b3e3f24988f609207ffc04e1a9') in 0.008264 seconds 
-  Import took 0.011926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/阿夜/陶宇 1/4_Materials/walls - physics.physicMaterial
-  artifactKey: Guid(7ddfa72a28d4b4b42a9e3d45ee8889de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/4_Materials/walls - physics.physicMaterial using Guid(7ddfa72a28d4b4b42a9e3d45ee8889de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9def77fb2aeebdfc5b54aa3fde600e89') in 0.001974 seconds 
-  Import took 0.005591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/阿夜/陶宇 1/4_Materials/Walls.mat
-  artifactKey: Guid(155682c82f207b34986ec25013935067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/4_Materials/Walls.mat using Guid(155682c82f207b34986ec25013935067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0976b0bbcb48aa0018660677ff489069') in 0.009302 seconds 
-  Import took 0.012549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.917148 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player
-  artifactKey: Guid(2d3e8cb7dd3bde34fa069ca382b8ccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player using Guid(2d3e8cb7dd3bde34fa069ca382b8ccb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40f9298aa38ba5ec1b0aa991df13d1e') in 0.001481 seconds 
-  Import took 0.005234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.176687 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController.cs
-  artifactKey: Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController.cs using Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e341275509f63cd553ec0930abbeaf') in 0.004302 seconds 
-  Import took 0.007978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.745295 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs
-  artifactKey: Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs using Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e705c91236ce990c291baa9e9cbba615') in 0.004278 seconds 
-  Import took 0.008147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.428561 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect.cs
-  artifactKey: Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect.cs using Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b9c8587fe8e34cca6847df665065b0') in 0.004100 seconds 
-  Import took 0.007680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.770678 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect+1.cs
-  artifactKey: Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect+1.cs using Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3247c7c81ccbd08df577002eb3b7db9e') in 0.004189 seconds 
-  Import took 0.008186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.701691 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs
-  artifactKey: Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs using Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1929ebe92e6f83621c8ec08afb0bb1e7') in 0.004125 seconds 
-  Import took 0.007818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.287401 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController.cs
-  artifactKey: Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController.cs using Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db9f12d6622f8ee8a2aebb4659acfd8') in 0.005625 seconds 
-  Import took 0.009269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.590667 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController_1.cs
-  artifactKey: Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController_1.cs using Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d28d8a896c4c965af16bded1ebc60e') in 0.004659 seconds 
-  Import took 0.008230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.387620 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData.cs
-  artifactKey: Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData.cs using Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aecb1fc042d143a5f3fe6018caad8ad') in 0.004155 seconds 
-  Import took 0.007786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.430008 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData_1.cs
-  artifactKey: Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData_1.cs using Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22d1fd2b967939d363685dc90f37173') in 0.004099 seconds 
-  Import took 0.007725 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.495439 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs
-  artifactKey: Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs using Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd64df30ef9203badc30af56bf5ab8bd') in 0.001748 seconds 
-  Import took 0.005692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.694756 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs
-  artifactKey: Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs using Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270dab98eb3cbbf5559d6d8a829446ac') in 0.001617 seconds 
-  Import took 0.005295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.042797 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs
-  artifactKey: Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_GroundDetect_1.cs using Guid(2ff2b6d193222a342bd560b14c383c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab062d91e7c5db89c4371d2c54c81a47') in 0.001411 seconds 
-  Import took 0.004876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.235244 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController_1.cs
-  artifactKey: Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerController_1.cs using Guid(161b4a4cc383fe048872f60533a9c723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7391e34cb35f53249c371aa15a815e94') in 0.001618 seconds 
-  Import took 0.005335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.301819 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData_1.cs
-  artifactKey: Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_PlayerData_1.cs using Guid(f5cd7c12395ffcf4586b22a6de99b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c80f81ec97c271ba357ba9ea895f03') in 0.001452 seconds 
-  Import took 0.004938 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.189901 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs
-  artifactKey: Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Player/scr_CameraController_1.cs using Guid(ff6225799ef898b4f85915aec8b098d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f9b691249efb90aa98585c3ada987d') in 0.001388 seconds 
-  Import took 0.004748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 77.716516 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove.cs
-  artifactKey: Guid(60dfe8b2f4c03154ca29bf659e050a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove.cs using Guid(60dfe8b2f4c03154ca29bf659e050a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cebd8131513ab0f1f52816151805841') in 0.004920 seconds 
-  Import took 0.009110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.684164 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove_1.cs
-  artifactKey: Guid(60dfe8b2f4c03154ca29bf659e050a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove_1.cs using Guid(60dfe8b2f4c03154ca29bf659e050a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd721ed6ba86588d2622378ba49e0a07b') in 0.005371 seconds 
-  Import took 0.010624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.496482 seconds.
-  path: Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove.cs
-  artifactKey: Guid(2a40513408d5c8b4e8be87b35e2db42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/1_Scripts/Scene/scr_BackgroundMove.cs using Guid(2a40513408d5c8b4e8be87b35e2db42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928c5da823d878d33a7fd56e170ccc10') in 0.001527 seconds 
-  Import took 0.005236 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002093 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.861 seconds
-Domain Reload Profiling:
-	ReloadAssembly (861ms)
-		BeginReloadAssembly (88ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (726ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (235ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (159ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2501 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 106.4 MB.
-System memory in use after: 106.6 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3061.
-Total: 2.998700 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.070600 ms MarkObjects: 2.628800 ms  DeleteObjects: 0.019500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 49.786582 seconds.
-  path: Assets/阿夜/陶宇 1/2_Datas/吉娃娃.asset
-  artifactKey: Guid(b33d51d8fec316849822474ec912bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/2_Datas/吉娃娃.asset using Guid(b33d51d8fec316849822474ec912bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ede6ec8f57885852ede7b042bdfdab') in 0.016759 seconds 
-  Import took 0.020508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/陶宇/2_Datas/吉娃娃.asset
-  artifactKey: Guid(f09ee41a37d9bf34385751bc21ff829e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/陶宇/2_Datas/吉娃娃.asset using Guid(f09ee41a37d9bf34385751bc21ff829e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946dd2e130588d5339b7cd44d1031520') in 0.001720 seconds 
-  Import took 0.004316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.098372 seconds.
-  path: Assets/阿夜/陶宇 1/2_Datas/吉娃娃_1.asset
-  artifactKey: Guid(b33d51d8fec316849822474ec912bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/2_Datas/吉娃娃_1.asset using Guid(b33d51d8fec316849822474ec912bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d3c4bb7cc01501f3b8a20924175c8f') in 0.004731 seconds 
-  Import took 0.008412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.214247 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background.psd
-  artifactKey: Guid(5925f9358edc694418abcae2ec5f7c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background.psd using Guid(5925f9358edc694418abcae2ec5f7c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0e4adb6cb0781d3e9e49b241e94303') in 0.039977 seconds 
-  Import took 0.045769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/中景.png
-  artifactKey: Guid(96be134017b8be14ca1657e01a8506bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/中景.png using Guid(96be134017b8be14ca1657e01a8506bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61a2b7de565672b914b598b9d78a63b') in 0.022821 seconds 
-  Import took 0.026655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/地板.psd
-  artifactKey: Guid(5f2f125c9d2e262418fdbdb368d41989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/地板.psd using Guid(5f2f125c9d2e262418fdbdb368d41989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c037e31450173fe98a160803317e615b') in 0.019787 seconds 
-  Import took 0.022930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_02 1.jpg
-  artifactKey: Guid(54967c23f6e60f24e8891f7d3e95b14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_02 1.jpg using Guid(54967c23f6e60f24e8891f7d3e95b14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9227ae3cf54d03dabbce53b44d20f4') in 0.024619 seconds 
-  Import took 0.028871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/後景.jpg
-  artifactKey: Guid(408ca7175bab4e74db3a072652152519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/後景.jpg using Guid(408ca7175bab4e74db3a072652152519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74decb1f3afbfaae01835973330e3975') in 0.024429 seconds 
-  Import took 0.027630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_level2.psd
-  artifactKey: Guid(2e63a1289da821d409e47a17656034bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_level2.psd using Guid(2e63a1289da821d409e47a17656034bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0509007e7a326c000cb6bc6e42a93255') in 0.015272 seconds 
-  Import took 0.018416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/大前景.png
-  artifactKey: Guid(f494ace0a9bca20429b128dd22f34359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/大前景.png using Guid(f494ace0a9bca20429b128dd22f34359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bdedc059823cc3d875d9b2d4486f0f') in 0.020052 seconds 
-  Import took 0.023180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_level4.psd
-  artifactKey: Guid(34fff7e09463e714dadce745f0a239b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/dusk_scene_background_level4.psd using Guid(34fff7e09463e714dadce745f0a239b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524c9b1bf712039bc8c83d615b3e84de') in 0.017630 seconds 
-  Import took 0.020838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Backgrounds/前景.png
-  artifactKey: Guid(fc8df33de35c4b14d8898582eef77536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Backgrounds/前景.png using Guid(fc8df33de35c4b14d8898582eef77536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0774f1f97b73b821c7145ac2d4065dd6') in 0.018933 seconds 
-  Import took 0.022279 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.164526 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Icons/attack.png
-  artifactKey: Guid(fd2f08abd671b9b4fa52b981b9866900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Icons/attack.png using Guid(fd2f08abd671b9b4fa52b981b9866900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fa76e1681ce686d1208406904a8753') in 0.012002 seconds 
-  Import took 0.015678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Icons/shield.png
-  artifactKey: Guid(dbcad573f56689a41a9e29b62a6de192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Icons/shield.png using Guid(dbcad573f56689a41a9e29b62a6de192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435749f6869abc734d3acd7c6042b941') in 0.009982 seconds 
-  Import took 0.013699 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Icons/left.png
-  artifactKey: Guid(36de3fea6f632a845b7e95d331baca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Icons/left.png using Guid(36de3fea6f632a845b7e95d331baca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fd66c7e8299b348afda97ca22162de8') in 0.021669 seconds 
-  Import took 0.024946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Icons/right.png
-  artifactKey: Guid(95964057fafc90d4cb18e2c34772696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Icons/right.png using Guid(95964057fafc90d4cb18e2c34772696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b880049354c639dc831a5b3fc254a90') in 0.024183 seconds 
-  Import took 0.027283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/阿夜/陶宇 1/3_Images/Icons/jump.png
-  artifactKey: Guid(54aad85b4c354334984f28789901aae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/3_Images/Icons/jump.png using Guid(54aad85b4c354334984f28789901aae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52734b7da3d0920ab25a27ebed07c626') in 0.015488 seconds 
-  Import took 0.018589 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.760986 seconds.
-  path: Assets/阿夜/陶宇 1/5_Characters/吉娃娃/Animations
-  artifactKey: Guid(19023cb62a5d66d448e29db7f5dd1c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/5_Characters/吉娃娃/Animations using Guid(19023cb62a5d66d448e29db7f5dd1c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7685815838224b7a1245098d88d7c8b8') in 0.004492 seconds 
-  Import took 0.008148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.907440 seconds.
-  path: Assets/阿夜/陶宇 1/5_Characters/吉娃娃/Animations/吉娃娃 - 受傷.anim
-  artifactKey: Guid(dfc4659a681a4e74cb701993fd6f8af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/陶宇 1/5_Characters/吉娃娃/Animations/吉娃娃 - 受傷.anim using Guid(dfc4659a681a4e74cb701993fd6f8af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de69d437b68c232f0ac9e08567b9ee86') in 0.006128 seconds 
-  Import took 0.009912 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002076 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.784 seconds
-Domain Reload Profiling:
-	ReloadAssembly (784ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (639ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (233ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 106.3 MB.
-System memory in use after: 106.5 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3059.
-Total: 3.074800 ms (FindLiveObjects: 0.271700 ms CreateObjectMapping: 0.072700 ms MarkObjects: 2.706400 ms  DeleteObjects: 0.022800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

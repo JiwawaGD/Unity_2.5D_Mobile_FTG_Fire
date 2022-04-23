@@ -297,3 +297,20 @@ C# parse time         : -1ms
 candidates check time : -1ms
 console write time    : -1ms
 
+[api-updater (non-obsolete-error-filter)] 2022/4/23 下午 09:29:43 : Starting A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] Exception caught while loading types from A:\Unity_2.5D_Mobile_FTG_Fire\Unity_2.5D_Mobile_FTG_Fire\Fire\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
+	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 56.8427ms
+moved types parse time: 40ms
+candidates parse time : 1ms
+C# parse time         : 186ms
+candidates check time : 49ms
+console write time    : 25ms
+
