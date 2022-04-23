@@ -15,11 +15,11 @@ D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58347
+60742
 Successfully changed project path to: D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
 D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 55.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path D:/unity/2017.4.40f1/Editor/Data/Resources/UnitySubsystems
@@ -36,90 +36,90 @@ Initialize mono
 Mono path[0] = 'D:/unity/2017.4.40f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/2017.4.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/unity/2017.4.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/2017.4.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001221 seconds.
+Registered in 0.000806 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.98 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.105 seconds
+- Completed reload, in  1.900 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1106ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (1900ms)
+		BeginReloadAssembly (48ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (591ms)
-			LoadAssemblies (101ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (475ms)
+			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (149ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (283ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (213ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (113ms)
-				BeforeProcessingInitializeOnLoad (21ms)
-				ProcessInitializeOnLoadAttributes (102ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002308 seconds.
+Registered in 0.002130 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 59.86 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.346 seconds
+- Completed reload, in  1.133 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1347ms)
-		BeginReloadAssembly (173ms)
+	ReloadAssembly (1133ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1108ms)
-			LoadAssemblies (105ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (936ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (393ms)
+			SetupTypeCache (299ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (415ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (371ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (74ms)
+				RefreshPlugins (60ms)
 				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (1ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2557 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2558 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 129.3 MB.
 System memory in use after: 129.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3020.
-Total: 2.939800 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.099300 ms MarkObjects: 2.571200 ms  DeleteObjects: 0.033700 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3021.
+Total: 3.218500 ms (FindLiveObjects: 0.213200 ms CreateObjectMapping: 0.089600 ms MarkObjects: 2.850500 ms  DeleteObjects: 0.063900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -133,122 +133,2468 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/阿夜/Script/mobsMove.cs
-  artifactKey: Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Script/mobsMove.cs using Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0816208aeb35506987c90a736eae8393') in 0.057541 seconds 
-  Import took 0.065341 seconds .
+  path: Assets/陶宇/5_Characters/吉娃娃/Animations/吉娃娃動畫控制器.controller
+  artifactKey: Guid(b5143ae4217f06940b929eb17754772d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/Animations/吉娃娃動畫控制器.controller using Guid(b5143ae4217f06940b929eb17754772d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70690ef3eaf0b09263d4c4bbc39fb978') in 0.067729 seconds 
+  Import took 0.073929 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002646 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.340 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1344ms)
-		BeginReloadAssembly (250ms)
-			ExecutionOrderSort (1ms)
-			DisableScriptedObjects (24ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (95ms)
-		EndReloadAssembly (1028ms)
-			LoadAssemblies (100ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (319ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (445ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (348ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.7 MB.
-System memory in use after: 123.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3022.
-Total: 3.723600 ms (FindLiveObjects: 0.249000 ms CreateObjectMapping: 0.097200 ms MarkObjects: 2.964000 ms  DeleteObjects: 0.411600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3008.065450 seconds.
-  path: Assets/阿夜/Script/mobsMove.cs
-  artifactKey: Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/阿夜/Script/mobsMove.cs using Guid(47439cc7f77316847960c7b9fa0c4f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52582492b41c23ba45d1f0ae7d1a8693') in 0.010128 seconds 
-  Import took 0.014891 seconds .
+  Time since last request: 21.916837 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Materials/Window.mat
+  artifactKey: Guid(3cc66b78ab25c204f9b4d415d02e3abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Materials/Window.mat using Guid(3cc66b78ab25c204f9b4d415d02e3abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60317c3159d12d2f2261e8689bbbd8cf') in 0.139134 seconds 
+  Import took 0.144538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Materials/Walls.mat
+  artifactKey: Guid(01aacb5ed5b6ce0428f30ebd1fa9c719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Materials/Walls.mat using Guid(01aacb5ed5b6ce0428f30ebd1fa9c719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55a95da6057ef31b4b9f4b5110f2e59') in 0.025912 seconds 
+  Import took 0.032472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcLand_clean_dome_mat.mat
+  artifactKey: Guid(4129879bf66148c44a38ead8e577c811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcLand_clean_dome_mat.mat using Guid(4129879bf66148c44a38ead8e577c811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aadf023c17975dd87c706b9cb07ef31') in 0.099526 seconds 
+  Import took 0.104652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/阿夜/阿夜的場景/4_Materials/Walls.mat
+  artifactKey: Guid(00a142d83dec7e446bff323c5688918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/4_Materials/Walls.mat using Guid(00a142d83dec7e446bff323c5688918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0ed46789529f7727b6c5d84c4d113f') in 0.014105 seconds 
+  Import took 0.020081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000588 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/WalkingStick.mat
+  artifactKey: Guid(3285d6d0bc506494b8fecba4d7aada26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/WalkingStick.mat using Guid(3285d6d0bc506494b8fecba4d7aada26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0dc47fa97b51946b57b4defbc6ab4b6') in 0.050285 seconds 
+  Import took 0.055872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/陶宇/3_Materials/Walls.mat
+  artifactKey: Guid(f4c5fb2d2b9b17e41a038337d5f5b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Materials/Walls.mat using Guid(f4c5fb2d2b9b17e41a038337d5f5b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb149c53ce01ab9215727aef5312d58') in 0.010671 seconds 
+  Import took 0.015412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/YellowStar.mat
+  artifactKey: Guid(751282d806bbc7140826086bfcefeb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/YellowStar.mat using Guid(751282d806bbc7140826086bfcefeb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc09cf9615c6c009939ba8e6fd979be') in 0.060422 seconds 
+  Import took 0.066648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/TrailFollowMaterial.mat
+  artifactKey: Guid(ff16fb4a90fe84bec9c8f29698aa0eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/TrailFollowMaterial.mat using Guid(ff16fb4a90fe84bec9c8f29698aa0eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224e3f36da11ee3e97a91b8ecaa103ee') in 0.080463 seconds 
+  Import took 0.086524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/TrackLines.mat
+  artifactKey: Guid(54538213a935248b8ac1ce7b42140cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/TrackLines.mat using Guid(54538213a935248b8ac1ce7b42140cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b5cf30fe923fd09f51fc3a8603b387') in 0.047702 seconds 
+  Import took 0.053724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Materials/UI Opaque.mat
+  artifactKey: Guid(8934f7763af9e41ee8845ae14c5473f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Materials/UI Opaque.mat using Guid(8934f7763af9e41ee8845ae14c5473f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19985148efcce2ab80f0bf35c24beee2') in 0.021654 seconds 
+  Import took 0.026307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcFlyer_dome_mat.mat
+  artifactKey: Guid(27342824cec2ee64ab208b2396c0d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcFlyer_dome_mat.mat using Guid(27342824cec2ee64ab208b2396c0d82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e35488d3e00b22da80c840a36d665ab') in 0.022943 seconds 
+  Import took 0.028961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/TrackGlowMaterial.mat
+  artifactKey: Guid(f99cee49392444d14b5e8c16cd41348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/TrackGlowMaterial.mat using Guid(f99cee49392444d14b5e8c16cd41348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b342b1d34a159808c1175eeef0dfce') in 0.042196 seconds 
+  Import took 0.048816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcFlyer_metal_mat.mat
+  artifactKey: Guid(879f5ab2d2a90614db855e052b3e2f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Models/Materials/vehicle_rcFlyer_metal_mat.mat using Guid(879f5ab2d2a90614db855e052b3e2f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76efdf93c0b9306d8f3c60ec2c6cc03') in 0.040795 seconds 
+  Import took 0.046047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/TrackFollowMaterial.mat
+  artifactKey: Guid(9efbdb862990242178d5b47a40b48e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/TrackFollowMaterial.mat using Guid(9efbdb862990242178d5b47a40b48e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a974b739b6e9b99cd7683332424fa0') in 0.020447 seconds 
+  Import took 0.025880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/TrackCar.mat
+  artifactKey: Guid(3e55a11a05aa141af9f3be5e921cc003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/TrackCar.mat using Guid(3e55a11a05aa141af9f3be5e921cc003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0151c6f19a6d44100a899f9e40cc620') in 0.020841 seconds 
+  Import took 0.026257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/陶宇/4_Materials/Walls.mat
+  artifactKey: Guid(d26323becc12ef345b83e64391c780e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/4_Materials/Walls.mat using Guid(d26323becc12ef345b83e64391c780e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1605c2b69d53735fb4e3ba6c756926dd') in 0.015213 seconds 
+  Import took 0.020051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/Trail67.mat
+  artifactKey: Guid(3632881d102df0f47864d899fa15a49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/Trail67.mat using Guid(3632881d102df0f47864d899fa15a49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f11352a6c4a008f6ff88596894bf4d') in 0.048383 seconds 
+  Import took 0.052803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.540530 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/SpaceLineGlowMaterial.mat
+  artifactKey: Guid(4d170a8aa584240f4b18ce6a5e58ef2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/SpaceLineGlowMaterial.mat using Guid(4d170a8aa584240f4b18ce6a5e58ef2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3921b08fbf84eb344f455dd84ac03e8b') in 0.049954 seconds 
+  Import took 0.055330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000644 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/Smoke26.mat
+  artifactKey: Guid(1fd724d226066ad4cbc105d4ad53a444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/Smoke26.mat using Guid(1fd724d226066ad4cbc105d4ad53a444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aeebd0553232ea9c86e52665b957ddf') in 0.026749 seconds 
+  Import took 0.032533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/SparkSphere.mat
+  artifactKey: Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/SparkSphere.mat using Guid(20e729147a4dad247abfc2305c3dd963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed4848451718942765e011ada94bd5c') in 0.030133 seconds 
+  Import took 0.034318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Knob.mat
+  artifactKey: Guid(2ac0972e5f0b5439998e30db4f1ab9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Knob.mat using Guid(2ac0972e5f0b5439998e30db4f1ab9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89f332b3289884d30d409e448d2165a') in 0.025413 seconds 
+  Import took 0.031269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SubTitleText.mat
+  artifactKey: Guid(33b82a22301d648c5afa1a682a259e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SubTitleText.mat using Guid(33b82a22301d648c5afa1a682a259e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb39e23cea43fc78b1a7ddbe10f740c8') in 0.019411 seconds 
+  Import took 0.024265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/Demo_Assets/background/Materials/Space.tga.mat
+  artifactKey: Guid(1a46a2cb5f7726f4eb70be3b37a00f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/Demo_Assets/background/Materials/Space.tga.mat using Guid(1a46a2cb5f7726f4eb70be3b37a00f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f944d2564d7c574c1a52ec813bfdad') in 0.060215 seconds 
+  Import took 0.065643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.450925 seconds.
+  path: Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Samples/Materials/Skybox.mat
+  artifactKey: Guid(ead10416033e1234ba5d02f9a9bc435b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Samples/Materials/Skybox.mat using Guid(ead10416033e1234ba5d02f9a9bc435b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ffe76d023d4fa49cdbbc44562cc09c') in 0.023541 seconds 
+  Import took 0.028876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Background.mat
+  artifactKey: Guid(27d87a15bf86c4159800770927c9aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Background.mat using Guid(27d87a15bf86c4159800770927c9aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14757ae68550b71ec38b3fbc193b37b0') in 0.027692 seconds 
+  Import took 0.032938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Fill.mat
+  artifactKey: Guid(74069a396ef888d4ea96c33784281ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Materials/Slider Fill.mat using Guid(74069a396ef888d4ea96c33784281ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620b697d6525049cc5f71a7d338d6f05') in 0.027257 seconds 
+  Import took 0.031634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarSpace.mat
+  artifactKey: Guid(9682c3da6d5384d098160b19ba3e02c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarSpace.mat using Guid(9682c3da6d5384d098160b19ba3e02c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49caa3a061470a932b269b8fc3c9a7c5') in 0.020348 seconds 
+  Import took 0.025960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarMat.mat
+  artifactKey: Guid(5732f0a6e68964f3eb5c3ebb94242055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarMat.mat using Guid(5732f0a6e68964f3eb5c3ebb94242055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94065aa095164a02c3c12e1d0a6de5d1') in 0.020789 seconds 
+  Import took 0.025323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/RuneStar.mat
+  artifactKey: Guid(dece830cf7f3ea14f8469a5c0f1a98c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/RuneStar.mat using Guid(dece830cf7f3ea14f8469a5c0f1a98c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbe657a3e6805e142915d027bcb22d1') in 0.031478 seconds 
+  Import took 0.037433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat
+  artifactKey: Guid(e86c6ee57cd4c400ea5852025bc7b7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarBlue.mat using Guid(e86c6ee57cd4c400ea5852025bc7b7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702aa5750a62f0d053b9a3b915d4b5d7') in 0.021652 seconds 
+  Import took 0.026340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat
+  artifactKey: Guid(894fe1d86fb5943f6a486e218bba2072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarHat.mat using Guid(894fe1d86fb5943f6a486e218bba2072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a03858266d4b4ae77b4e57d008dda7e') in 0.019599 seconds 
+  Import took 0.024359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarAlphaBlue.mat
+  artifactKey: Guid(39a7c2c726d36466a82bb11886f760e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/SimpleAvatarAlphaBlue.mat using Guid(39a7c2c726d36466a82bb11886f760e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c48e396334334bfa0e6f1f7630cc385') in 0.127063 seconds 
+  Import took 0.131686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.746882 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/01.png
+  artifactKey: Guid(8ea5ffda068c2f643928bbd10adc2056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/01.png using Guid(8ea5ffda068c2f643928bbd10adc2056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c83acea0eee31e29395a6c085c61afc') in 0.113863 seconds 
+  Import took 0.121347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/01.png
+  artifactKey: Guid(b90621e957ce7804d9cc16461beb9c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/01.png using Guid(b90621e957ce7804d9cc16461beb9c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4645f8162b4f363e8b462e320d38eabe') in 0.086150 seconds 
+  Import took 0.093633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/01.png
+  artifactKey: Guid(e1011b21f923e3f488a5e7dec5130278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/01.png using Guid(e1011b21f923e3f488a5e7dec5130278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd63d6cc6fdb57ac10874e49ed2947b') in 0.064117 seconds 
+  Import took 0.071037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/01.png
+  artifactKey: Guid(a467d3df3e604054ca56fb7a64b37af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/01.png using Guid(a467d3df3e604054ca56fb7a64b37af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dcff509c781a7abd480eb1d9afcfb67') in 0.063497 seconds 
+  Import took 0.069742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/01.png
+  artifactKey: Guid(277aec7a16bb9de4ab6e17d7c0bfcd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/01.png using Guid(277aec7a16bb9de4ab6e17d7c0bfcd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429652368e0a16d8b4ad17fdce7c9374') in 0.041302 seconds 
+  Import took 0.048117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/01.png
+  artifactKey: Guid(54bf6e07e753b524ca4e636773eec9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/01.png using Guid(54bf6e07e753b524ca4e636773eec9cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8542223854d6ec9119df5acc4e5f5367') in 0.046526 seconds 
+  Import took 0.053652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/01.png
+  artifactKey: Guid(065006143779f0b4288410a39125536d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/01.png using Guid(065006143779f0b4288410a39125536d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115d66747446563fe1c204ffcd59eee1') in 0.054933 seconds 
+  Import took 0.062883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/紹威資料/UI/fire/01.png
+  artifactKey: Guid(82caddd650e8847429c471f6e5e78477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/01.png using Guid(82caddd650e8847429c471f6e5e78477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e293171672244a01b13b22eed5a85b0f') in 0.030993 seconds 
+  Import took 0.036165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/01.png
+  artifactKey: Guid(d7f008a6c362a3a438c7e7219c2c9163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/01.png using Guid(d7f008a6c362a3a438c7e7219c2c9163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3809bc9130a88eef5b054349ae7259a1') in 0.027957 seconds 
+  Import took 0.034693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/01.png
+  artifactKey: Guid(8610b5b7d685967488f04cc5195db5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/01.png using Guid(8610b5b7d685967488f04cc5195db5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05d42095e871b046731e8f4f82372f8') in 0.031326 seconds 
+  Import took 0.036896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/01.png
+  artifactKey: Guid(1e8a2ac33c3238d4fac818553aaf771d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/01.png using Guid(1e8a2ac33c3238d4fac818553aaf771d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b270cb688f26f7c19f70727b5ed0ab') in 0.035336 seconds 
+  Import took 0.042449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/01.png
+  artifactKey: Guid(e5668bd44c4808c4eb8fe31da2adfa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/01.png using Guid(e5668bd44c4808c4eb8fe31da2adfa43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d19e3d7541ba6c3090b2c60e7b4a9ea') in 0.031997 seconds 
+  Import took 0.037913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.697095 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/02.png
+  artifactKey: Guid(68c4c95d15435b54ba9b6319a788e24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/02.png using Guid(68c4c95d15435b54ba9b6319a788e24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2838392ddd21402a4be7742cdeebcc9') in 0.030687 seconds 
+  Import took 0.036048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/02.png
+  artifactKey: Guid(333569d3269b76e4b9f10e1152ce8623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/02.png using Guid(333569d3269b76e4b9f10e1152ce8623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d1367756c48f5413f24e93149ad519') in 0.043205 seconds 
+  Import took 0.048961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/02.png
+  artifactKey: Guid(c2b9de0b651d6cb4bb11e7f11b6432a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/02.png using Guid(c2b9de0b651d6cb4bb11e7f11b6432a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bd1cf504e49893247dbdf08793a92f') in 0.030332 seconds 
+  Import took 0.035953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/02.png
+  artifactKey: Guid(0300761cc1ea2f24e894b45c630c5e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/02.png using Guid(0300761cc1ea2f24e894b45c630c5e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a3bdf8ca095398e391a206822329e6') in 0.046095 seconds 
+  Import took 0.051568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/02.png
+  artifactKey: Guid(43952353369f5dc4f8fe2bab1f2f4f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/02.png using Guid(43952353369f5dc4f8fe2bab1f2f4f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f57f6f3626e49070bec532e7103ae73') in 0.041193 seconds 
+  Import took 0.047073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/02.png
+  artifactKey: Guid(df39efd13ea43e14aa3ec87841415777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/02.png using Guid(df39efd13ea43e14aa3ec87841415777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408bd29acac40153630ee17b7b98d2be') in 0.075472 seconds 
+  Import took 0.081174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/02.png
+  artifactKey: Guid(c097a721697aad743bb713738b3862dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/02.png using Guid(c097a721697aad743bb713738b3862dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088b422ea7d107b049e93130ddd4f707') in 0.031497 seconds 
+  Import took 0.038731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/02.png
+  artifactKey: Guid(89e886f6100506942823c278a9b2ce0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/02.png using Guid(89e886f6100506942823c278a9b2ce0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca482cbc57ce9799f70d3d55398725d2') in 0.046281 seconds 
+  Import took 0.053583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/02.png
+  artifactKey: Guid(f09c1c0a63eaab543aed084cc4d980f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/02.png using Guid(f09c1c0a63eaab543aed084cc4d980f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4a5c7eb395c9f8d583402594f315ce') in 0.027974 seconds 
+  Import took 0.034776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147746 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/02.png
+  artifactKey: Guid(7c422c53f30682447bb1eeb3180a4574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/02.png using Guid(7c422c53f30682447bb1eeb3180a4574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b4098f2531b37c2fbda50d5e11c698') in 0.045017 seconds 
+  Import took 0.052293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/03.png
+  artifactKey: Guid(aac0e11e39c8be542ba5fd11a50bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/03.png using Guid(aac0e11e39c8be542ba5fd11a50bcfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1881ef7c16eb85b337d73f1b3df9a778') in 0.053111 seconds 
+  Import took 0.059322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/03.png
+  artifactKey: Guid(cdc9c2b560f58c642b892014beb94b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/03.png using Guid(cdc9c2b560f58c642b892014beb94b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ed679c56093fb9f0b57de0761f92c2') in 0.043301 seconds 
+  Import took 0.049652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/03.png
+  artifactKey: Guid(afd13cc6d5f1f2346a2e2be06fb33387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/03.png using Guid(afd13cc6d5f1f2346a2e2be06fb33387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd484c4a1ec9a65433235606342ea0e68') in 0.029204 seconds 
+  Import took 0.035083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/03.png
+  artifactKey: Guid(f866b1901647ad1409beaa104f736274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/03.png using Guid(f866b1901647ad1409beaa104f736274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20687a52ac5361ff0d66dad7c55de297') in 0.038968 seconds 
+  Import took 0.044309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/02.png
+  artifactKey: Guid(5c218d42e04286c42816450e9ff3c1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/02.png using Guid(5c218d42e04286c42816450e9ff3c1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1be1b5a274c17841b5ed6c336dc162') in 0.026354 seconds 
+  Import took 0.031810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/紹威資料/UI/fire/02.png
+  artifactKey: Guid(2876bb6f0676efc49a8ab41ae7146042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/02.png using Guid(2876bb6f0676efc49a8ab41ae7146042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87e99ce399e28629bdc0282a2de7d91') in 0.030734 seconds 
+  Import took 0.036623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/03.png
+  artifactKey: Guid(36b98fcc092b41140a2ea4d42b9267d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/03.png using Guid(36b98fcc092b41140a2ea4d42b9267d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf897495b69d272af8527a271759e1e') in 0.029881 seconds 
+  Import took 0.035471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/03.png
+  artifactKey: Guid(0862329c9f892e14387634098d9806a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/03.png using Guid(0862329c9f892e14387634098d9806a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04613734660c4bf2dd9890f2ab675dd1') in 0.044672 seconds 
+  Import took 0.050986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.370508 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/03.png
+  artifactKey: Guid(df54e3f4bd6f87749b9c149958721e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/03.png using Guid(df54e3f4bd6f87749b9c149958721e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a213d32274815f8b90f9e113a994d9a5') in 0.032617 seconds 
+  Import took 0.039301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/03.png
+  artifactKey: Guid(3c1ffeb78a932f644863dd94e702615b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/03.png using Guid(3c1ffeb78a932f644863dd94e702615b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74872bfa803327c9a5ecc7e938d45a12') in 0.044739 seconds 
+  Import took 0.050163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/03.png
+  artifactKey: Guid(5f6e255d249aaa84eb401145d8ba2856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/03.png using Guid(5f6e255d249aaa84eb401145d8ba2856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a374b070ae002e9bf78dfde2fc31ea4') in 0.025219 seconds 
+  Import took 0.030993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/04.png
+  artifactKey: Guid(32c9a28235e8bf34d94582d8a420b7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/04.png using Guid(32c9a28235e8bf34d94582d8a420b7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878a342d3ae28ed1922b8fe5b05dda24') in 0.050688 seconds 
+  Import took 0.056062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/04.png
+  artifactKey: Guid(4a02f01b4ef0d2542ab86926c99c1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/04.png using Guid(4a02f01b4ef0d2542ab86926c99c1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abbe159c7d0531f83c7789f2947e366') in 0.049572 seconds 
+  Import took 0.054579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/04.png
+  artifactKey: Guid(9d42803ff59adf447805cff6fa194c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/04.png using Guid(9d42803ff59adf447805cff6fa194c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfed4ff509577093f84b60b4fedd5310') in 0.042658 seconds 
+  Import took 0.047722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/03.png
+  artifactKey: Guid(c452e60718565c64b9cdf50d0177243d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/03.png using Guid(c452e60718565c64b9cdf50d0177243d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2d29c83bc1e993721cb9eda1e3e750') in 0.047084 seconds 
+  Import took 0.052140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/紹威資料/UI/fire/03.png
+  artifactKey: Guid(d5e783cab31f3064b8d154f52a58963a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/03.png using Guid(d5e783cab31f3064b8d154f52a58963a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4d1465a814c60bb851ee372b19dd08') in 0.027698 seconds 
+  Import took 0.032067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/04.png
+  artifactKey: Guid(6edd4e5680423524594c779d244ba4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/04.png using Guid(6edd4e5680423524594c779d244ba4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16072b6455ad7556fcddc2e9974a9402') in 0.033371 seconds 
+  Import took 0.042453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/03.png
+  artifactKey: Guid(fba01f140ddf8094b95ea5bc8471ba61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/03.png using Guid(fba01f140ddf8094b95ea5bc8471ba61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41fee32fa8275371f5f05db07e8a4e7f') in 0.059569 seconds 
+  Import took 0.066826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/紹威資料/UI/fire/04.png
+  artifactKey: Guid(ee306914e8b0e8441814867abced7b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/04.png using Guid(ee306914e8b0e8441814867abced7b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca32ef50eb80f9b180169d3739b22da') in 0.030178 seconds 
+  Import took 0.034945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/04.png
+  artifactKey: Guid(9c953efc54027bd4abfc1ec43b1749b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/04.png using Guid(9c953efc54027bd4abfc1ec43b1749b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d58d7625dd87cf06f77333b5630a6d5') in 0.043625 seconds 
+  Import took 0.050745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/05.png
+  artifactKey: Guid(bb6da3d6077fd9546b598952a609414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/05.png using Guid(bb6da3d6077fd9546b598952a609414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd632d845d5ab2223df91c417b36d892e') in 0.048862 seconds 
+  Import took 0.054090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/04.png
+  artifactKey: Guid(fa11ba2275ebbd94cb31df8483790c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/04.png using Guid(fa11ba2275ebbd94cb31df8483790c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101cf3eb050c4bd69b06f354e1a3c1fe') in 0.026752 seconds 
+  Import took 0.033698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/04.png
+  artifactKey: Guid(18ea24d9889ae1249880461872c2f277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/04.png using Guid(18ea24d9889ae1249880461872c2f277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd295f565324a6df573131b27b6967bf') in 0.048560 seconds 
+  Import took 0.055367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/04.png
+  artifactKey: Guid(cea59209f5194f5438e22c9b46a94f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/04.png using Guid(cea59209f5194f5438e22c9b46a94f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fad067b1fcff8945e4ac5f3a895278e') in 0.045300 seconds 
+  Import took 0.050669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/05.png
+  artifactKey: Guid(43cb142ed4b38e240801b166628ce2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/05.png using Guid(43cb142ed4b38e240801b166628ce2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ba898a1bacdd3db0d5cabc2f2787ee') in 0.045454 seconds 
+  Import took 0.051074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/05.png
+  artifactKey: Guid(a7af57cdac08b1141862fd9752eea3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/05.png using Guid(a7af57cdac08b1141862fd9752eea3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00f1f8ec13a185cd86baa0a3e0ddebef') in 0.042292 seconds 
+  Import took 0.049145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/04.png
+  artifactKey: Guid(60ae29694805c9648bdc4d0d25660aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/04.png using Guid(60ae29694805c9648bdc4d0d25660aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198e3c98a68f61c5d3acec82da135051') in 0.040427 seconds 
+  Import took 0.046437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/05.png
+  artifactKey: Guid(192f9f4fd11eb0c4aaaed612f85d2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/05.png using Guid(192f9f4fd11eb0c4aaaed612f85d2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6d7619da96206af5ad22ffa13e92f5') in 0.050522 seconds 
+  Import took 0.055850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/04.png
+  artifactKey: Guid(42926cf492b49764aa980fa4d0ce380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/04.png using Guid(42926cf492b49764aa980fa4d0ce380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53724bd4c6a6468f1a672f0cbc58e922') in 0.030570 seconds 
+  Import took 0.036001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/04.png
+  artifactKey: Guid(a3d19e034b93c5e4ba65c0d96215cd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/04.png using Guid(a3d19e034b93c5e4ba65c0d96215cd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9577ef871b0d763a513beca751b010') in 0.025537 seconds 
+  Import took 0.031282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/05.png
+  artifactKey: Guid(2d86ee5335580bf4283959927d528dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/05.png using Guid(2d86ee5335580bf4283959927d528dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972c74826b193141e1367fec923778e6') in 0.028414 seconds 
+  Import took 0.033557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/05.png
+  artifactKey: Guid(bb8e793eaf6c58b42b4a9c40f626b497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/05.png using Guid(bb8e793eaf6c58b42b4a9c40f626b497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d3ad541c3bb72acae1e7611aebf745') in 0.042214 seconds 
+  Import took 0.047816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.109178 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/05.png
+  artifactKey: Guid(41aae61b498b9184ba74c02d42e93d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/05.png using Guid(41aae61b498b9184ba74c02d42e93d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a95d43c03808926e346ba31871b1d5') in 0.031533 seconds 
+  Import took 0.038319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/紹威資料/UI/fire/05.png
+  artifactKey: Guid(15ee14f1926630d4daea0de9b6c58e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/05.png using Guid(15ee14f1926630d4daea0de9b6c58e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26433ba0ba2a65ea1cbc0da554c77986') in 0.031266 seconds 
+  Import took 0.036372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034957 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/05.png
+  artifactKey: Guid(2ca6ac04cede2f24ab43c3beb806ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/05.png using Guid(2ca6ac04cede2f24ab43c3beb806ddda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e900bd15ccb85d5cc63ae1f1294b9d') in 0.049793 seconds 
+  Import took 0.059660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/05.png
+  artifactKey: Guid(362651f4ff83ea64da0b521b396ce65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/05.png using Guid(362651f4ff83ea64da0b521b396ce65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878b00a3df9f2e458d26973f1584fb80') in 0.026525 seconds 
+  Import took 0.033152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/05.png
+  artifactKey: Guid(eb77ccf0af0a92542b4d24e12d5559fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/05.png using Guid(eb77ccf0af0a92542b4d24e12d5559fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cd9ccc9cf522f29605470699aff035') in 0.043878 seconds 
+  Import took 0.049992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/05.png
+  artifactKey: Guid(7b1e962ddd58cbb46a7dc2dd30b5a963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/05.png using Guid(7b1e962ddd58cbb46a7dc2dd30b5a963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805f5290feb115c5441ded986a4397fa') in 0.032189 seconds 
+  Import took 0.037429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/06.png
+  artifactKey: Guid(9c399eea1448caf44be54a16461e26ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/06.png using Guid(9c399eea1448caf44be54a16461e26ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b52cd56054406e1ae9a5953350be2d') in 0.051767 seconds 
+  Import took 0.059187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/06.png
+  artifactKey: Guid(bff7a0f3942a43d43a237c05133f9809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/06.png using Guid(bff7a0f3942a43d43a237c05133f9809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d3d5ab8f002f281506fcf8ff0d7da3') in 0.048711 seconds 
+  Import took 0.054551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/06.png
+  artifactKey: Guid(9e3f983de1d3c2f45b2ba825fd5cb30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/06.png using Guid(9e3f983de1d3c2f45b2ba825fd5cb30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4e69a542548b60dc7b9a8ef708f615') in 0.043610 seconds 
+  Import took 0.049798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036422 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/06.png
+  artifactKey: Guid(135995ceb2c35544bbe2671481c37297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/06.png using Guid(135995ceb2c35544bbe2671481c37297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5963428b44b32a2c24bc60030b89e18') in 0.044519 seconds 
+  Import took 0.050217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/06.png
+  artifactKey: Guid(431afcb13567dea408b6c773751bde44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/06.png using Guid(431afcb13567dea408b6c773751bde44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c454267a28c585f7e4ff8dde48d8b1ee') in 0.041720 seconds 
+  Import took 0.047108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/紹威資料/UI/fire/06.png
+  artifactKey: Guid(156b12cfc83f17047ae41ece927428a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/06.png using Guid(156b12cfc83f17047ae41ece927428a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e2c3ab2e36ae42211d9e8458970da2') in 0.025444 seconds 
+  Import took 0.030314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/06.png
+  artifactKey: Guid(125be3153abf21b40b69cf55059c9b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/06.png using Guid(125be3153abf21b40b69cf55059c9b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d373d8b9951624838d8099f446a1f9') in 0.026373 seconds 
+  Import took 0.032205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/06.png
+  artifactKey: Guid(9a576cbfc1836f9418c78fa0817cabfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/06.png using Guid(9a576cbfc1836f9418c78fa0817cabfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e8e70f5d9eb6cc96aea70e850d8b34') in 0.025548 seconds 
+  Import took 0.031164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/06.png
+  artifactKey: Guid(3bbebd4bffa5f354e9feb69e0d297c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/06.png using Guid(3bbebd4bffa5f354e9feb69e0d297c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e31a5195a03214ffaad9f4fc7d92ee') in 0.028240 seconds 
+  Import took 0.033494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055651 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/06.png
+  artifactKey: Guid(2ae377be137543741bc018ded70bc739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/06.png using Guid(2ae377be137543741bc018ded70bc739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374c13a86bab3d64a622e07ab53ab659') in 0.057897 seconds 
+  Import took 0.064836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/06.png
+  artifactKey: Guid(48bda4be6006cd34ab9461cb3730e16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/06.png using Guid(48bda4be6006cd34ab9461cb3730e16b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071a7df9a4a938be27d59702e7d565bc') in 0.032787 seconds 
+  Import took 0.038661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/06.png
+  artifactKey: Guid(0e3e41c573efcb847a725582185b43f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/06.png using Guid(0e3e41c573efcb847a725582185b43f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6391d878311686c5480f225a490c0889') in 0.049197 seconds 
+  Import took 0.055020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/紹威資料/UI/fire/07.png
+  artifactKey: Guid(c4fd41b6d4da657428137e1d538fb263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/07.png using Guid(c4fd41b6d4da657428137e1d538fb263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fe7a4bbbf5e6bcf5eb01f42c890713') in 0.028338 seconds 
+  Import took 0.033291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/07.png
+  artifactKey: Guid(4313db99201d3d14a8dab60b71d73d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/07.png using Guid(4313db99201d3d14a8dab60b71d73d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921a3804705a8e72dceab2942e3ebfb2') in 0.045605 seconds 
+  Import took 0.051657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/07.png
+  artifactKey: Guid(80ffa6bb3985bba4e8cdbb5271c84cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/07.png using Guid(80ffa6bb3985bba4e8cdbb5271c84cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2985cb4d24350b504f91b73b3c4f81ec') in 0.042085 seconds 
+  Import took 0.047384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/07.png
+  artifactKey: Guid(678452a5a15322049a5128c97c35a056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/07.png using Guid(678452a5a15322049a5128c97c35a056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443b9c0ecde8039abc6f38e797ff381f') in 0.043327 seconds 
+  Import took 0.048736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/07.png
+  artifactKey: Guid(bacb8fb29f8a58f47b6b3d59c7622b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/07.png using Guid(bacb8fb29f8a58f47b6b3d59c7622b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45705e52006cc766ddccdb2eed0e8bb1') in 0.028837 seconds 
+  Import took 0.034050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/07.png
+  artifactKey: Guid(ec34c4b28959fcb4aa63de5d0e87d71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/07.png using Guid(ec34c4b28959fcb4aa63de5d0e87d71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0203d3358669947915c04d85707887df') in 0.044680 seconds 
+  Import took 0.050785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/07.png
+  artifactKey: Guid(05f6eb061988b1e4b9723f53eaaa35b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/07.png using Guid(05f6eb061988b1e4b9723f53eaaa35b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795d03cf41cf2fdef45298fd128a6abf') in 0.039140 seconds 
+  Import took 0.044301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/07.png
+  artifactKey: Guid(87071ebcc285d524eb5e2d6d94c15544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/07.png using Guid(87071ebcc285d524eb5e2d6d94c15544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cce8e69eb403cef9660be30195079d') in 0.049803 seconds 
+  Import took 0.055010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/07.png
+  artifactKey: Guid(5a1b2524602884c43ba4c48d87f28149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/07.png using Guid(5a1b2524602884c43ba4c48d87f28149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '494feaef25aa60cbb7bc548512959a59') in 0.046249 seconds 
+  Import took 0.051689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/08.png
+  artifactKey: Guid(675c713da3eefbc43bdc4743b87a5dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/08.png using Guid(675c713da3eefbc43bdc4743b87a5dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba5f5f02f2ba86e38c48e22b73b5ab98') in 0.050041 seconds 
+  Import took 0.055317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/等待/08.png
+  artifactKey: Guid(62c73b4ff30c61b42a389f9585cf71ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/等待/08.png using Guid(62c73b4ff30c61b42a389f9585cf71ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ba3c7328b9a71283725663804c7c4c') in 0.048290 seconds 
+  Import took 0.053375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/08.png
+  artifactKey: Guid(702735a8da02f674ba66053d30905c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/08.png using Guid(702735a8da02f674ba66053d30905c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d189ea14047a1f66c7380ca5d779b1b') in 0.038999 seconds 
+  Import took 0.044589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/07.png
+  artifactKey: Guid(3831cda3bae70234eb6e20f1b4dd73b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/07.png using Guid(3831cda3bae70234eb6e20f1b4dd73b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1002073147903377d0726faa8621086') in 0.028692 seconds 
+  Import took 0.034610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/07.png
+  artifactKey: Guid(1c86a20d936bffa4ba0ce7654412cf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/07.png using Guid(1c86a20d936bffa4ba0ce7654412cf4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011f62aabf5e69e228d6614442183aef') in 0.035628 seconds 
+  Import took 0.044126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/07.png
+  artifactKey: Guid(e0164d6aea2597045a8e88a23b7c3dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/07.png using Guid(e0164d6aea2597045a8e88a23b7c3dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65656b23f0d65b5b46fa4e5d41673524') in 0.060465 seconds 
+  Import took 0.067658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/08.png
+  artifactKey: Guid(309ab18ea3f043b4ea54e154a3fe7352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/等待 - Sprites/08.png using Guid(309ab18ea3f043b4ea54e154a3fe7352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4226dbea534ead0596b7b8a3ff2338cf') in 0.043713 seconds 
+  Import took 0.050210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/08.png
+  artifactKey: Guid(a28c9e888a2c6cd4e869a189bacf8d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/等待 - Sprites/08.png using Guid(a28c9e888a2c6cd4e869a189bacf8d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315295eaaad391dba2009e371bea0674') in 0.031385 seconds 
+  Import took 0.037150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/08.png
+  artifactKey: Guid(278c9a56797cf364f805f33a63c96f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/08.png using Guid(278c9a56797cf364f805f33a63c96f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb49d0aecf2c75565f782b3f4d777cb9') in 0.027766 seconds 
+  Import took 0.034518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/08.png
+  artifactKey: Guid(1207f3bbbf159e94ab79aad308146352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/08.png using Guid(1207f3bbbf159e94ab79aad308146352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e74519636bd2cf5ee8e4538c900159c') in 0.045436 seconds 
+  Import took 0.051900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/紹威資料/UI/fire/08.png
+  artifactKey: Guid(eece6b7623f20d14db8d4493ed4baad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/08.png using Guid(eece6b7623f20d14db8d4493ed4baad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58557c882ce703ac5cb44d954aba588d') in 0.027762 seconds 
+  Import took 0.032881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/08.png
+  artifactKey: Guid(99a577c0e7dd4504482ad2b7c4f6b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/08.png using Guid(99a577c0e7dd4504482ad2b7c4f6b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677133281d0497e66ac40f2677edee74') in 0.047469 seconds 
+  Import took 0.053140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/08.png
+  artifactKey: Guid(5b61001313ccf6d4fbaac1fa5901014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/08.png using Guid(5b61001313ccf6d4fbaac1fa5901014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce62835a5c9c40c42acb273130d02119') in 0.032210 seconds 
+  Import took 0.039047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/08.png
+  artifactKey: Guid(069e1826988726944a82d479cbd1748e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/08.png using Guid(069e1826988726944a82d479cbd1748e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c204d9b37050d8937872286b36687dac') in 0.051432 seconds 
+  Import took 0.057869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/08.png
+  artifactKey: Guid(44ef730c887eb5a4e96330c8426f6f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/08.png using Guid(44ef730c887eb5a4e96330c8426f6f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d3e303578175ab65c0208538e04e7f') in 0.027753 seconds 
+  Import took 0.033688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036054 seconds.
+  path: Assets/紹威資料/UI/fire/09.png
+  artifactKey: Guid(47262febc57b2334588938c6b960605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/09.png using Guid(47262febc57b2334588938c6b960605e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e20d6620c9b730eb06efda85eebb9d') in 0.033230 seconds 
+  Import took 0.038079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/09.png
+  artifactKey: Guid(27b371a81fe587f47870efdabfa7b7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/09.png using Guid(27b371a81fe587f47870efdabfa7b7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2a93fba75773a3811ad96ab7de4f36') in 0.047496 seconds 
+  Import took 0.053157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/受傷/09.png
+  artifactKey: Guid(9590eb8488122ed4f922da62d42ca360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/受傷/09.png using Guid(9590eb8488122ed4f922da62d42ca360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236cd7c0fd85f513e5ae9ed9349cd5da') in 0.043609 seconds 
+  Import took 0.048759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/09.png
+  artifactKey: Guid(1efbc0709a55be9439e2606ef2700f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/09.png using Guid(1efbc0709a55be9439e2606ef2700f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a3a5c5247ed06b906bdafb47bce068') in 0.043656 seconds 
+  Import took 0.048869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/09.png
+  artifactKey: Guid(d6fb3c3aad384db4095fcbe31de67179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/09.png using Guid(d6fb3c3aad384db4095fcbe31de67179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '969aa0db2839ec6897331d4000e1af2f') in 0.027286 seconds 
+  Import took 0.032513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/09.png
+  artifactKey: Guid(33c7f6dddf809ba46a35688e093f7e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/受傷 - Sprites/09.png using Guid(33c7f6dddf809ba46a35688e093f7e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b1d8bd7b8be39465b03bc776a9ca8d') in 0.041104 seconds 
+  Import took 0.047239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/09.png
+  artifactKey: Guid(6cf572a04cddcc74d99c2761606334dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/09.png using Guid(6cf572a04cddcc74d99c2761606334dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05784b02df6b4208a3a0e71a78e67997') in 0.031776 seconds 
+  Import took 0.037209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/09.png
+  artifactKey: Guid(cf6c2dd30724d0844b8cc2822b8bd867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/09.png using Guid(cf6c2dd30724d0844b8cc2822b8bd867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0377c39d866017b2f4c93d07d6de8262') in 0.051937 seconds 
+  Import took 0.058096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/09.png
+  artifactKey: Guid(59cecb993e63cde4aa9bcc43bb0ddfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/受傷 - Sprites/09.png using Guid(59cecb993e63cde4aa9bcc43bb0ddfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee59e42b1a7b19dd5c8b170afd032df') in 0.026397 seconds 
+  Import took 0.031533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.091336 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/10.png
+  artifactKey: Guid(fb424387518c51f44bf5b0c0d0a4d0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/移動 - Sprites/10.png using Guid(fb424387518c51f44bf5b0c0d0a4d0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444248b8ede4ffca538e91fadc7f9be2') in 0.050471 seconds 
+  Import took 0.056227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/紹威資料/角色/吉娃娃/移動/10.png
+  artifactKey: Guid(c30877826ea17f844b006965fcd0b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/角色/吉娃娃/移動/10.png using Guid(c30877826ea17f844b006965fcd0b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f20623f899c15bbbf530bbcbe60bf73') in 0.051053 seconds 
+  Import took 0.056724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/10.png
+  artifactKey: Guid(a6ef2efdf6252dc4c9c3f716169b5e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/10.png using Guid(a6ef2efdf6252dc4c9c3f716169b5e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47727006165d15588a0c562bd052e12a') in 0.043212 seconds 
+  Import took 0.048656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_1.png
+  artifactKey: Guid(f2d012f88eb53f740971da996e742625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_1.png using Guid(f2d012f88eb53f740971da996e742625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4870c532484298e19e7431be9f64c0') in 0.044846 seconds 
+  Import took 0.050273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_1.png
+  artifactKey: Guid(f8a53863b1369a849ba9bb6695600948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_1.png using Guid(f8a53863b1369a849ba9bb6695600948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61822e849038a335108032a3f75fd86b') in 0.029147 seconds 
+  Import took 0.034759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/10.png
+  artifactKey: Guid(7ea66a70b794f9042bd1ceae3b22e998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/10.png using Guid(7ea66a70b794f9042bd1ceae3b22e998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960a30c91b918b739339caaa5c66d537') in 0.028947 seconds 
+  Import took 0.035887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/10.png
+  artifactKey: Guid(b82cf08f3e70be94997e2c847eb6709e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/移動 - Sprites/10.png using Guid(b82cf08f3e70be94997e2c847eb6709e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7b2b0cc16a31287eb2acb509835cec') in 0.034964 seconds 
+  Import took 0.042539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/紹威資料/UI/fire/11.png
+  artifactKey: Guid(185ced88e7806e5478f8a3111e96062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/11.png using Guid(185ced88e7806e5478f8a3111e96062f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d7e4c7ca8cc4a1c80fbd927f3a2411') in 0.033578 seconds 
+  Import took 0.039235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_2.png
+  artifactKey: Guid(87f2871042688224290b299f7b72b5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_2.png using Guid(87f2871042688224290b299f7b72b5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de9733b69a94a8e496aae4cb5c63cfa') in 0.045308 seconds 
+  Import took 0.051371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_2.png
+  artifactKey: Guid(89f6a1ff389d5c74cbb03236c97c1362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_2.png using Guid(89f6a1ff389d5c74cbb03236c97c1362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5170be605b7a8a8b9e50e94090dc6cf5') in 0.025732 seconds 
+  Import took 0.031131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_3.png
+  artifactKey: Guid(6becd931197b411408a7264a831f4fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_3.png using Guid(6becd931197b411408a7264a831f4fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb97c8ca3a2c6630f5cf705e207541a2') in 0.048042 seconds 
+  Import took 0.054219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/紹威資料/UI/fire/10.png
+  artifactKey: Guid(c9a84777f3ca5fd45a80bc78ce4aa822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/10.png using Guid(c9a84777f3ca5fd45a80bc78ce4aa822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72425cce44fa1ef3f08fb628e0715e1a') in 0.029803 seconds 
+  Import took 0.035272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066412 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_3.png
+  artifactKey: Guid(c23ea5d451a3c70428edb14d75efc215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_3.png using Guid(c23ea5d451a3c70428edb14d75efc215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4120c3ab571d96b196ae3b5e616fc98') in 0.022737 seconds 
+  Import took 0.029237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_4.png
+  artifactKey: Guid(b8b89bd520afb3b4f97c6bc385bcba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_4.png using Guid(b8b89bd520afb3b4f97c6bc385bcba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41888d671208e8fbfe777a6db04bb412') in 0.046535 seconds 
+  Import took 0.052050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_4.png
+  artifactKey: Guid(0c69316f01cdd8941a872588077b08f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_4.png using Guid(0c69316f01cdd8941a872588077b08f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648fa577d173d238de98c02ba330f3fd') in 0.027810 seconds 
+  Import took 0.034826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037857 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_5.png
+  artifactKey: Guid(92bc883f372cdee4390ad9c2cb94e25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_5.png using Guid(92bc883f372cdee4390ad9c2cb94e25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e2e00471b7dfef2b29f6cdb47fe781') in 0.045317 seconds 
+  Import took 0.050633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_5.png
+  artifactKey: Guid(6298a34d5e9a2e74ab00c8ee63469a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_5.png using Guid(6298a34d5e9a2e74ab00c8ee63469a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f008a11bd8571ba175585ad6a45bbb') in 0.027495 seconds 
+  Import took 0.033572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_6.png
+  artifactKey: Guid(7cf76a0779613cf4db54bad358b84ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_6.png using Guid(7cf76a0779613cf4db54bad358b84ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bce24c6005cc76dc5c1722a9a5b9b2e') in 0.047913 seconds 
+  Import took 0.054238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136350 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_6.png
+  artifactKey: Guid(237a3198aae18144e9a899a68d68b562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_6.png using Guid(237a3198aae18144e9a899a68d68b562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57976e00a56099de217269ebf44c79c') in 0.026408 seconds 
+  Import took 0.031941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_7.png
+  artifactKey: Guid(31b651e7c72325c44ae8ab1b79e827fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_7.png using Guid(31b651e7c72325c44ae8ab1b79e827fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a808cddc55b3fe2ca409c74d7d47067') in 0.043718 seconds 
+  Import took 0.050690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_7.png
+  artifactKey: Guid(7b7f698995c55c24c9b0a4c3810c6bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_7.png using Guid(7b7f698995c55c24c9b0a4c3810c6bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c623696b60093622a8b15eb952c49c93') in 0.025780 seconds 
+  Import took 0.032434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030539 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_8.png
+  artifactKey: Guid(8d69b55d5361a3048b59dcee157a9a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_8.png using Guid(8d69b55d5361a3048b59dcee157a9a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ba9e0a9fafc81b92800864226ceac1') in 0.041996 seconds 
+  Import took 0.051702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_8.png
+  artifactKey: Guid(7ef4b8c9fa9ada845b5533b99259ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_8.png using Guid(7ef4b8c9fa9ada845b5533b99259ff1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ee6d9572a6c3871a62c5a038a79dd6') in 0.026685 seconds 
+  Import took 0.032488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_9.png
+  artifactKey: Guid(1f2fee46f92aff84dad458c5b2787355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_9.png using Guid(1f2fee46f92aff84dad458c5b2787355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1967940cbe07e1ef237f6688bceda0e') in 0.043627 seconds 
+  Import took 0.049315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028728 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_9.png
+  artifactKey: Guid(c97057eb862174842ac16b8cdf9bec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_9.png using Guid(c97057eb862174842ac16b8cdf9bec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f7217c8271585b228b65a16f067fb6') in 0.023114 seconds 
+  Import took 0.028657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_10.png
+  artifactKey: Guid(c794dce75ce14594796b9fcadcb9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/11_10.png using Guid(c794dce75ce14594796b9fcadcb9e502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dccad1b48f0d958adc42c14284e234') in 0.044011 seconds 
+  Import took 0.049308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_10.png
+  artifactKey: Guid(193ce0f3cf995154a96337978e50534c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/11_10.png using Guid(193ce0f3cf995154a96337978e50534c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cd51a23a4e2595e2025cd789523461') in 0.026472 seconds 
+  Import took 0.031862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.355606 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/12.png
+  artifactKey: Guid(697a1e854497f6044b157f5901bccf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/12.png using Guid(697a1e854497f6044b157f5901bccf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a035cbda7b3408c43f28df249dbce90e') in 0.050967 seconds 
+  Import took 0.057587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/紹威資料/UI/fire/12.png
+  artifactKey: Guid(8dd6463b0a3513348864197127346d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/12.png using Guid(8dd6463b0a3513348864197127346d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72226400eeb848c25d0034a6e5fb7e91') in 0.029498 seconds 
+  Import took 0.034490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/紹威資料/UI/fire/13.png
+  artifactKey: Guid(92d49de414cb6f348bcab472f3dd9902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/13.png using Guid(92d49de414cb6f348bcab472f3dd9902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c847d366ee9b39a70fb06cc3f5f529f') in 0.027883 seconds 
+  Import took 0.032697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/12.png
+  artifactKey: Guid(fb68495ae39678b43a9557c8b44f6862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/12.png using Guid(fb68495ae39678b43a9557c8b44f6862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815a35d54a10df23af1fb0b214bf8cc8') in 0.026614 seconds 
+  Import took 0.033352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/13.png
+  artifactKey: Guid(6811ad03dc4cdc647a5ac07a7993e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/13.png using Guid(6811ad03dc4cdc647a5ac07a7993e9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06499389a4be385901126758143d39fa') in 0.050972 seconds 
+  Import took 0.057884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/紹威資料/UI/fire/15.png
+  artifactKey: Guid(db522b01b39b6a54290d1cdbc8302445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/15.png using Guid(db522b01b39b6a54290d1cdbc8302445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd271113fd4e37fed8eb3311203607e32') in 0.059978 seconds 
+  Import took 0.066270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/紹威資料/UI/fire/14.png
+  artifactKey: Guid(7a522bd29aafabd459a223546d5f0657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/14.png using Guid(7a522bd29aafabd459a223546d5f0657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27eef8a9ae911d6037344231a9a53ec') in 0.032531 seconds 
+  Import took 0.038034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/13.png
+  artifactKey: Guid(f1429a408824d5142ae87f61698706b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/13.png using Guid(f1429a408824d5142ae87f61698706b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a655574bc66b5e2163c3c2aa98935e') in 0.026579 seconds 
+  Import took 0.033385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_1.png
+  artifactKey: Guid(7e24ff004930b0f4e94d54acc5f61299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_1.png using Guid(7e24ff004930b0f4e94d54acc5f61299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d58a850e441557e54f08c86245c2c1') in 0.049594 seconds 
+  Import took 0.056415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_3.png
+  artifactKey: Guid(9f24a3ca0910ec74abde796dd967fd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_3.png using Guid(9f24a3ca0910ec74abde796dd967fd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f981cc6717c015f050a6f74b075a0249') in 0.046369 seconds 
+  Import took 0.052141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_4.png
+  artifactKey: Guid(45a446021a0e3be43a36485467cc4431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_4.png using Guid(45a446021a0e3be43a36485467cc4431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4e08f753fb91efa8a11426132c9245') in 0.046878 seconds 
+  Import took 0.053581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_3.png
+  artifactKey: Guid(bf21466ec02154743bfd11a891e4d659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_3.png using Guid(bf21466ec02154743bfd11a891e4d659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef673b348d8b90dd078dcafb9c76c6e') in 0.026843 seconds 
+  Import took 0.032533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_2.png
+  artifactKey: Guid(e4d589c3b47fa5e4692fe3f80aa5e81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_2.png using Guid(e4d589c3b47fa5e4692fe3f80aa5e81b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049bd8d5891d23147c08abc7c7d20da9') in 0.045690 seconds 
+  Import took 0.052559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/14.png
+  artifactKey: Guid(61ee7a4ed21a25141956bce746175204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/14.png using Guid(61ee7a4ed21a25141956bce746175204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80edde19f25c7bfe4dca8e146dc0011b') in 0.044035 seconds 
+  Import took 0.050840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/14.png
+  artifactKey: Guid(c953a224e08968946877083a6e7a7072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/14.png using Guid(c953a224e08968946877083a6e7a7072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4213807734466feb6da2d168911f50') in 0.026819 seconds 
+  Import took 0.033063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_4.png
+  artifactKey: Guid(4a2a267f2384c934aad600c19b3068ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_4.png using Guid(4a2a267f2384c934aad600c19b3068ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab96f8ed9c6b953f875c19740f6da2a') in 0.029194 seconds 
+  Import took 0.037069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_1.png
+  artifactKey: Guid(0ecbfc4cb8e3fab4fa4c83e94abedeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_1.png using Guid(0ecbfc4cb8e3fab4fa4c83e94abedeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9454f6dac580a6bd3499541eb52ece01') in 0.028001 seconds 
+  Import took 0.034587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_2.png
+  artifactKey: Guid(d86ab2e839c405f4284c5f615a1a0cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_2.png using Guid(d86ab2e839c405f4284c5f615a1a0cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6ea448f88bbc6a8976696ad65a9805') in 0.026286 seconds 
+  Import took 0.032683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.476188 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_5.png
+  artifactKey: Guid(66f0da78daeead2438764a40c91584bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_5.png using Guid(66f0da78daeead2438764a40c91584bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e9d6739cc9476af0d6fe2f1a60c7f2') in 0.043241 seconds 
+  Import took 0.049375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_5.png
+  artifactKey: Guid(e55d37eaccfb55f4680f10fa83bc64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_5.png using Guid(e55d37eaccfb55f4680f10fa83bc64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d82cb4ed27f9bb7b4b72c2c34cfe72b') in 0.026302 seconds 
+  Import took 0.031692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_6.png
+  artifactKey: Guid(75b3fc331a3fc25439edc80a5d6196f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_6.png using Guid(75b3fc331a3fc25439edc80a5d6196f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c56881b3fe57fca31ef84ada975c70e') in 0.045268 seconds 
+  Import took 0.051533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_8.png
+  artifactKey: Guid(d5effed45225bf94ab43a11290e4d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_8.png using Guid(d5effed45225bf94ab43a11290e4d694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd239b1c569f5842a1c9ed4693f4a3b1a') in 0.043078 seconds 
+  Import took 0.049315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_6.png
+  artifactKey: Guid(c37b46f25e4c87e4fb33d3df39228bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_6.png using Guid(c37b46f25e4c87e4fb33d3df39228bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b145391d30945f25f9dccced3cb67a2') in 0.025728 seconds 
+  Import took 0.030995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_10.png
+  artifactKey: Guid(a7319f618f55b9e4e880bc79239963a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_10.png using Guid(a7319f618f55b9e4e880bc79239963a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec89dd7b87ac7c9fdb61e68e0c97db55') in 0.047872 seconds 
+  Import took 0.056188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/紹威資料/UI/fire/18.png
+  artifactKey: Guid(e70b4411dfaf2b449916b4c38f59ef0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/18.png using Guid(e70b4411dfaf2b449916b4c38f59ef0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27a6e38c1e39410d2970db2e5f04b87') in 0.030024 seconds 
+  Import took 0.035919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_9.png
+  artifactKey: Guid(afd17e839283a9a42a7525286d7bffe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_9.png using Guid(afd17e839283a9a42a7525286d7bffe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d18711c7c3034895af1c35a580d0568') in 0.045875 seconds 
+  Import took 0.051590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_7.png
+  artifactKey: Guid(b63e20eeeddbbb14ea1c84ffcfbabf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_7.png using Guid(b63e20eeeddbbb14ea1c84ffcfbabf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db6dda3e28fdd53cfb6ef9a95728d20') in 0.042896 seconds 
+  Import took 0.048133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/紹威資料/選單範例/313944.png
+  artifactKey: Guid(27c8b6d531be19046a4e4c89729b914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/313944.png using Guid(27c8b6d531be19046a4e4c89729b914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f92c9278780350dcae59236dda33fc7') in 0.024286 seconds 
+  Import took 0.028888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/紹威資料/選單範例/6138162_parallelogram_figure_form_geometry_graphic_icon 1.png
+  artifactKey: Guid(51bcda705a88afa40babfae1cb702cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/6138162_parallelogram_figure_form_geometry_graphic_icon 1.png using Guid(51bcda705a88afa40babfae1cb702cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed36fc33daa35da04ddd3d26386a806') in 0.056127 seconds 
+  Import took 0.061250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_7.png
+  artifactKey: Guid(3c5f20e2ee751f645a07437f4514f56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_7.png using Guid(3c5f20e2ee751f645a07437f4514f56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6570c035863f0554b936a1f43a035459') in 0.059734 seconds 
+  Import took 0.067222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/紹威資料/UI/fire/16.png
+  artifactKey: Guid(8a8d5ea31ccdcdd448b2797a25ec0683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/16.png using Guid(8a8d5ea31ccdcdd448b2797a25ec0683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747f3219baa7d98061ee818031e3922b') in 0.028339 seconds 
+  Import took 0.035037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_9.png
+  artifactKey: Guid(2da13e4e5a638f74e833ebc1ce731d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_9.png using Guid(2da13e4e5a638f74e833ebc1ce731d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23e61bc0190a3cc82be96703f552ef0') in 0.028458 seconds 
+  Import took 0.035147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_8.png
+  artifactKey: Guid(09503b438c8a249498dbdcb2819d33ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/5_Characters/吉娃娃/死亡 - Sprites/15_8.png using Guid(09503b438c8a249498dbdcb2819d33ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec69e693b0546cc52574cec4b462b18') in 0.026971 seconds 
+  Import took 0.032693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/紹威資料/UI/fire/17.png
+  artifactKey: Guid(011d4d837419df14b8a78b282b580e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/17.png using Guid(011d4d837419df14b8a78b282b580e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24cdf269cb22a66aadd7e7edadf10a34') in 0.027618 seconds 
+  Import took 0.033362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/紹威資料/UI/fire/19.png
+  artifactKey: Guid(b48501733deb5304688361cf8b08f68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/fire/19.png using Guid(b48501733deb5304688361cf8b08f68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975205132e9c4259d9bcafc89a5a0a28') in 0.028416 seconds 
+  Import took 0.033235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_10.png
+  artifactKey: Guid(650c13049b699c94cb22b9b76f4e2445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/5_Characters/吉娃娃/死亡 - Sprites/15_10.png using Guid(650c13049b699c94cb22b9b76f4e2445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17f99267d7de1fc38d60d632ddcd825') in 0.027870 seconds 
+  Import took 0.034871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.832952 seconds.
+  path: Assets/紹威資料/選單範例/8675435_ic_fluent_slide_settings_regular_icon.png
+  artifactKey: Guid(679a294b132b47641992b617695576b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/8675435_ic_fluent_slide_settings_regular_icon.png using Guid(679a294b132b47641992b617695576b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0ee8db08dc0c15bbd92f94542fda03') in 0.030003 seconds 
+  Import took 0.034464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/atlas.png
+  artifactKey: Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/atlas.png using Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3bc412dfabb904a3eb0e9df2bb0dc0') in 0.147172 seconds 
+  Import took 0.152154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Icons/attack.png
+  artifactKey: Guid(3679df9f3a275984b90c3f49981a4c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Icons/attack.png using Guid(3679df9f3a275984b90c3f49981a4c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46eff5f8cb501a0dc9da0f672eea9d2') in 0.017945 seconds 
+  Import took 0.022647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/bullets.png
+  artifactKey: Guid(fcab35236e33438448805a9211b0cc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/bullets.png using Guid(fcab35236e33438448805a9211b0cc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ff07572e717559e0a689485fd97aa4') in 0.027663 seconds 
+  Import took 0.032796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/紹威資料/選單範例/Back Inflammation_ What You Need to Know.jpg
+  artifactKey: Guid(7e13325f770928549a4676c6b0b44fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/Back Inflammation_ What You Need to Know.jpg using Guid(7e13325f770928549a4676c6b0b44fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0553068c9e7ab9ca30c3afa506dc1e4') in 0.038100 seconds 
+  Import took 0.042561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button1.png
+  artifactKey: Guid(8a6f536f4b2392f40afb62df609f6e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button1.png using Guid(8a6f536f4b2392f40afb62df609f6e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5264336e11cebcb079aeee0d97c63c') in 0.028801 seconds 
+  Import took 0.033330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/紹威資料/UI/DEJAVULOGO-1.psd
+  artifactKey: Guid(1cb6bfc7fc54f174093783384f3a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/DEJAVULOGO-1.psd using Guid(1cb6bfc7fc54f174093783384f3a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf9ab80491c1141c210e18f763d47cc') in 0.052044 seconds 
+  Import took 0.057551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/DottedRoundedRect.psd
+  artifactKey: Guid(2b4a1682166e4434e8ee7c6f47115b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/DottedRoundedRect.psd using Guid(2b4a1682166e4434e8ee7c6f47115b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa020afe7835d9aa01102387b2195dea') in 0.024243 seconds 
+  Import took 0.030990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_level2.psd
+  artifactKey: Guid(7dcd848078a57c544b3f434fd058792d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_level2.psd using Guid(7dcd848078a57c544b3f434fd058792d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02da8a5d7c1b83678b9151940e810514') in 0.058789 seconds 
+  Import took 0.064342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futuro_WindowBack.psd
+  artifactKey: Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futuro_WindowBack.psd using Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981359be1bfe1276d93f3771b87801ba') in 0.023942 seconds 
+  Import took 0.029370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/陶宇/3_Images/Icons/left.png
+  artifactKey: Guid(455b1586e2aff0746afc115c188ea26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Icons/left.png using Guid(455b1586e2aff0746afc115c188ea26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4a0b45f0f5ee0ffc78eb46cbdceb54') in 0.018581 seconds 
+  Import took 0.024739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Button.psd
+  artifactKey: Guid(9a32a6cc2cb803443983d45d4a513506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Button.psd using Guid(9a32a6cc2cb803443983d45d4a513506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f806e7e7e590ce9cd8345192508787') in 0.026928 seconds 
+  Import took 0.032650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futuro_ButtonBack.psd
+  artifactKey: Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futuro_ButtonBack.psd using Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdf577a23640e3482ab7e0b6d16cdc9') in 0.022564 seconds 
+  Import took 0.027980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Icons/left.png
+  artifactKey: Guid(3ddee34663644cc4e95118276187c45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Icons/left.png using Guid(3ddee34663644cc4e95118276187c45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c723c05c12cf7a8228732f3bc179c98') in 0.011385 seconds 
+  Import took 0.017149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Textures/Dude2d.png
+  artifactKey: Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Textures/Dude2d.png using Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe8cd4b735a4609b837b2fa93f00295') in 0.025461 seconds 
+  Import took 0.032143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/陶宇/3_Images/Icons/right.png
+  artifactKey: Guid(5ea7bb3e4e5712d45964546d3fc158ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Icons/right.png using Guid(5ea7bb3e4e5712d45964546d3fc158ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbf9013b0d822fe166397b68a8b2017') in 0.018872 seconds 
+  Import took 0.024288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Title.psd
+  artifactKey: Guid(966be606197166640a108ef53355eddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Title.psd using Guid(966be606197166640a108ef53355eddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987938c031f594751a4f16c79e794cf5') in 0.025507 seconds 
+  Import took 0.030919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIToggleButton.png
+  artifactKey: Guid(1238f32bb27c642c5b81174a099459f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIToggleButton.png using Guid(1238f32bb27c642c5b81174a099459f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892710a2d176b921ce7d3a7a46efa1ed') in 0.028830 seconds 
+  Import took 0.034277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Icons/jump.png
+  artifactKey: Guid(3016a9aac3241ef46956a2704de095fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Icons/jump.png using Guid(3016a9aac3241ef46956a2704de095fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272f550ba66234646f7abf91f3b0d19d') in 0.022282 seconds 
+  Import took 0.028632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg
+  artifactKey: Guid(4d48dfc736ed78544a7951a4be71a6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_02 1.jpg using Guid(4d48dfc736ed78544a7951a4be71a6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6791e01ac359de5c47b71f5b5e4de14') in 0.024357 seconds 
+  Import took 0.030249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Icons/shield.png
+  artifactKey: Guid(0c2de0853394d184e9ae28d058d7effe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Icons/shield.png using Guid(0c2de0853394d184e9ae28d058d7effe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061280156c9f62c5eb520905402b5037') in 0.020363 seconds 
+  Import took 0.026937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg
+  artifactKey: Guid(b76b8b216adf64f4bbdb78f7977f0310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg using Guid(b76b8b216adf64f4bbdb78f7977f0310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5dd4261662386ad9094f85959ff5107') in 0.037605 seconds 
+  Import took 0.043162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_level4.psd
+  artifactKey: Guid(674da72b2b3c14a4d9dbfc5d2baea993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Backgrounds/dusk_scene_background_level4.psd using Guid(674da72b2b3c14a4d9dbfc5d2baea993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4b4ca2d5cb822965a0e3546312c69f') in 0.024262 seconds 
+  Import took 0.029546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/紹威資料/選單範例/back_2_1.jpg
+  artifactKey: Guid(7e94cc6911fc9174196d37f615da3826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/back_2_1.jpg using Guid(7e94cc6911fc9174196d37f615da3826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7aa1da0da7bb4e48e2a4719f5185ac2') in 0.356599 seconds 
+  Import took 0.371521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000622 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futuro_Bar.psd
+  artifactKey: Guid(492b9988436bd45049a9a6bc52ac8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futuro_Bar.psd using Guid(492b9988436bd45049a9a6bc52ac8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7249d488e5588e16fea814e8cf457c7f') in 0.034285 seconds 
+  Import took 0.044045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/Background/SF Background.png
+  artifactKey: Guid(39939fe0b3df2b741aca15c2accaf90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/Background/SF Background.png using Guid(39939fe0b3df2b741aca15c2accaf90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2764b2cd51dcf376744e20999037c7e') in 0.047606 seconds 
+  Import took 0.053595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Unity Logo Unlit.psd
+  artifactKey: Guid(1182605a67e89c34996a4dff4126aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Unity Logo Unlit.psd using Guid(1182605a67e89c34996a4dff4126aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c679d9786f47e3354900fc1f024498') in 0.026948 seconds 
+  Import took 0.032059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Icons/right.png
+  artifactKey: Guid(d1e4d35946fdabf4bad5038a28ec830e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Icons/right.png using Guid(d1e4d35946fdabf4bad5038a28ec830e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e89ff957cd8580ef49064f2b4c9f8c8') in 0.014816 seconds 
+  Import took 0.020913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonCorner.png
+  artifactKey: Guid(f4c899d39b015484a9b4e5464802e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonCorner.png using Guid(f4c899d39b015484a9b4e5464802e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64eec1289dd24a66199cc15ce800b2f') in 0.026446 seconds 
+  Import took 0.031093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/紹威資料/UI/Giwawa1.psd
+  artifactKey: Guid(280faf33e6c2a9642bb795cea436539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Giwawa1.psd using Guid(280faf33e6c2a9642bb795cea436539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d37d22beeb5215d7a86fef4650799a1') in 0.055148 seconds 
+  Import took 0.060735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button_active.png
+  artifactKey: Guid(67c34bb955c72e6419b7528e10e73c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button_active.png using Guid(67c34bb955c72e6419b7528e10e73c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa4f892d11711fd14c588906ea3f9aa') in 0.026651 seconds 
+  Import took 0.031359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/紹威資料/UI/DEJAVULOGO-1.png
+  artifactKey: Guid(20e0667fe2ac05f408249a513cd19a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/DEJAVULOGO-1.png using Guid(20e0667fe2ac05f408249a513cd19a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f939696fd2bfa2d801486331dc2981c') in 0.031505 seconds 
+  Import took 0.037448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Icon3.png
+  artifactKey: Guid(e484876f0cfbe8d46981ae0062b5e77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Icon3.png using Guid(e484876f0cfbe8d46981ae0062b5e77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104f4fc4c7339e4489ef092a23d98ff9') in 0.030748 seconds 
+  Import took 0.035355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Icon2.png
+  artifactKey: Guid(fccea209f9ea7b1488225287813f4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Decoration/Icon2.png using Guid(fccea209f9ea7b1488225287813f4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c42d4fb520822cb00d30dfa1f1bda1') in 0.028018 seconds 
+  Import took 0.032961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_level2.psd
+  artifactKey: Guid(56cc76313a669594fa17a4f8906a381a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_level2.psd using Guid(56cc76313a669594fa17a4f8906a381a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '495f2e8e1190b7a8271adce8f1371d61') in 0.013196 seconds 
+  Import took 0.018947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonDefault.png
+  artifactKey: Guid(967c7b47090d34cf090c40749e45f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonDefault.png using Guid(967c7b47090d34cf090c40749e45f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47d6c8063b4d55409ea5f4451fc43f4') in 0.024193 seconds 
+  Import took 0.029649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/紹威資料/選單範例/chihuahua.png
+  artifactKey: Guid(3a72ccdbf5d3a75408e289cdcf88bff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/chihuahua.png using Guid(3a72ccdbf5d3a75408e289cdcf88bff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5c63dcac9116714a238a102d1c24f1') in 0.043438 seconds 
+  Import took 0.048508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Editor/editoricon.png
+  artifactKey: Guid(89e673bfcaddd8743a848309cf698350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Editor/editoricon.png using Guid(89e673bfcaddd8743a848309cf698350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8076f839103b6384430d4b1996f4f78') in 0.020891 seconds 
+  Import took 0.025828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futuro_SineWave.psd
+  artifactKey: Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futuro_SineWave.psd using Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4477883d1c80bf4fb14683b012fe8db1') in 0.023287 seconds 
+  Import took 0.028482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background.psd
+  artifactKey: Guid(e1c6c9ebef77fa548a6b25bb307cbd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background.psd using Guid(e1c6c9ebef77fa548a6b25bb307cbd23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed3d784ebda7491a5fd3ee2864a596c') in 0.020388 seconds 
+  Import took 0.025452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/陶宇/3_Images/Icons/shield.png
+  artifactKey: Guid(8d16722202a47d04297c293874ec5ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Icons/shield.png using Guid(8d16722202a47d04297c293874ec5ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cd3ec313e27bbcc33a0bf936f8c716') in 0.012332 seconds 
+  Import took 0.016919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIPanel.png
+  artifactKey: Guid(935962ddb1e44499dad00e5ca6b38823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/Rounded UI/UIPanel.png using Guid(935962ddb1e44499dad00e5ca6b38823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea908009bc95ae1bce09737672539607') in 0.024633 seconds 
+  Import took 0.030194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Generic.psd
+  artifactKey: Guid(1f1d5baae1d26404a8a639a07e5c7766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Generic.psd using Guid(1f1d5baae1d26404a8a639a07e5c7766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39b808d96f6381a10192736b12b7668') in 0.021816 seconds 
+  Import took 0.026002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/rocket.png
+  artifactKey: Guid(3b8db7241fc8ff54e9dea6fc64cfd7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/rocket.png using Guid(3b8db7241fc8ff54e9dea6fc64cfd7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0e290e4537a2234e6e30350fc16cfc') in 0.027367 seconds 
+  Import took 0.032605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futoro_Ring.psd
+  artifactKey: Guid(ef31bc3f46d6047b29ff513e55daf05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futoro_Ring.psd using Guid(ef31bc3f46d6047b29ff513e55daf05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd84e03258ceb80f0673a740e6a869e') in 0.029642 seconds 
+  Import took 0.037550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Window.psd
+  artifactKey: Guid(6858abb4516aae344881bf286b3aac33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Textures and Sprites/SF UI/SF Window.psd using Guid(6858abb4516aae344881bf286b3aac33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0422dd2d15c054f54813edf5f049c3') in 0.063659 seconds 
+  Import took 0.068409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/陶宇/3_Images/Backgrounds/dusk_scene_background.psd
+  artifactKey: Guid(b954ae8a64c19074aa920f88f3f9fe3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Backgrounds/dusk_scene_background.psd using Guid(b954ae8a64c19074aa920f88f3f9fe3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be75aa9f271624748dfa937a4ac28ad') in 0.016004 seconds 
+  Import took 0.020432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Textures/PowerUpStar.png
+  artifactKey: Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Textures/PowerUpStar.png using Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f205782b6f41edd986c828d1f35f249e') in 0.023777 seconds 
+  Import took 0.028768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_02 1.jpg
+  artifactKey: Guid(d90934b1de0cb8b409cfeeb3c8a5a147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_02 1.jpg using Guid(d90934b1de0cb8b409cfeeb3c8a5a147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936962bec90cd9140e89398260f8c882') in 0.016755 seconds 
+  Import took 0.021155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/陶宇/3_Images/Icons/jump.png
+  artifactKey: Guid(3e5b5afabeb0592428ec15548722cde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Icons/jump.png using Guid(3e5b5afabeb0592428ec15548722cde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7941afbadd4a3bc780104612090712') in 0.012087 seconds 
+  Import took 0.017772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/紹威資料/選單範例/back_2_2.jpg
+  artifactKey: Guid(4c9cf78f89f8f3e42a8f247238253603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/選單範例/back_2_2.jpg using Guid(4c9cf78f89f8f3e42a8f247238253603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f44c1657ec5aeee75dde1b768cbc9d') in 0.044636 seconds 
+  Import took 0.049919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_level4.psd
+  artifactKey: Guid(6ad31cec0f7c7c842ac1dcea2dfcfba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/3_Images/Backgrounds/dusk_scene_background_level4.psd using Guid(6ad31cec0f7c7c842ac1dcea2dfcfba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcd47b31ac89737baa0843be98f1606') in 0.014222 seconds 
+  Import took 0.019496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd
+  artifactKey: Guid(b8aaa707027cc4f79af3439c5dbc9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd using Guid(b8aaa707027cc4f79af3439c5dbc9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e422b128a14a79c3d98ce5ff91b521f1') in 0.026010 seconds 
+  Import took 0.032931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button_pushed.png
+  artifactKey: Guid(03cbfa7fbded80a479f24add4a997757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/button_pushed.png using Guid(03cbfa7fbded80a479f24add4a997757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10d0f8c795b6f944d2153dec636fa88') in 0.025088 seconds 
+  Import took 0.030175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Textures/DustCloud.png
+  artifactKey: Guid(c4c548a339b4d41a590928c0c98934a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Textures/DustCloud.png using Guid(c4c548a339b4d41a590928c0c98934a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610adf66f0b6a8a7539de7ca5a2058cf') in 0.028611 seconds 
+  Import took 0.033787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/pause.png
+  artifactKey: Guid(379c45e0c5ba5e54e8df03f52e4c7680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/buttons/pause.png using Guid(379c45e0c5ba5e54e8df03f52e4c7680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e33d3af3f50c38f353e036cbf9daa5') in 0.028014 seconds 
+  Import took 0.033091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/陶宇/3_Images/Icons/attack.png
+  artifactKey: Guid(a420156a68df1f74982a791ff871e089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Icons/attack.png using Guid(a420156a68df1f74982a791ff871e089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f25bfcc05eba3ddf60ffea8d4a3e7a') in 0.012394 seconds 
+  Import took 0.017943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.531571 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/AlphaReadyMaterial.mat
+  artifactKey: Guid(61731bf38a6fa4d66b536bc03fc8eb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/AlphaReadyMaterial.mat using Guid(61731bf38a6fa4d66b536bc03fc8eb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c55a2bdb31805ffe67828b366f0bde5') in 0.025069 seconds 
+  Import took 0.032638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001842 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/FireSphere2.mat
+  artifactKey: Guid(2e69c8c236ea65447a07e24d8cbed40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/FireSphere2.mat using Guid(2e69c8c236ea65447a07e24d8cbed40b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695282d16099459cef917a8a45855936') in 0.034402 seconds 
+  Import took 0.040331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/阿夜/阿夜的場景/4_Materials/Ball.mat
+  artifactKey: Guid(58300f1814966cd49bdcf638ee519e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/4_Materials/Ball.mat using Guid(58300f1814966cd49bdcf638ee519e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4ecb8757df82ce9510acad5a1bcf1a') in 0.053109 seconds 
+  Import took 0.059185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/FireSphere1.mat
+  artifactKey: Guid(14fab0de6c54324468738e7b38a88207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Materials/FireSphere1.mat using Guid(14fab0de6c54324468738e7b38a88207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d5f640dd3bfd9ba2f5c486907842c1') in 0.024859 seconds 
+  Import took 0.029887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf
+  artifactKey: Guid(8297a2bf97dbbba468bd2518d003a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Sci-Fi UI/_SciFi_GUISkin_/Skin_Assets/font/zekton free.ttf using Guid(8297a2bf97dbbba468bd2518d003a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455a6d7bf1eb1e578cdf145b0bcd7c7e') in 0.053673 seconds 
+  Import took 0.059126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/BlueStar.mat
+  artifactKey: Guid(76cc7eb3b760f8746b3ce8819a79e6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Fraktalia/DreamStarGenerator/Materials/BlueStar.mat using Guid(76cc7eb3b760f8746b3ce8819a79e6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e297adeab40440f7ddae35c00e397f') in 0.038591 seconds 
+  Import took 0.044442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Models/Materials/eanTween.mat
+  artifactKey: Guid(f619dcfcfb4564405b5fe5ea207c9199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Models/Materials/eanTween.mat using Guid(f619dcfcfb4564405b5fe5ea207c9199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bd57dcce1fa6c0bfc7e11bd4ee3405') in 0.021819 seconds 
+  Import took 0.028042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Demo scene/Floor3.mat
+  artifactKey: Guid(ca6fd35d7de69cb449d560ab9228d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/粒子特效/Hovl Studio/Procedural fire/Demo scene/Floor3.mat using Guid(ca6fd35d7de69cb449d560ab9228d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3966cd287a5959f27db4d81d1b763874') in 0.115597 seconds 
+  Import took 0.121276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/AlphBumps.mat
+  artifactKey: Guid(12c720f1dd5674502bc1185ff99b70f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/AlphBumps.mat using Guid(12c720f1dd5674502bc1185ff99b70f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9db2255483a6822c24426c36da16c85') in 0.154321 seconds 
+  Import took 0.159549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/陶宇/4_Materials/Ball.mat
+  artifactKey: Guid(1c8862af1a4dc294bbebdee9419c63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/4_Materials/Ball.mat using Guid(1c8862af1a4dc294bbebdee9419c63f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c669f9b852dc26ce682466e3743821') in 0.009550 seconds 
+  Import took 0.014220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/紹威資料/UI/Unity UI Samples/Fonts/Jupiter/Jupiter.ttf
+  artifactKey: Guid(7cb2912222469634ba17a77055919ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/UI/Unity UI Samples/Fonts/Jupiter/Jupiter.ttf using Guid(7cb2912222469634ba17a77055919ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363be07481c94159e502034d0028fb6a') in 0.022488 seconds 
+  Import took 0.028317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/DirectionalArrowMaterial.mat
+  artifactKey: Guid(79809b4fc57ad41b982c1dd5ceb812b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/DirectionalArrowMaterial.mat using Guid(79809b4fc57ad41b982c1dd5ceb812b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b00a4e357623d3aaf0f2d1380b510c') in 0.021577 seconds 
+  Import took 0.026879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.008640 seconds.
+  path: Assets/紹威資料/Font/BD_Cartoon_Shout.ttf
+  artifactKey: Guid(b76d02c5a44177741a370d430c4563be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/Font/BD_Cartoon_Shout.ttf using Guid(b76d02c5a44177741a370d430c4563be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd815841b6d29f21eafdb22d0dc27a8ca') in 0.032212 seconds 
+  Import took 0.037627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/紹威資料/Font/firebreak/FirebreakDemoRegular.ttf
+  artifactKey: Guid(c4d775f236d796b4e95a1fef59c9d60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/Font/firebreak/FirebreakDemoRegular.ttf using Guid(c4d775f236d796b4e95a1fef59c9d60d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e50b2dd4306ac521fa2c92e08ab12e2') in 0.028823 seconds 
+  Import took 0.035106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/紹威資料/Font/Kidsco.ttf
+  artifactKey: Guid(c7bb4d608fa2a7344b3e72e1e957504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/Font/Kidsco.ttf using Guid(c7bb4d608fa2a7344b3e72e1e957504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fffc07f90cc885fb8f1e6a346959a7f') in 0.023241 seconds 
+  Import took 0.029118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011589 seconds.
+  path: Assets/紹威資料/Font/Florilane Cardillac.ttf
+  artifactKey: Guid(e82f802efabc51e45867cddd5a84895c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/Font/Florilane Cardillac.ttf using Guid(e82f802efabc51e45867cddd5a84895c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa8d62c2935883ac722971b33710cba') in 0.028626 seconds 
+  Import took 0.033931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/紹威資料/Font/Kidsco.otf
+  artifactKey: Guid(5a45186edebfab94983afec9c982b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/Font/Kidsco.otf using Guid(5a45186edebfab94983afec9c982b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5944bdb56ddead712f6ad9dadb0aa311') in 0.022673 seconds 
+  Import took 0.028655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/紹威資料/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat
+  artifactKey: Guid(6b98784ec692b4e00a86fa1044ad8998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/紹威資料/LeanTween/Examples/Material/Futoro_PlanetMaterial.mat using Guid(6b98784ec692b4e00a86fa1044ad8998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2964e94babeb6f0a3359fd33dd35b286') in 0.145766 seconds 
+  Import took 0.150819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.484296 seconds.
+  path: Assets/阿夜/Materials/Moster.prefab
+  artifactKey: Guid(1b92d8ee48411c741814b1ab799ad77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/Materials/Moster.prefab using Guid(1b92d8ee48411c741814b1ab799ad77c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a606d1d6c7e9f5d1b23221feba86590c') in 0.036605 seconds 
+  Import took 0.043051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.599782 seconds.
+  path: Assets/阿夜/Materials/Susuwatari_03.prefab
+  artifactKey: Guid(fc0810e90c5dfce4fb610f51f2abd086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/Materials/Susuwatari_03.prefab using Guid(fc0810e90c5dfce4fb610f51f2abd086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266576b9e61b95b1ce9e5a52e1ee5243') in 0.020237 seconds 
+  Import took 0.025337 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008959 seconds.
+Registered in 0.004895 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.947 seconds
+- Completed reload, in  1.138 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1948ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (1139ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1707ms)
-			LoadAssemblies (168ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (971ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (776ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (544ms)
+			SetupTypeCache (321ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (364ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (170ms)
-				ProcessInitializeOnLoadAttributes (357ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (260ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2497 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.6 MB.
+System memory in use after: 128.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3145.
+Total: 2.918700 ms (FindLiveObjects: 0.240400 ms CreateObjectMapping: 0.097100 ms MarkObjects: 2.552000 ms  DeleteObjects: 0.027900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003752 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.588 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1588ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1300ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (466ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (502ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (361ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2497 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.7 MB.
+System memory in use after: 128.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3147.
+Total: 4.020900 ms (FindLiveObjects: 0.275300 ms CreateObjectMapping: 0.120500 ms MarkObjects: 3.594200 ms  DeleteObjects: 0.028700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 396.041170 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17be77ee53984b5c6eeb4fbbf1d82ca8') in 0.039298 seconds 
+  Import took 0.044045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.995551 seconds.
+  path: Assets/阿夜/Prefab/Moster.prefab
+  artifactKey: Guid(9ae62b0095cf778488325f673c1ce472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/Prefab/Moster.prefab using Guid(9ae62b0095cf778488325f673c1ce472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1501a33dc8c99a5e0fcee2953d4addf9') in 0.075109 seconds 
+  Import took 0.080788 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002908 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.654 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1654ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1421ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (456ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (570ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (405ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2497 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 128.7 MB.
+System memory in use after: 128.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3150.
+Total: 3.098300 ms (FindLiveObjects: 0.240800 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.739700 ms  DeleteObjects: 0.023200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 127.532827 seconds.
+  path: Assets/陶宇/3_Images/Backgrounds/地板.psd
+  artifactKey: Guid(dda3120e52cd12843ac653a9dc699e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/陶宇/3_Images/Backgrounds/地板.psd using Guid(dda3120e52cd12843ac653a9dc699e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826aa1130ffe7a051a8b4ba5d96932f9') in 0.092578 seconds 
+  Import took 0.098577 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.160 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1161ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (917ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (338ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2496 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.8 MB.
-System memory in use after: 124.0 MB.
+System memory in use before: 128.7 MB.
+System memory in use after: 128.9 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3024.
-Total: 7.553400 ms (FindLiveObjects: 0.489600 ms CreateObjectMapping: 0.261000 ms MarkObjects: 6.716900 ms  DeleteObjects: 0.083700 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3154.
+Total: 3.837900 ms (FindLiveObjects: 0.270200 ms CreateObjectMapping: 0.311300 ms MarkObjects: 3.229900 ms  DeleteObjects: 0.024700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
