@@ -13,7 +13,7 @@ public class scr_CameraController : MonoBehaviour
     #region - Monobehaviour -
     void Awake()
     {
-        player = GameObject.Find("player").transform;
+        player = FindObjectOfType<scr_PlayerController>().transform;
     }
 
     void LateUpdate()
@@ -32,7 +32,7 @@ public class scr_CameraController : MonoBehaviour
         Vector3 v_player = player.position;     // 0, -1.5, -3
 
         v_player.x = Mathf.Clamp(v_player.x, x_limit.x, x_limit.y);
-        v_player.y = 1;
+        v_player.y = 0;
         v_player.z = -10;
 
         v_camera = Vector3.Lerp(v_camera, v_player, speed * Time.deltaTime);
