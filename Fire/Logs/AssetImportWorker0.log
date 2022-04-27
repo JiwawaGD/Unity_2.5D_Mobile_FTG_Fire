@@ -1,125 +1,125 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1645; Version 2009; 64bit' Language: 'zh' Physical Memory: 32681 MB
+OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'zh' Physical Memory: 7963 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-A:\UnityHub\下載位置\2020.3.19\Unity\Editor\Unity.exe
+D:\unity\2017.4.40f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
+D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-6048
-Successfully changed project path to: A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
-A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire
+54924
+Successfully changed project path to: D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
+D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.17 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
-[Subsystems] Discovering subsystems at path A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path A:/Unity_2.5D_Mobile_FTG_Fire/Unity_2.5D_Mobile_FTG_Fire/Fire/Assets
+[Subsystems] Discovering subsystems at path D:/unity/2017.4.40f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/FireOnline/Unity_2.5D_Mobile_FTG_Fire/Fire/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Renderer: NVIDIA GeForce MX250 (ID=0x1d52)
     Vendor:   
-    VRAM:     8011 MB
-    Driver:   27.21.14.5671
+    VRAM:     1983 MB
+    Driver:   27.21.14.5167
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/Managed'
-Mono path[1] = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
+Mono path[0] = 'D:/unity/2017.4.40f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2017.4.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/unity/2017.4.40f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: A:/UnityHub/下載位置/2020.3.19/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000890 seconds.
+Register platform support module: D:/unity/2017.4.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000846 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.92 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 58.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.687 seconds
+- Completed reload, in  0.871 seconds
 Domain Reload Profiling:
-	ReloadAssembly (687ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (871ms)
+		BeginReloadAssembly (48ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (333ms)
-			LoadAssemblies (39ms)
+		EndReloadAssembly (449ms)
+			LoadAssemblies (48ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (116ms)
+			SetupTypeCache (146ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (141ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (196ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (58ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001803 seconds.
+Registered in 0.003240 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 62.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.885 seconds
+- Completed reload, in  1.152 seconds
 Domain Reload Profiling:
-	ReloadAssembly (886ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (1153ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (726ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (961ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (237ms)
+			SetupTypeCache (314ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (284ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (378ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (49ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (160ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (219ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2557 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.3 MB.
+Unloading 2562 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.4 MB.
 System memory in use after: 108.5 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2992.
-Total: 3.050900 ms (FindLiveObjects: 0.274600 ms CreateObjectMapping: 0.106300 ms MarkObjects: 2.597600 ms  DeleteObjects: 0.071800 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2997.
+Total: 4.456700 ms (FindLiveObjects: 0.391800 ms CreateObjectMapping: 0.136500 ms MarkObjects: 3.809900 ms  DeleteObjects: 0.116300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -133,49 +133,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/紹威資料/遊戲選單.unity
-  artifactKey: Guid(00e8a9fa866fc534e965cfa63fc1cb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/遊戲選單.unity using Guid(00e8a9fa866fc534e965cfa63fc1cb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba60fcc0e5cb5749d9d335f0ced34c9b') in 0.015898 seconds 
-  Import took 0.019351 seconds .
+  path: Assets/阿夜/阿夜的場景/阿夜的場景.unity
+  artifactKey: Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景/阿夜的場景.unity using Guid(348e44d29d23a6f47a28c6d8f3dcc2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d153642a6b534703b4c2bb9ef237f8b') in 0.031232 seconds 
+  Import took 0.038798 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/紹威資料/紹威選單.unity
-  artifactKey: Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/紹威選單.unity using Guid(dfb59a6fe20f98a468968af8e408c376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45188a92c3a5fe63f622f663aeda63f3') in 0.005603 seconds 
-  Import took 0.009144 seconds .
+  Time since last request: 0.000366 seconds.
+  path: Assets/阿夜/阿夜的場景
+  artifactKey: Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/阿夜的場景 using Guid(7bf0df648e0c1b748b1d6bfe5b5137ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ceafefcb917a28ff44c150530b920ee') in 0.011131 seconds 
+  Import took 0.017194 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/紹威資料/遊戲開始.unity
-  artifactKey: Guid(052cfc15a938c13459626c8a9d25313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/遊戲開始.unity using Guid(052cfc15a938c13459626c8a9d25313f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699bf72aaa434ab20b273f20d5a869ef') in 0.006021 seconds 
-  Import took 0.009126 seconds .
+  Time since last request: 0.000353 seconds.
+  path: Assets/阿夜
+  artifactKey: Guid(7d383576d9f62134aa00bf383208b157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜 using Guid(7d383576d9f62134aa00bf383208b157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af4bfe91750f13fdd714f084187fa6f') in 0.010824 seconds 
+  Import took 0.017833 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/紹威資料/角色選擇.unity
-  artifactKey: Guid(7bf673d307711954bb6428bfbbfd7454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/角色選擇.unity using Guid(7bf673d307711954bb6428bfbbfd7454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a170f14dd33d74703f58f5dc11fc67a') in 0.005960 seconds 
-  Import took 0.010164 seconds .
+  Time since last request: 7.285486 seconds.
+  path: Assets/阿夜/陶宇_1/0_Scene_1
+  artifactKey: Guid(7bb29b8c581c6e04cbefd7c4a4ca94e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/陶宇_1/0_Scene_1 using Guid(7bb29b8c581c6e04cbefd7c4a4ca94e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa29e0c61c982f7552d4d216f5a0b2c') in 0.011025 seconds 
+  Import took 0.017974 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.463499 seconds.
-  path: Assets/紹威資料/難易度選擇.unity
-  artifactKey: Guid(08ca158d6093cb44c969be5140b254b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/難易度選擇.unity using Guid(08ca158d6093cb44c969be5140b254b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85518fe53fecfd20ca953333d92b391') in 0.004626 seconds 
-  Import took 0.008151 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.142324 seconds.
-  path: Assets/紹威資料/地圖選擇.unity
-  artifactKey: Guid(411c99869ed51a64aa05d533a3ed3df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/紹威資料/地圖選擇.unity using Guid(411c99869ed51a64aa05d533a3ed3df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6658399fac23fecee1990eb6663220be') in 0.004567 seconds 
-  Import took 0.008074 seconds .
+  Time since last request: 0.818294 seconds.
+  path: Assets/阿夜/陶宇_1/0_Scene_1/陶宇的測試場景_1.unity
+  artifactKey: Guid(ed7123edc1143524bb798d8643d68c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/阿夜/陶宇_1/0_Scene_1/陶宇的測試場景_1.unity using Guid(ed7123edc1143524bb798d8643d68c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece3645b19672efaea39cefd1265eaa2') in 0.010253 seconds 
+  Import took 0.015653 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
