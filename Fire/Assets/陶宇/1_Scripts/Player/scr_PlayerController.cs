@@ -6,16 +6,13 @@ public class scr_PlayerController : MonoBehaviour
     #region - Variables -
     [SerializeField] [Header("角色資料")] scr_PlayerData data;
 
-    [SerializeField] [Header("地心引力")] float gravity;
-
-    [SerializeField] [Header("攻擊間隔")] float attackInterval;
-
+    float gravity;               // 地心引力
     float hp;                    // 生命值
     float moveSpeed;             // 移動速度
     float jumpHeight;            // 跳躍高度限制
     float jumpForce;             // 跳躍力道
-
     float jumpTimer;             // 跳躍計時器
+    float attackInterval;        // 攻擊間隔
     float attackTimer;           // 攻擊計時器
     int attackCount;             // 攻擊計數器
     bool isJumping;              // 是否跳躍
@@ -52,7 +49,9 @@ public class scr_PlayerController : MonoBehaviour
         jumpHeight = data.jumpHeight;
         hp = data.hp;
 
+        gravity = 150f;
         attackCount = 0;
+        attackInterval = 2f;
 
         // 按鈕事件
         attack_btn.onClick.AddListener(Attack);
@@ -68,7 +67,7 @@ public class scr_PlayerController : MonoBehaviour
         attackTimer += Time.deltaTime;
 
         // 布林值
-        if (jumpTimer >= 0.5f) isJumping = false;
+        if (jumpTimer >= 0.2f) isJumping = false;
         if (attackTimer >= attackInterval) attackCount = 0;
     }
 
@@ -211,26 +210,25 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Attack()
     {
-        if (attackCount == 2 && attackTimer > 0.9f)
+        if (attackCount == 2 && attackTimer > 0.78f)
         {
-            print("final attack");
+            ani.SetTrigger("攻擊3 - Trigger");
 
+            attackTimer = 0;
             attackCount = 0;
         }
-        else if (attackCount == 1 && attackTimer > 0.8f)
+        else if (attackCount == 1 && attackTimer > 0.68f)
         {
-            attackTimer = 0;
-
             ani.SetTrigger("攻擊2 - Trigger");
 
+            attackTimer = 0;
             attackCount += 1;
         }
-        else if (attackCount == 0)
+        else if (attackCount == 0 && attackTimer > 0.68f)
         {
-            attackTimer = 0;
-
             ani.SetTrigger("攻擊1 - Trigger");
 
+            attackTimer = 0;
             attackCount += 1;
         }
     }

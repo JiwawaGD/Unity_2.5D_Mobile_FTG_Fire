@@ -46,7 +46,6 @@ public class scr_BackgroundMove : MonoBehaviour
 
             else
             {
-                temp.y = 2f;
                 temp.z = 0;
 
                 if (playerController.holding_left) temp.x -= distance * Time.deltaTime;
