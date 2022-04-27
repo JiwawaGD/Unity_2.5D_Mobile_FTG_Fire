@@ -4,26 +4,38 @@ using UnityEngine.UI;
 public class scr_PlayerController : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("移動速度")] float moveSpeed;
-    [SerializeField] [Header("跳躍力道")] float jumpForce;
-    [SerializeField] [Header("跳躍高度限制")] float jumpHeight;
-    [SerializeField] [Header("地心引力")] float gravity;
+    [SerializeField] [Header("角色資料")] scr_PlayerData data;
 
-    [SerializeField] [Header("跳躍 - 按鈕")] Button jump_btn;
+    float gravity;               // 地心引力
+    float hp;                    // 生命值
+    float moveSpeed;             // 移動速度
+    float jumpHeight;            // 跳躍高度限制
+    float jumpForce;             // 跳躍力道
+    float jumpTimer;             // 跳躍計時器
+    float attackInterval;        // 攻擊間隔
+    float attackTimer;           // 攻擊計時器
+    int attackCount;             // 攻擊計數器
+    bool isJumping;              // 是否跳躍
 
-    bool holding_left = false;
-    bool holding_Right = false;
-    public bool isGrounded;
+    Button jump_btn;             // 跳躍 - 按鈕
+    Button attack_btn;           // 攻擊 - 按鈕
+    Vector3 moveDir;             // 移動座標
+    Rigidbody rig;               // 剛體
+    Animator ani;                // 動畫
 
-    Vector3 moveDir;
-    Rigidbody rig;
+    [HideInInspector] public bool holding_left;      // 按下左鍵
+    [HideInInspector] public bool holding_Right;     // 按下左鍵
+    [HideInInspector] public bool isGrounded;        // 是否在地上
     #endregion
 
     #region - Monobehaviour -
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
+        ani = GetComponentInChildren<Animator>();
+
         jump_btn = GameObject.Find("跳_btn").GetComponent<Button>();
+        attack_btn = GameObject.Find("攻_btn").GetComponent<Button>();
     }
 
     void Start()
@@ -31,15 +43,46 @@ public class scr_PlayerController : MonoBehaviour
         holding_left = false;
         holding_Right = false;
         isGrounded = true;
+
+        moveSpeed = data.moveSpeed;
+        jumpForce = data.jumpForce;
+        jumpHeight = data.jumpHeight;
+        hp = data.hp;
+
+        gravity = 150f;
+        attackCount = 0;
+        attackInterval = 2f;
+
+        // 按鈕事件
+        attack_btn.onClick.AddListener(Attack);
+        jump_btn.onClick.AddListener(SetJump);
+    }
+
+    void Update()
+    {
+        Movement();
+
+        // 計時器
+        jumpTimer += Time.deltaTime;
+        attackTimer += Time.deltaTime;
+
+        // 布林值
+        if (jumpTimer >= 0.2f) isJumping = false;
+        if (attackTimer >= attackInterval) attackCount = 0;
     }
 
     void FixedUpdate()
     {
-        Movement();
+        Movement_Rig();
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "可使玩家受傷") Hurt(1);
     }
     #endregion
 
-    #region - Methods -
+    #region - Button trigger -
     /// <summary>
     /// 按著左鍵
     /// </summary>
@@ -57,24 +100,50 @@ public class scr_PlayerController : MonoBehaviour
     {
         holding_Right = press;
     }
+    #endregion
 
+    #region - Methods -
     /// <summary>
-    /// 所有與鋼體有關移動
+    /// 所有移動
     /// </summary>
     void Movement()
     {
-        // 移動
-        if (holding_left) Move(new Vector3(-2, 0, 0), new Vector3(-1f, 1, 1));
+        // 等待
+        if (!holding_left && !holding_Right) Idle();
 
-        if (holding_Right) Move(new Vector3(2, 0, 0), new Vector3(1, 1, 1));
+        // 攻擊
+        if (Input.GetKeyDown(KeyCode.Alpha5)) Attack();
+    }
 
-        if (!holding_left && !holding_Right) moveDir = Vector3.zero;
-
-        // 跳躍
-        jump_btn.onClick.AddListener(Jump);
-
+    /// <summary>
+    /// 所有移動 - 有缸體的
+    /// </summary>
+    void Movement_Rig()
+    {
         // 增加下墜速度
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
+
+        // 移動
+        if (holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+
+        // 測試用功能
+        if (Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+        if (Input.GetKey(KeyCode.Space)) SetJump();
+
+        // 跳躍
+        if (isJumping) Jump();
+    }
+
+    /// <summary>
+    /// 等待
+    /// </summary>
+    void Idle()
+    {
+        moveDir = Vector3.zero;
+
+        ani.SetBool("移動 - Bool", false);
     }
 
     /// <summary>
@@ -88,7 +157,19 @@ public class scr_PlayerController : MonoBehaviour
 
         rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
 
+        ani.SetBool("移動 - Bool", true);
+
         transform.localScale = scale;
+    }
+
+    /// <summary>
+    /// 設定跳躍狀態
+    /// </summary>
+    void SetJump()
+    {
+        isJumping = true;
+
+        jumpTimer = 0;
     }
 
     /// <summary>
@@ -96,8 +177,60 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Jump()
     {
-        if (isGrounded) rig.velocity = new Vector3(0, jumpForce, 0);
-        else return;
+        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 60f, 0);
+    }
+
+    /// <summary>
+    /// 受傷
+    /// </summary>
+    /// <param name="damage">傷害值</param>
+    void Hurt(float damage)
+    {
+        hp -= damage;
+
+        if (hp > 0) ani.SetTrigger("受傷 - Trigger");
+
+        else if (hp <= 0) Die();
+
+        Debug.Log(hp);
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    void Die()
+    {
+        ani.SetBool("死亡 - Bool", true);
+
+        this.enabled = false;
+    }
+
+    /// <summary>
+    /// 攻擊
+    /// </summary>
+    void Attack()
+    {
+        if (attackCount == 2 && attackTimer > 0.78f)
+        {
+            ani.SetTrigger("攻擊3 - Trigger");
+
+            attackTimer = 0;
+            attackCount = 0;
+        }
+        else if (attackCount == 1 && attackTimer > 0.68f)
+        {
+            ani.SetTrigger("攻擊2 - Trigger");
+
+            attackTimer = 0;
+            attackCount += 1;
+        }
+        else if (attackCount == 0 && attackTimer > 0.68f)
+        {
+            ani.SetTrigger("攻擊1 - Trigger");
+
+            attackTimer = 0;
+            attackCount += 1;
+        }
     }
     #endregion
 }
