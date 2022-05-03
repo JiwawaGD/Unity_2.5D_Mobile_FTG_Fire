@@ -660,6 +660,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: f09ee41a37d9bf34385751bc21ff829e, type: 2}
   holding_left: 0
   holding_Right: 0
+  holding_defense: 0
   isGrounded: 0
 --- !u!1 &338385991
 GameObject:
@@ -1351,6 +1352,7 @@ GameObject:
   - component: {fileID: 607528911}
   - component: {fileID: 607528910}
   - component: {fileID: 607528909}
+  - component: {fileID: 607528912}
   m_Layer: 5
   m_Name: "\u9632__btn"
   m_TagString: Untagged
@@ -1459,6 +1461,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607528907}
   m_CullTransparentMesh: 1
+--- !u!114 &607528912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607528907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 278680973}
+          m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
+          m_MethodName: HoldDefense
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 278680973}
+          m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
+          m_MethodName: HoldDefense
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &711534341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4417,7 +4464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1883336908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4727,7 +4774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1938877801
 RectTransform:
   m_ObjectHideFlags: 0

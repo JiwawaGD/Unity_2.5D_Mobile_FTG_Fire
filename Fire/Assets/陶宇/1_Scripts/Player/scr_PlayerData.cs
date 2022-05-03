@@ -9,8 +9,8 @@ public class scr_PlayerData : ScriptableObject
     [Header("跳躍力度")] public float jumpForce;
     [Header("跳躍高度")] public float jumpHeight;
 
-    [Header("生命值")] public float hp;
+    [Header("生命值")] public int hp;
     [Header("魔力值")] public float mp;
     [Header("攻擊力")] public float atk;
-    [Header("防禦力")] public float def;
+    [Header("護甲值")] public int armor;
 }
