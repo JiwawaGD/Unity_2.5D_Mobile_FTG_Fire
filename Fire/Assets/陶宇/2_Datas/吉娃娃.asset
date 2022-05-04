@@ -19,4 +19,4 @@ MonoBehaviour:
   hp: 10
   mp: 10
   atk: 10
-  def: 10
+  armor: 10
