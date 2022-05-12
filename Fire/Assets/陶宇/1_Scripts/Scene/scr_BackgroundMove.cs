@@ -39,29 +39,34 @@ public class scr_BackgroundMove : MonoBehaviour
         Vector3 temp = transform.localPosition;
         Vector3 target = player.transform.localPosition;
 
-        // 첿ㄴ뉴
-        if (movable)
-        {
-            if (backObject.transform.position.x == backLimit.x || backObject.transform.position.x == backLimit.y) return;
+        if (playerController.isDead) return;
 
-            else
+        else
+        {
+            // 첿ㄴ뉴
+            if (movable)
             {
-                temp.z = 0;
+                if (backObject.transform.position.x == backLimit.x || backObject.transform.position.x == backLimit.y) return;
 
-                if (playerController.holding_left) temp.x -= distance * Time.deltaTime;
+                else
+                {
+                    temp.z = 0;
 
-                else if (playerController.holding_Right) temp.x += distance * Time.deltaTime;
+                    if (playerController.holding_left) temp.x -= distance * Time.deltaTime;
+
+                    else if (playerController.holding_Right) temp.x += distance * Time.deltaTime;
+                }
             }
-        }
-        // メ뉴
-        else if (!movable)
-        {
-            target.x = Mathf.Clamp(target.x, backLimit.x, backLimit.y);
-            target.y = 2.4f;
-            target.z = 0;
+            // メ뉴
+            else if (!movable)
+            {
+                target.x = Mathf.Clamp(target.x, backLimit.x, backLimit.y);
+                target.y = 2.4f;
+                target.z = 0;
 
-            temp = target;
+                temp = target;
+            }
+            transform.localPosition = temp;
         }
-        transform.localPosition = temp;
     }
 }

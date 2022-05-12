@@ -21,14 +21,18 @@ public class scr_PlayerController : MonoBehaviour
     int attackCount;             // 攻擊計數器
 
     bool isJumping;              // 是否跳躍
+    bool isSkilling;             // 施放技能中
 
     Button jump_btn;             // 跳躍 - 按鈕
     Button attack_btn;           // 攻擊 - 按鈕
     Button skill_1_btn;          // 技能1 - 按鈕
+    Button skill_2_btn;          // 技能2 - 按鈕
+    Button skill_3_btn;          // 技能3 - 按鈕
     Vector3 moveDir;             // 移動座標
     Rigidbody rig;               // 剛體
     Animator ani;                // 動畫
 
+    [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool holding_left;      // 按下左鍵
     [HideInInspector] public bool holding_Right;     // 按下左鍵
     [HideInInspector] public bool isDefense;         // 按下防禦
@@ -44,44 +48,21 @@ public class scr_PlayerController : MonoBehaviour
         jump_btn = GameObject.Find("跳__btn").GetComponent<Button>();
         attack_btn = GameObject.Find("攻__btn").GetComponent<Button>();
         skill_1_btn = GameObject.Find("技能1__Btn").GetComponent<Button>();
+        skill_2_btn = GameObject.Find("技能2__Btn").GetComponent<Button>();
+        skill_3_btn = GameObject.Find("技能3__Btn").GetComponent<Button>();
     }
 
     void Start()
     {
-        holding_left = false;
-        holding_Right = false;
-        isDefense = false;
-        isGrounded = true;
-
-        moveSpeed = data.moveSpeed;
-        jumpForce = data.jumpForce;
-        jumpHeight = data.jumpHeight;
-        hp = data.hp;
-        armor = data.armor;
-
-        gravity = 150f;
-        attackCount = 0;
-        attackInterval = 2f;
-
-        // 按鈕
-        attack_btn.onClick.AddListener(Attack);
-        jump_btn.onClick.AddListener(SetJump);
-        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", 1.667f); });
+        Initialize();
+        ButtonOnclick();
     }
 
     void Update()
     {
         Movement();
-
-        // 計時器
-        jumpTimer += Time.deltaTime;
-        attackTimer += Time.deltaTime;
-        skillTimer += Time.deltaTime;
-        hurtTimer += Time.deltaTime;
-
-        // 判斷式
-        if (jumpTimer >= 0.2f) isJumping = false;
-        if (attackTimer >= attackInterval) attackCount = 0;
+        Timer();
+        Judgement();
     }
 
     void FixedUpdate()
@@ -95,36 +76,63 @@ public class scr_PlayerController : MonoBehaviour
     }
     #endregion
 
-    #region - Button trigger -
+    #region - Event -
     /// <summary>
-    /// 按著左鍵
+    /// 計時器
     /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldLeft(bool press)
+    void Timer()
     {
-        holding_left = press;
+        jumpTimer += Time.deltaTime;
+        attackTimer += Time.deltaTime;
+        hurtTimer += Time.deltaTime;
+        skillTimer -= Time.deltaTime;
     }
 
     /// <summary>
-    /// 按著右鍵
+    /// 判斷式
     /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldRight(bool press)
+    void Judgement()
     {
-        holding_Right = press;
+        if (jumpTimer >= 0.2f) isJumping = false;
+        if (skillTimer <= 0) isSkilling = false;
+        if (attackTimer >= attackInterval) attackCount = 0;
     }
 
     /// <summary>
-    /// 按著防禦
+    /// 數值初始化
     /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldDefense(bool press)
+    void Initialize()
     {
-        isDefense = press;
-    }
-    #endregion
+        holding_left = false;
+        holding_Right = false;
+        isDefense = false;
+        isGrounded = true;
+        isDead = false;
+        isSkilling = false;
 
-    #region - Methods -
+        moveSpeed = data.moveSpeed;
+        jumpForce = data.jumpForce;
+        jumpHeight = data.jumpHeight;
+        hp = data.hp;
+        armor = data.armor;
+
+        gravity = 150f;
+        attackCount = 0;
+        attackInterval = 2f;
+    }
+
+    /// <summary>
+    /// 按鈕事件
+    /// </summary>
+    void ButtonOnclick()
+    {
+        attack_btn.onClick.AddListener(Attack);
+        jump_btn.onClick.AddListener(SetJump);
+        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", 1.667f); });
+        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", 1.583f); });
+        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", 2.167f); });
+    }
+
     /// <summary>
     /// 所有移動
     /// </summary>
@@ -160,7 +168,38 @@ public class scr_PlayerController : MonoBehaviour
         // 跳躍
         if (isJumping) Jump();
     }
+    #endregion
 
+    #region - Button trigger -
+    /// <summary>
+    /// 按著左鍵
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldLeft(bool press)
+    {
+        holding_left = press;
+    }
+
+    /// <summary>
+    /// 按著右鍵
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldRight(bool press)
+    {
+        holding_Right = press;
+    }
+
+    /// <summary>
+    /// 按著防禦
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldDefense(bool press)
+    {
+        isDefense = press;
+    }
+    #endregion
+
+    #region - Methods -
     /// <summary>
     /// 移動功能
     /// </summary>
@@ -168,8 +207,7 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="scale">物件尺寸</param>
     void Move(Vector3 direction, Vector3 scale)
     {
-        // 防禦中不可動
-        if (isDefense) return;
+        if (isDefense || isSkilling) return;
 
         else
         {
@@ -190,10 +228,13 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="skilltime">技能時間</param>
     void Skill(string skillname, float skilltime)
     {
-        if (skillTimer > skilltime)
+        if (!isSkilling)
         {
+            isSkilling = true;
+
             ani.SetTrigger(skillname);
-            skillTimer = 0;
+
+            skillTimer = skilltime;
         }
         else return;
     }
@@ -261,6 +302,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Die()
     {
+        isDead = true;
+
         ani.SetBool("死亡 - Bool", true);
 
         this.enabled = false;
@@ -271,6 +314,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Attack()
     {
+        if (isSkilling) return;
+
         if (attackCount == 2 && attackTimer > 0.78f)
         {
             ani.SetTrigger("攻擊3 - Trigger");
@@ -299,6 +344,8 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Defense()
     {
+        if (isSkilling) return;
+
         Debug.Log("is defensing");
 
         if (hurtTimer >= 20f && armor <= data.armor)

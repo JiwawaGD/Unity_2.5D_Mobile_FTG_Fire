@@ -16,8 +16,8 @@ TagManager:
   - Player
   - 
   - Background
-  - 
-  - 
+  - player_groundDetect
+  - Enemy
   - 
   - 
   - 
