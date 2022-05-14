@@ -9,6 +9,11 @@ public class scr_GroundDetect : MonoBehaviour
         playerController = GetComponentInParent<scr_PlayerController>();
     }
 
+    void Start()
+    {
+        IgnoreLayer();
+    }
+
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject == this.gameObject) return;
@@ -28,5 +33,10 @@ public class scr_GroundDetect : MonoBehaviour
         if (col.gameObject == this.gameObject) return;
 
         playerController.isGrounded = false;
+    }
+
+    void IgnoreLayer()
+    {
+        Physics.IgnoreLayerCollision(9, 10);
     }
 }
