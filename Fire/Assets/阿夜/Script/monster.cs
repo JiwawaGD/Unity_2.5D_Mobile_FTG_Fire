@@ -15,7 +15,7 @@ public class monster : MonoBehaviour
     private NavMeshAgent navMeshAgent;//設置尋路組件
     private Animator animator;//定義變量動畫
     public float guaiwugogjili;
-    private object guaiwugongjili;
+    
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class monster : MonoBehaviour
         target = GameObject.FindWithTag("player").transform;//獲取角色位置
         navMeshAgent = GetComponent<NavMeshAgent>();//獲取尋路插件
         navMeshAgent.speed = MoveSpeed;//設定尋路器的行走速度
-        if (navMeshAgent==null)
+        if (navMeshAgent == null)
         {
             navMeshAgent = gameObject.AddComponent<NavMeshAgent>();
         }
@@ -43,24 +43,5 @@ public class monster : MonoBehaviour
             animator.SetBool("AIismove", false);
         }
 
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "wuqi")
-        {
-            GameObject.Find("huojuling").GetComponent<AIshuxing>().TakeDamage(guaiwugongjili);//(Clone)
-        }
-        if (collision.tag == "Player")
-        {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().TakeDamage(guaiwugongjili);
-        }
-    }
-}
-
-internal class AIshuxing
-{
-    internal void TakeDamage(object guaiwugongjili)
-    {
-        throw new NotImplementedException();
     }
 }
