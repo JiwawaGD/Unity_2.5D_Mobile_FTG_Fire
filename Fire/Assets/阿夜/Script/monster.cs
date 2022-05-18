@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,42 +6,63 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 /// <summary>
-/// ¤p©Ç
+/// å°æ€ª
 /// </summary>
 public class monster : MonoBehaviour
 {
-    private Transform target;//³]¸m°lÂÜ¥Ø¼Ğªº¦ì¸m
-    public float MoveSpeed = 2.5f;//¼Ä¤H²¾°Ê³t«×
-    private NavMeshAgent navMeshAgent;//³]¸m´M¸ô²Õ¥ó
-    private Animator animator;//©w¸qÅÜ¶q°Êµe
-    public float guaiwugogjili;
-    
+    //å°æ€ªé è£½ç‰©
+    public GameObject enemys;
+    //å°é»‘ç‚­å·¦å³åµæ¸¬
+    public Transform rightPoint, leftPoint;
+    //å°é»‘ç‚­å·¦å³ç§»å‹•é€Ÿåº¦
+    [Header("å°é»‘ç‚­å·¦å³ç§»å‹•é€Ÿåº¦"),Range(0,1000)]
+    public float enemysSpeed;
+    //é‹¼é«”
+    private Rigidbody rb;
+    //è‡‰éƒ¨æœå‘å·¦å³
+    private bool faceLeft = true;
+    //å°æ€ªæ•¸é‡
+    int count;
+    //å°æ€ªè¨ˆæ™‚
+    float enemysTime;
+
 
     void Start()
     {
-        animator = GetComponent<Animator>();//Àò¨ú°Êµe
-        target = GameObject.FindWithTag("player").transform;//Àò¨ú¨¤¦â¦ì¸m
-        navMeshAgent = GetComponent<NavMeshAgent>();//Àò¨ú´M¸ô´¡¥ó
-        navMeshAgent.speed = MoveSpeed;//³]©w´M¸ô¾¹ªº¦æ¨«³t«×
-        if (navMeshAgent == null)
-        {
-            navMeshAgent = gameObject.AddComponent<NavMeshAgent>();
-        }
+        transform.DetachChildren();
+        rb = GetComponent<Rigidbody>();
+        moveMent();
     }
-
 
     void Update()
     {
-        navMeshAgent.SetDestination(target.transform.position); //³]¸m´M¸ô¥Ø¼Ğ
-        Vector2 input = target.transform.position;
-        if (input != Vector2.zero)
+
+    }
+
+    /// <summary>
+    /// ç§»å‹•
+    /// </summary>
+    private void moveMent()
+    {
+        if (faceLeft)
         {
-            animator.SetBool("AIismove", true);
+            rb.velocity = new Vector2(-enemysSpeed, rb.velocity.y);
+            //å¦‚æœå°é»‘ç‚­ç•¶å‰ä½ç½®å°æ–¼å·¦é‚Šåµæ¸¬ä½ç½®
+            if (transform.position.x < leftPoint.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+                faceLeft = false;
+            }
         }
         else
         {
-            animator.SetBool("AIismove", false);
+            rb.velocity = new Vector2(enemysSpeed, rb.velocity.y);
+            //å¦‚æœå°é»‘ç‚­ç•¶å‰ä½ç½®å°æ–¼å³é‚Šåµæ¸¬ä½ç½®
+            if (transform.position.x > rightPoint.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                faceLeft = true;
+            }
         }
-
     }
 }
