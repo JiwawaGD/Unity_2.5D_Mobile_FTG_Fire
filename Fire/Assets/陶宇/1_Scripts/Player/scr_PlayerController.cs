@@ -15,6 +15,7 @@ public class scr_PlayerController : MonoBehaviour
     float attackTimer;           // 攻擊 - 計時器
     float hurtTimer;             // 受傷 - 計時器
     float skillTimer;            // 技能 - 計時器
+    float ultTimer;              // 大招 - 計時器
 
     int hp;                      // 生命值
     int armor;                   // 護甲值
@@ -32,6 +33,7 @@ public class scr_PlayerController : MonoBehaviour
     Rigidbody rig;               // 剛體
     Animator ani;                // 動畫
 
+    public bool isUlt;
     [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool holding_left;      // 按下左鍵
     [HideInInspector] public bool holding_Right;     // 按下左鍵
@@ -86,6 +88,7 @@ public class scr_PlayerController : MonoBehaviour
         attackTimer += Time.deltaTime;
         hurtTimer += Time.deltaTime;
         skillTimer -= Time.deltaTime;
+        ultTimer -= Time.deltaTime;
     }
 
     /// <summary>
@@ -95,7 +98,9 @@ public class scr_PlayerController : MonoBehaviour
     {
         if (jumpTimer >= 0.2f) isJumping = false;
         if (skillTimer <= 0) isSkilling = false;
+        if (ultTimer <= 0) isUlt = false;
         if (attackTimer >= attackInterval) attackCount = 0;
+        ani.SetBool("技能3 - 狀態 - Bool", isUlt);
     }
 
     /// <summary>
@@ -128,9 +133,11 @@ public class scr_PlayerController : MonoBehaviour
     {
         attack_btn.onClick.AddListener(Attack);
         jump_btn.onClick.AddListener(SetJump);
+
         skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", 1.667f); });
         skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", 1.583f); });
         skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", 2.167f); });
+        skill_3_btn.onClick.AddListener(Ultimate);
     }
 
     /// <summary>
@@ -149,7 +156,7 @@ public class scr_PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// 所有移動 - 有缸體的
+    /// 所有移動 - 有剛體的
     /// </summary>
     void Movement_Rig()
     {
@@ -196,6 +203,10 @@ public class scr_PlayerController : MonoBehaviour
     public void HoldDefense(bool press)
     {
         isDefense = press;
+
+        if (isUlt) return;
+
+        ani.SetBool("防禦 - Bool", press);
     }
     #endregion
 
@@ -215,7 +226,9 @@ public class scr_PlayerController : MonoBehaviour
 
             rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
 
-            ani.SetBool("移動 - Bool", true);
+            if (isUlt) ani.SetBool("技能3 - 移動 - Bool", true);
+
+            else ani.SetBool("移動 - Bool", true);
 
             transform.localScale = scale;
         }
@@ -228,15 +241,21 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="skilltime">技能時間</param>
     void Skill(string skillname, float skilltime)
     {
-        if (!isSkilling)
-        {
-            isSkilling = true;
+        if (isUlt || isSkilling) return;
 
-            ani.SetTrigger(skillname);
+        isSkilling = true;
+        ani.SetTrigger(skillname);
+        skillTimer = skilltime;
+    }
 
-            skillTimer = skilltime;
-        }
-        else return;
+    /// <summary>
+    /// 使用大招
+    /// </summary>
+    void Ultimate()
+    {
+        isUlt = true;
+
+        ultTimer = 10f;
     }
 
     /// <summary>
@@ -245,11 +264,11 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="damage">傷害值</param>
     void Hurt(int damage)
     {
+        if (isUlt) return;
+
         // 防禦
-        if (isDefense && armor >= 0)
-        {
-            armor -= damage;
-        }
+        if (isDefense && armor >= 0) armor -= damage;
+
         // 破防 or 未防禦
         else
         {
@@ -277,6 +296,7 @@ public class scr_PlayerController : MonoBehaviour
         moveDir = Vector3.zero;
 
         ani.SetBool("移動 - Bool", false);
+        ani.SetBool("技能3 - 移動 - Bool", false);
     }
 
     /// <summary>
@@ -344,9 +364,7 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Defense()
     {
-        if (isSkilling) return;
-
-        Debug.Log("is defensing");
+        if (isSkilling || isUlt) return;
 
         if (hurtTimer >= 20f && armor <= data.armor)
         {
