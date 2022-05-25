@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb41308ea020cb4ca8bef633c63e431, type: 3}
   m_Name: "\u5409\u5A03\u5A03"
   m_EditorClassIdentifier: 
-  charactorName: "\u5409\u5A03\u5A03"
-  moveSpeed: 8
-  jumpForce: 30
-  jumpHeight: 3
-  hp: 10
-  mp: 10
+  CharactorName: "\u5409\u5A03\u5A03"
+  hp: 50
+  rage: 5
+  armor: 50
   atk: 10
-  armor: 10
+  playerSkills:
+  - name: "\u6280\u80FD1"
+    time: 1.667
+    damage: 10
+    cost: 1
+  - name: "\u6280\u80FD2"
+    time: 1.583
+    damage: 10
+    cost: 3
+  - name: "\u6280\u80FD3"
+    time: 2.167
+    damage: 10
+    cost: 5
