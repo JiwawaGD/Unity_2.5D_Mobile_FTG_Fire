@@ -17,23 +17,29 @@ public class scr_PlayerController : MonoBehaviour
     float skillTimer;            // 技能 - 計時器
     float ultTimer;              // 大招 - 計時器
 
-    int hp;                      // 生命值
-    int armor;                   // 護甲值
+    float hp;                    // 生命值
+    float rage;                  // 怒氣值
+    float armor;                 // 護甲值
+    float atk;                   // 攻擊力
     int attackCount;             // 攻擊計數器
 
     bool isJumping;              // 是否跳躍
     bool isSkilling;             // 施放技能中
+    bool isUlt;                  // 是否大招中
 
     Button jump_btn;             // 跳躍 - 按鈕
     Button attack_btn;           // 攻擊 - 按鈕
     Button skill_1_btn;          // 技能1 - 按鈕
     Button skill_2_btn;          // 技能2 - 按鈕
     Button skill_3_btn;          // 技能3 - 按鈕
+    Image hpBar;                 // 血條
+    Image rageBar;               // 怒氣條
+    Image armorBar;              // 護甲條
     Vector3 moveDir;             // 移動座標
+
     Rigidbody rig;               // 剛體
     Animator ani;                // 動畫
 
-    public bool isUlt;
     [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool holding_left;      // 按下左鍵
     [HideInInspector] public bool holding_Right;     // 按下左鍵
@@ -46,6 +52,10 @@ public class scr_PlayerController : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         ani = GetComponentInChildren<Animator>();
+
+        hpBar = GameObject.Find("HUD/血條").GetComponent<Image>();
+        rageBar = GameObject.Find("HUD/怒氣條").GetComponent<Image>();
+        armorBar = GameObject.Find("HUD/護甲條").GetComponent<Image>();
 
         jump_btn = GameObject.Find("跳__btn").GetComponent<Button>();
         attack_btn = GameObject.Find("攻__btn").GetComponent<Button>();
@@ -65,6 +75,7 @@ public class scr_PlayerController : MonoBehaviour
         Movement();
         Timer();
         Judgement();
+        UpdateHUD();
     }
 
     void FixedUpdate()
@@ -74,7 +85,7 @@ public class scr_PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "可使玩家受傷") Hurt(1);
+        if (col.tag == "可使玩家受傷") Hurt(10);
     }
     #endregion
 
@@ -104,24 +115,26 @@ public class scr_PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// 數值初始化
+    /// 初始化
     /// </summary>
     void Initialize()
     {
         holding_left = false;
         holding_Right = false;
         isDefense = false;
-        isGrounded = true;
         isDead = false;
         isSkilling = false;
+        isGrounded = true;
 
-        moveSpeed = data.moveSpeed;
-        jumpForce = data.jumpForce;
-        jumpHeight = data.jumpHeight;
         hp = data.hp;
         armor = data.armor;
+        atk = data.atk;
 
+        rage = 0f;
         gravity = 150f;
+        jumpHeight = 3f;
+        jumpForce = 30f;
+        moveSpeed = 8f;
         attackCount = 0;
         attackInterval = 2f;
     }
@@ -134,9 +147,9 @@ public class scr_PlayerController : MonoBehaviour
         attack_btn.onClick.AddListener(Attack);
         jump_btn.onClick.AddListener(SetJump);
 
-        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", 1.667f); });
-        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", 1.583f); });
-        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", 2.167f); });
+        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", data.playerSkills[0].time, data.playerSkills[0].cost); });
+        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", data.playerSkills[1].time, data.playerSkills[1].cost); });
+        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", data.playerSkills[2].time, data.playerSkills[2].cost); });
         skill_3_btn.onClick.AddListener(Ultimate);
     }
 
@@ -235,17 +248,19 @@ public class scr_PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// 施放技能
+    /// 放技能
     /// </summary>
-    /// <param name="skillname">技能名稱</param>
-    /// <param name="skilltime">技能時間</param>
-    void Skill(string skillname, float skilltime)
+    /// <param name="_name">技能名稱</param>
+    /// <param name="_time">動畫時長</param>
+    /// <param name="_cost">技能消耗</param>
+    void Skill(string _name, float _time, int _cost)
     {
         if (isUlt || isSkilling) return;
+        if (rage < _cost) return;
 
         isSkilling = true;
-        ani.SetTrigger(skillname);
-        skillTimer = skilltime;
+        ani.SetTrigger(_name);
+        skillTimer = _time;
     }
 
     /// <summary>
@@ -323,8 +338,10 @@ public class scr_PlayerController : MonoBehaviour
     void Die()
     {
         isDead = true;
-
+        ani.SetBool("移動 - Bool", false);
         ani.SetBool("死亡 - Bool", true);
+
+        hpBar.fillAmount = 0;
 
         this.enabled = false;
     }
@@ -366,10 +383,20 @@ public class scr_PlayerController : MonoBehaviour
     {
         if (isSkilling || isUlt) return;
 
-        if (hurtTimer >= 20f && armor <= data.armor)
+        if (hurtTimer >= 6f && armor <= data.armor)
         {
-            armor += 1;
+            armor += 5;
         }
+    }
+
+    /// <summary>
+    /// 更新資訊
+    /// </summary>
+    void UpdateHUD()
+    {
+        hpBar.fillAmount = hp / data.hp;
+        armorBar.fillAmount = armor / data.armor;
+        rageBar.fillAmount = rage / data.rage;
     }
     #endregion
 }

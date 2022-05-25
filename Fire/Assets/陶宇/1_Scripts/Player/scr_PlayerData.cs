@@ -1,16 +1,23 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "player", menuName = "Players's data")]
+[CreateAssetMenu(fileName = "Charactor", menuName = "Charactor's data")]
 public class scr_PlayerData : ScriptableObject
 {
-    [Header("角色名稱")] public string charactorName;
+    [Header("角色名稱")] public string CharactorName;
 
-    [Header("移動速度")] public float moveSpeed;
-    [Header("跳躍力度")] public float jumpForce;
-    [Header("跳躍高度")] public float jumpHeight;
-
-    [Header("生命值")] public int hp;
-    [Header("魔力值")] public float mp;
+    [Header("生命值")] public float hp;
+    [Header("怒氣值")] public float rage;
+    [Header("護甲值")] public float armor;
     [Header("攻擊力")] public float atk;
-    [Header("護甲值")] public int armor;
+
+    [Header("技能組")] public PlayerSkill[] playerSkills;
+}
+
+[System.Serializable]
+public class PlayerSkill
+{
+    [Header("技能名稱")] public string name;
+    [Header("技能動畫時長")] public float time;
+    [Header("技能傷害")] public float damage;
+    [Header("技能消耗")] public int cost;
 }
