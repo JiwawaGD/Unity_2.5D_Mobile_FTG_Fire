@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
-        SceneManager.LoadScene("角色選擇");
+        SceneManager.LoadScene("地圖選擇");
     }
     /// <summary>
     /// 前往下一關
