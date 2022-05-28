@@ -23,12 +23,16 @@ public class monster : MonoBehaviour
     //位置
     private Transform myTransform;
 
+    //腳色位置
+    public Transform playerPos;
+    private SpriteRenderer spr;
+
      void Start()
     {
         //status = Status.walk;
         status = Status.idle;
-
-        if (this.transform.GetComponent<SpriteRenderer>().flipX)
+        spr = this.transform.GetComponent<SpriteRenderer>();
+        if (spr.flipX)
         {
             face = Face.Right;
         }
@@ -37,6 +41,10 @@ public class monster : MonoBehaviour
             face = Face.Left;
         }
         myTransform = this.transform;
+        if (GameObject.Find("吉娃娃_Player_1") != null)
+        {
+           playerPos = GameObject.Find("吉娃娃_Player_1").transform;
+        }
     }
 
     void Update()
@@ -45,8 +53,28 @@ public class monster : MonoBehaviour
         switch (status)
         {
             case Status.idle:
+                if (playerPos)
+                {
+                    if (Mathf.Abs(myTransform.position.x - playerPos.position.x) < 10f)
+                    {
+                        status = Status.walk;
+                    }
+                }
                 break;
             case Status.walk:
+                if (playerPos)
+                {
+                    if (myTransform.position.x >= playerPos.position.x)
+                    {
+                        spr.flipX = false;
+                        face = Face.Left;
+                    }
+                    else
+                    {
+                        spr.flipX = true;
+                        face = Face.Right;
+                    }
+                }
                 switch (face)
                 {
                     case Face.Right:
@@ -55,6 +83,13 @@ public class monster : MonoBehaviour
                     case Face.Left:
                         myTransform.position -= new Vector3(speed * deltaTime, 0, 0);
                         break;
+                }
+                if (playerPos)
+                {
+                    if (Mathf.Abs(myTransform.position.x - playerPos.position.x) >= 10f)
+                    {
+                        status = Status.idle;
+                    }
                 }
                 break;
         }
