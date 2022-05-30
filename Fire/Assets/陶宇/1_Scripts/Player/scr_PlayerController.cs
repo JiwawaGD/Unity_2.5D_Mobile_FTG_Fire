@@ -353,26 +353,29 @@ public class scr_PlayerController : MonoBehaviour
     {
         if (isSkilling) return;
 
-        if (attackCount == 2 && attackTimer > 0.78f)
+        if (isUlt && attackTimer > 1.417f)
+        {
+            ani.SetTrigger("§Ş¯à3 - §ğÀ» - Trigger");
+            attackTimer = 0;
+        }
+
+        if (attackCount == 2 && attackTimer > data.attackTime[2])
         {
             ani.SetTrigger("§ğÀ»3 - Trigger");
-
-            attackTimer = 0;
             attackCount = 0;
+            attackTimer = 0;
         }
-        else if (attackCount == 1 && attackTimer > 0.68f)
+        else if (attackCount == 1 && attackTimer > data.attackTime[1])
         {
             ani.SetTrigger("§ğÀ»2 - Trigger");
-
-            attackTimer = 0;
             attackCount += 1;
+            attackTimer = 0;
         }
-        else if (attackCount == 0 && attackTimer > 0.68f)
+        else if (attackCount == 0 && attackTimer > data.attackTime[0])
         {
             ani.SetTrigger("§ğÀ»1 - Trigger");
-
-            attackTimer = 0;
             attackCount += 1;
+            attackTimer = 0;
         }
     }
 

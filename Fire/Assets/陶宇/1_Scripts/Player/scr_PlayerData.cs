@@ -9,8 +9,9 @@ public class scr_PlayerData : ScriptableObject
     [Header("怒氣值")] public float rage;
     [Header("護甲值")] public float armor;
     [Header("攻擊力")] public float atk;
+    [Header("攻擊動畫時間")] public float[] attackTime = new float[3];
 
-    [Header("技能組")] public PlayerSkill[] playerSkills;
+    [Header("技能組")] public PlayerSkill[] playerSkills = new PlayerSkill[3];
 }
 
 [System.Serializable]

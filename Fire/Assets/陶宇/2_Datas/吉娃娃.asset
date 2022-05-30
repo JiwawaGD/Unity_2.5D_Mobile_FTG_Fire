@@ -17,6 +17,10 @@ MonoBehaviour:
   rage: 5
   armor: 50
   atk: 10
+  attackTime:
+  - 0.68
+  - 0.68
+  - 0.78
   playerSkills:
   - name: "\u6280\u80FD1"
     time: 1.667
@@ -29,4 +33,4 @@ MonoBehaviour:
   - name: "\u6280\u80FD3"
     time: 2.167
     damage: 10
-    cost: 5
+    cost: 0
