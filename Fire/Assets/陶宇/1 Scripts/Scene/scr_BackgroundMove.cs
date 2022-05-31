@@ -14,15 +14,15 @@ public class scr_BackgroundMove : MonoBehaviour
 
     void Awake()
     {
-        player = GameObject.Find("¦N«½«½_Player");
-        backObject = GameObject.Find("­I´º_Sprites/«á´º");
+        player = GameObject.Find("¦N«½«½ Player");
+        backObject = GameObject.Find("­I´º Sprites/«á´º");
         playerController = player.GetComponent<scr_PlayerController>();
     }
 
     void Start()
     {
         backLimit.x = -31f;
-        backLimit.y = 31f;
+        backLimit.y = 41f;
     }
 
     void Update()

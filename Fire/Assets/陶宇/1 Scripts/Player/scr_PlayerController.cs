@@ -245,6 +245,8 @@ public class scr_PlayerController : MonoBehaviour
 
             transform.localScale = scale;
         }
+
+        //transform.position = Mathf.Clamp((transform.position.x,))
     }
 
     /// <summary>
