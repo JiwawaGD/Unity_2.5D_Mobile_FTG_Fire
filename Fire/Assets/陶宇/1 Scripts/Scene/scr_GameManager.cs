@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class scr_GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] [Header("場景資料")] scr_SceneData sceneData;
+
+    [Header("玩家移動左右邊界")] public Vector2 playerxLimit;
+    [Header("攝影機左右邊界")] public Vector2 cameraxLimit;
+
     void Start()
     {
-        
+        Initialize();
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// 初始化
+    /// </summary>
+    void Initialize()
     {
-        
+        playerxLimit = sceneData.playerxLimit;
+        cameraxLimit = sceneData.cameraxLimit;
     }
 }

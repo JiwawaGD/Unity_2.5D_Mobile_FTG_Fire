@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class scr_PlayerController : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("角色資料")] scr_PlayerData data;
+    [SerializeField] [Header("角色資料")] scr_PlayerData playerdata;
 
     float gravity;               // 地心引力
     float moveSpeed;             // 移動速度
@@ -39,6 +39,8 @@ public class scr_PlayerController : MonoBehaviour
 
     Rigidbody rig;               // 剛體
     Animator ani;                // 動畫
+    scr_GameManager gameManager;
+
 
     [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool holding_left;      // 按下左鍵
@@ -62,6 +64,8 @@ public class scr_PlayerController : MonoBehaviour
         skill_1_btn = GameObject.Find("技能1__Btn").GetComponent<Button>();
         skill_2_btn = GameObject.Find("技能2__Btn").GetComponent<Button>();
         skill_3_btn = GameObject.Find("技能3__Btn").GetComponent<Button>();
+
+        gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
 
     void Start()
@@ -126,14 +130,14 @@ public class scr_PlayerController : MonoBehaviour
         isSkilling = false;
         isGrounded = true;
 
-        hp = data.hp;
-        armor = data.armor;
-        atk = data.atk;
+        hp = playerdata.hp;
+        armor = playerdata.armor;
+        atk = playerdata.atk;
 
         rage = 0f;
         gravity = 150f;
         jumpHeight = 3f;
-        jumpForce = 30f;
+        jumpForce = 40f;
         moveSpeed = 8f;
         attackCount = 0;
         attackInterval = 2f;
@@ -147,9 +151,9 @@ public class scr_PlayerController : MonoBehaviour
         attack_btn.onClick.AddListener(Attack);
         jump_btn.onClick.AddListener(SetJump);
 
-        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", data.playerSkills[0].time, data.playerSkills[0].cost); });
-        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", data.playerSkills[1].time, data.playerSkills[1].cost); });
-        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", data.playerSkills[2].time, data.playerSkills[2].cost); });
+        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
+        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
+        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
         skill_3_btn.onClick.AddListener(Ultimate);
     }
 
@@ -166,6 +170,10 @@ public class scr_PlayerController : MonoBehaviour
 
         // 防禦
         if (isDefense) Defense();
+
+        // 移動
+        if (Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
     }
 
     /// <summary>
@@ -181,8 +189,6 @@ public class scr_PlayerController : MonoBehaviour
         if (holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
 
         // 測試用功能
-        if (Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
-        if (Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
         if (Input.GetKey(KeyCode.Space)) SetJump();
 
         // 跳躍
@@ -237,7 +243,8 @@ public class scr_PlayerController : MonoBehaviour
         {
             moveDir = direction;
 
-            rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
+            //rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
+            transform.Translate(moveDir * moveSpeed * Time.deltaTime);
 
             if (isUlt) ani.SetBool("技能3 - 移動 - Bool", true);
 
@@ -245,8 +252,7 @@ public class scr_PlayerController : MonoBehaviour
 
             transform.localScale = scale;
         }
-
-        //transform.position = Mathf.Clamp((transform.position.x,))
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
     }
 
     /// <summary>
@@ -299,10 +305,8 @@ public class scr_PlayerController : MonoBehaviour
         // 死亡
         if (hp <= 0) Die();
 
-        Debug.Log("hp = ");
-        Debug.Log(hp);
-        Debug.Log("armor = ");
-        Debug.Log(armor);
+        Debug.Log("hp = " + hp);
+        Debug.Log("armor = " + armor);
     }
 
     /// <summary>
@@ -361,19 +365,19 @@ public class scr_PlayerController : MonoBehaviour
             attackTimer = 0;
         }
 
-        if (attackCount == 2 && attackTimer > data.attackTime[2])
+        if (attackCount == 2 && attackTimer > playerdata.attackTime[2])
         {
             ani.SetTrigger("攻擊3 - Trigger");
             attackCount = 0;
             attackTimer = 0;
         }
-        else if (attackCount == 1 && attackTimer > data.attackTime[1])
+        else if (attackCount == 1 && attackTimer > playerdata.attackTime[1])
         {
             ani.SetTrigger("攻擊2 - Trigger");
             attackCount += 1;
             attackTimer = 0;
         }
-        else if (attackCount == 0 && attackTimer > data.attackTime[0])
+        else if (attackCount == 0 && attackTimer > playerdata.attackTime[0])
         {
             ani.SetTrigger("攻擊1 - Trigger");
             attackCount += 1;
@@ -388,10 +392,7 @@ public class scr_PlayerController : MonoBehaviour
     {
         if (isSkilling || isUlt) return;
 
-        if (hurtTimer >= 6f && armor <= data.armor)
-        {
-            armor += 5;
-        }
+        if (hurtTimer >= 6f && armor <= playerdata.armor) armor += 5;
     }
 
     /// <summary>
@@ -399,9 +400,9 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void UpdateHUD()
     {
-        hpBar.fillAmount = hp / data.hp;
-        armorBar.fillAmount = armor / data.armor;
-        rageBar.fillAmount = rage / data.rage;
+        hpBar.fillAmount = hp / playerdata.hp;
+        armorBar.fillAmount = armor / playerdata.armor;
+        rageBar.fillAmount = rage / playerdata.rage;
     }
     #endregion
 }
