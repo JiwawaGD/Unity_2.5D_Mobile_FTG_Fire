@@ -29,8 +29,8 @@ public class monster : MonoBehaviour
 
      void Start()
     {
-        //status = Status.walk;
-        status = Status.idle;
+        status = Status.walk;
+        //status = Status.idle;
         spr = this.transform.GetComponent<SpriteRenderer>();
         if (spr.flipX)
         {
