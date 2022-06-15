@@ -1916,8 +1916,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1399677610}
   - component: {fileID: 1399677609}
-  - component: {fileID: 1399677608}
   - component: {fileID: 1399677611}
+  - component: {fileID: 1399677612}
   m_Layer: 6
   m_Name: "\u5C0F\u9ED1\u70AD"
   m_TagString: Untagged
@@ -1925,22 +1925,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1399677608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399677607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7f29dcb9fdad6049b09de0be4010e1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  status: 0
-  face: 0
-  speed: 2
-  playerPos: {fileID: 0}
 --- !u!212 &1399677609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2000,7 +1984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399677607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.65, y: -3.54, z: 0}
+  m_LocalPosition: {x: 28.06, y: -3.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1195655762}
@@ -2026,6 +2010,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1399677612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399677607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15752603da1db540b3ebfb6eea24a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  canMove: 0
 --- !u!1 &1462518280
 GameObject:
   m_ObjectHideFlags: 0
