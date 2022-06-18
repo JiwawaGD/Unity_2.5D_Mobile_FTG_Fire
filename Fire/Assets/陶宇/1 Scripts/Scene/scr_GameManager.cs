@@ -31,11 +31,11 @@ public class scr_GameManager : MonoBehaviour
 
     #region - Methods -
     /// <summary>
-    /// 切換關卡
+    /// 選擇關卡
     /// </summary>
-    public static void NextLevel()
+    public static void ChooseLevel(int _sceneBuildIndex)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(_sceneBuildIndex);
     }
 
     /// <summary>
