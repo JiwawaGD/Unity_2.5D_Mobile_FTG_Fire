@@ -15,10 +15,12 @@ public class monsterTest : MonoBehaviour
     Animator ani;
     //位置
     Vector3 pos;
+    //玩家跟敵人之間的距離
+    float distance;
 
     void Start()
     {
-         pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ani = GetComponent<Animator>();
     }
     void Update()
@@ -49,6 +51,13 @@ public class monsterTest : MonoBehaviour
                     timeMove = 0;
                     movingRight = false;
                     ani.SetBool("walk", false);
+                    //if (pos)s
+                    //{
+                    //    if (Mathf.Abs(Transform.position.x - pos.position.x) < 10f)
+                    //    {
+                    //        ani.SetBool("walk", false);
+                    //    }
+                    //}
                 }
             }
             else
@@ -68,6 +77,16 @@ public class monsterTest : MonoBehaviour
                 }
             }
         }
-        
+        ////近距離 觸發 敵人攻擊
+        //Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 10);
+
+        ////用 自己的位置 減 敵人的位置
+        //Vector2 toVector = transform.position - colliders[i].gameObject.transform.position;
+        ////取得夾角
+        //float nowAngle = Mathf.Atan2(toVector.y, toVector.x) * Mathf.Rad2Deg;
+        ////轉90
+        //nowAngle = nowAngle - 90;
+        ////面向方向
+        //colliders[i].gameObject.transform.rotation = Quaternion.Euler(0, 0, nowAngle);
     }
 }
