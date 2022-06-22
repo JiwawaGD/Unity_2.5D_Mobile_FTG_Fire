@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SliderSettingAnim : MonoBehaviour
+namespace WEI
 {
-    public GameObject Setting;
-    public void ShowSetting()
+    public class SliderSettingAnim : MonoBehaviour
     {
-        if (Setting != null)
+        public GameObject Setting;
+        public void ShowSetting()
         {
-            Animator animator = Setting.GetComponent<Animator>();
-            if (animator != null)
+            if (Setting != null)
             {
-                bool isOpen = animator.GetBool("show");
-                animator.SetBool("show", !isOpen);
+                Animator animator = Setting.GetComponent<Animator>();
+                if (animator != null)
+                {
+                    bool isOpen = animator.GetBool("show");
+                    animator.SetBool("show", !isOpen);
+                }
             }
         }
-    }
 
+    }
 }
