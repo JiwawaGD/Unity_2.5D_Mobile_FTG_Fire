@@ -574,6 +574,12 @@ AnimatorController:
   m_Name: "\u5409\u5A03\u5A03\u52D5\u756B\u63A7\u5236\u5668"
   serializedVersion: 5
   m_AnimatorParameters:
+  - m_Name: ' - General - '
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: "\u79FB\u52D5 - Bool"
     m_Type: 4
     m_DefaultFloat: 0
@@ -588,24 +594,6 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: "\u9632\u79A6 - Bool"
     m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "\u6280\u80FD3 - \u72C0\u614B - Bool"
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "\u6280\u80FD3 - \u79FB\u52D5 - Bool"
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: "\u6280\u80FD3 - \u653B\u64CA - Trigger"
-    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -647,6 +635,30 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: "\u6280\u80FD3 - Trigger"
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: ' - Special -'
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: "\u6280\u80FD3 - \u72C0\u614B - Bool"
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: "\u6280\u80FD3 - \u79FB\u52D5 - Bool"
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: "\u6280\u80FD3 - \u653B\u64CA - Trigger"
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

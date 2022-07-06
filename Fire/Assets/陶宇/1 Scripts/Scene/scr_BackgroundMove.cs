@@ -8,15 +8,15 @@ public class scr_BackgroundMove : MonoBehaviour
 
     [SerializeField] [Header("後景左右限制 / 前中景省略")] Vector2 backLimit;
 
-    GameObject player;          // 玩家物件
     GameObject backObject;      // 後景物件
-    scr_PlayerController playerController;
+    scr_PlayerBase playerBase;
+    scr_GameManager gameManager;
 
     void Awake()
     {
-        player = GameObject.Find("吉娃娃 Player");
-        backObject = GameObject.Find("背景 Sprites/後景");
-        playerController = player.GetComponent<scr_PlayerController>();
+        playerBase = FindObjectOfType<scr_PlayerBase>();
+        gameManager = FindObjectOfType<scr_GameManager>();
+        backObject = GameObject.Find("背景/後景");
     }
 
     void Start()
@@ -37,9 +37,9 @@ public class scr_BackgroundMove : MonoBehaviour
     void Track(float distance)
     {
         Vector3 temp = transform.localPosition;
-        Vector3 target = player.transform.localPosition;
+        Vector3 target = playerBase.transform.localPosition;
 
-        if (playerController.isDead) return;
+        if (playerBase.isDead) return;
 
         else
         {
@@ -52,14 +52,14 @@ public class scr_BackgroundMove : MonoBehaviour
                 {
                     temp.z = 0;
 
-                    if (playerController.holding_left) temp.x -= distance * Time.deltaTime;
+                    if (gameManager.holding_left) temp.x -= distance * Time.deltaTime;
 
-                    else if (playerController.holding_Right) temp.x += distance * Time.deltaTime;
+                    else if (gameManager.holding_Right) temp.x += distance * Time.deltaTime;
                 }
             }
             // 後景
             else if (!movable)
-            {
+            {   
                 target.x = Mathf.Clamp(target.x, backLimit.x, backLimit.y);
                 target.y = 2.4f;
                 target.z = 0;
