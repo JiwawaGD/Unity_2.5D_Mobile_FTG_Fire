@@ -14,7 +14,7 @@ public class scr_CameraController : MonoBehaviour
     #region - Monobehaviour -
     void Awake()
     {
-        player = FindObjectOfType<scr_PlayerController>().transform;
+        player = FindObjectOfType<scr_PlayerBase>().transform;
         gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
 

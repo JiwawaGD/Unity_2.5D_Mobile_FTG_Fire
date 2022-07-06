@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Charactor", menuName = "Charactor's data")]
+[CreateAssetMenu(fileName = "Charactor", menuName = "Character/Charactor's data")]
 public class scr_PlayerData : ScriptableObject
 {
     [Header("¨¤¦â¦WºÙ")] public string CharactorName;

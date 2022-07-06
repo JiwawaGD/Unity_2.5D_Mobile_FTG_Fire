@@ -12,13 +12,21 @@ public class scr_GameManager : MonoBehaviour
 
     [SerializeField] [Header("任務是否通關")] bool isPass;
 
+    [Header("按著往左")] public bool holding_left;
+    [Header("按著往右")] public bool holding_Right;
+    [Header("按著防禦")] public bool holding_Defense;
+
     int passAmount; // 關卡需要擊殺小怪數量
     int killAmount; // 玩家關卡擊殺小怪數量
+
+    scr_PlayerBase playerBase;
     #endregion
 
     #region - MonoBehaviour -
     void Start()
     {
+        playerBase = FindObjectOfType<scr_PlayerBase>();
+
         Initialize();
     }
 
@@ -26,6 +34,35 @@ public class scr_GameManager : MonoBehaviour
     {
         PassLevel();
         ActivatePortal();
+    }
+    #endregion
+
+    #region - Event Trigger -
+    /// <summary>
+    /// 按著左鍵
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldLeft(bool press)
+    {
+        holding_left = press;
+    }
+
+    /// <summary>
+    /// 按著右鍵
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldRight(bool press)
+    {
+        holding_Right = press;
+    }
+
+    /// <summary>
+    /// 按著防禦
+    /// </summary>
+    /// <param name="press">是否按著</param>
+    public void HoldDefense(bool press)
+    {
+        holding_Defense = press;
     }
     #endregion
 
@@ -43,6 +80,10 @@ public class scr_GameManager : MonoBehaviour
     /// </summary>
     void Initialize()
     {
+        holding_left = false;
+        holding_Right = false;
+        holding_Defense = false;
+
         playerxLimit = sceneData.playerxLimit;
         cameraxLimit = sceneData.cameraxLimit;
         passAmount = sceneData.enemyAmount;

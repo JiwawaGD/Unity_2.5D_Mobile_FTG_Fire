@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scr_PlayerController : MonoBehaviour
+public class scr_PlayerBase : MonoBehaviour
 {
     #region - Variables -
     [SerializeField] [Header("角色資料")] scr_PlayerData playerdata;
@@ -25,7 +25,6 @@ public class scr_PlayerController : MonoBehaviour
 
     bool isJumping;              // 是否跳躍
     bool isSkilling;             // 施放技能中
-    bool isUlt;                  // 是否大招中
 
     Button jump_btn;             // 跳躍 - 按鈕
     Button attack_btn;           // 攻擊 - 按鈕
@@ -41,11 +40,8 @@ public class scr_PlayerController : MonoBehaviour
     Animator ani;                // 動畫
     scr_GameManager gameManager;
 
-
+    [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了
-    [HideInInspector] public bool holding_left;      // 按下左鍵
-    [HideInInspector] public bool holding_Right;     // 按下左鍵
-    [HideInInspector] public bool isDefense;         // 按下防禦
     [HideInInspector] public bool isGrounded;        // 是否在地上
     #endregion
 
@@ -123,9 +119,6 @@ public class scr_PlayerController : MonoBehaviour
     /// </summary>
     void Initialize()
     {
-        holding_left = false;
-        holding_Right = false;
-        isDefense = false;
         isDead = false;
         isSkilling = false;
         isGrounded = true;
@@ -163,17 +156,17 @@ public class scr_PlayerController : MonoBehaviour
     void Movement()
     {
         // 等待
-        if (!holding_left && !holding_Right) Idle();
+        if (!gameManager.holding_left && !gameManager.holding_Right) Idle();
 
         // 攻擊
         if (Input.GetKeyDown(KeyCode.Alpha5)) Attack();
 
         // 防禦
-        if (isDefense) Defense();
+        if (gameManager.holding_Defense) Defense();
 
         // 移動
-        if (Input.GetKey(KeyCode.A)) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
-        if (Input.GetKey(KeyCode.D)) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+        if (Input.GetKey(KeyCode.A) || gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+        if (Input.GetKey(KeyCode.D) || gameManager.holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
     }
 
     /// <summary>
@@ -185,47 +178,14 @@ public class scr_PlayerController : MonoBehaviour
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
 
         // 移動
-        if (holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
-        if (holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
-
+        // if (gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
+// if (gameManager.holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+        
         // 測試用功能
         if (Input.GetKey(KeyCode.Space)) SetJump();
 
         // 跳躍
         if (isJumping) Jump();
-    }
-    #endregion
-
-    #region - Button trigger -
-    /// <summary>
-    /// 按著左鍵
-    /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldLeft(bool press)
-    {
-        holding_left = press;
-    }
-
-    /// <summary>
-    /// 按著右鍵
-    /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldRight(bool press)
-    {
-        holding_Right = press;
-    }
-
-    /// <summary>
-    /// 按著防禦
-    /// </summary>
-    /// <param name="press">是否按著</param>
-    public void HoldDefense(bool press)
-    {
-        isDefense = press;
-
-        if (isUlt) return;
-
-        ani.SetBool("防禦 - Bool", press);
     }
     #endregion
 
@@ -237,13 +197,12 @@ public class scr_PlayerController : MonoBehaviour
     /// <param name="scale">物件尺寸</param>
     void Move(Vector3 direction, Vector3 scale)
     {
-        if (isDefense || isSkilling) return;
+        if (gameManager.holding_Defense || isSkilling) return;
 
         else
         {
             moveDir = direction;
 
-            //rig.MovePosition(transform.position + moveDir * moveSpeed * Time.deltaTime);
             transform.Translate(moveDir * moveSpeed * Time.deltaTime);
 
             if (isUlt) ani.SetBool("技能3 - 移動 - Bool", true);
@@ -290,7 +249,7 @@ public class scr_PlayerController : MonoBehaviour
         if (isUlt) return;
 
         // 防禦
-        if (isDefense && armor >= 0) armor -= damage;
+        if (gameManager.holding_Defense && armor >= 0) armor -= damage;
 
         // 破防 or 未防禦
         else
@@ -391,6 +350,8 @@ public class scr_PlayerController : MonoBehaviour
     void Defense()
     {
         if (isSkilling || isUlt) return;
+
+        ani.SetBool("防禦 - Bool", gameManager.holding_Defense);
 
         if (hurtTimer >= 6f && armor <= playerdata.armor) armor += 5;
     }

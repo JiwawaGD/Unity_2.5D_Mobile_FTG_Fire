@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class scr_GroundDetect : MonoBehaviour
 {
-    scr_PlayerController playerController;
+    scr_PlayerBase playerBase;
 
     void Awake()
     {
-        playerController = GetComponentInParent<scr_PlayerController>();
+        playerBase = GetComponentInParent<scr_PlayerBase>();
     }
 
     void Start()
@@ -18,21 +18,21 @@ public class scr_GroundDetect : MonoBehaviour
     {
         if (col.gameObject == this.gameObject) return;
 
-        playerController.isGrounded = true;
+        playerBase.isGrounded = true;
     }
 
     void OnTriggerStay(Collider col)
     {
         if (col.gameObject == this.gameObject) return;
 
-        playerController.isGrounded = true;
+        playerBase.isGrounded = true;
     }
 
     void OnTriggerExit(Collider col)
     {
         if (col.gameObject == this.gameObject) return;
 
-        playerController.isGrounded = false;
+        playerBase.isGrounded = false;
     }
 
     void IgnoreLayer()
