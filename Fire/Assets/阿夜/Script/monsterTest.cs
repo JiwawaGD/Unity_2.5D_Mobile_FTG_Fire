@@ -15,13 +15,14 @@ public class monsterTest : MonoBehaviour
     Animator ani;
     //位置
     Vector3 pos;
-    //玩家跟敵人之間的距離
-    float distance;
+    //要攻擊的目標
+    public Transform Target;
 
     void Start()
     {
         pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ani = GetComponent<Animator>();
+       
     }
     void Update()
     {
@@ -30,13 +31,27 @@ public class monsterTest : MonoBehaviour
         {
             canMove = true;
         }
+        //計算玩家與敵人的距離
+        float distsance = Vector3.Distance(transform.position, Target.position);
+        //玩家與敵人的方向向量
+        Vector3 temVec = Target.position - transform.position;
+        //與玩家正前方做點積
+        float forwardDistance = Vector3.Dot(temVec, transform.forward.normalized);
+        if (forwardDistance > 0 && forwardDistance <= 10)
+        {
+            float rightDistance = Vector3.Dot(temVec, transform.right.normalized);
+            if (Mathf.Abs(rightDistance) <= 3)
+            {
+                Debug.Log("進入攻擊範圍");
+            }
+        }
     }
 
     void FixedUpdate()
     {
         if (canMove)
         {
-            //假設我在x軸-3到3之間左右循環移動
+            //在x軸-3到3之間左右循環移動
             if (movingRight)
             {
                 //右移
@@ -44,20 +59,13 @@ public class monsterTest : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
                 ani.SetBool("walk", true);
 
-                //如果我移到了3 那麼接下來就是左移,所以把右移設為false
-                if (transform.position.x - pos.x >= 5 )
+                //如果移到了3 那麼接下來就是左移,把右移設為false
+                if (transform.position.x - pos.x >= 5)
                 {
                     canMove = false;
                     timeMove = 0;
                     movingRight = false;
                     ani.SetBool("walk", false);
-                    //if (pos)s
-                    //{
-                    //    if (Mathf.Abs(Transform.position.x - pos.position.x) < 10f)
-                    //    {
-                    //        ani.SetBool("walk", false);
-                    //    }
-                    //}
                 }
             }
             else
@@ -77,16 +85,22 @@ public class monsterTest : MonoBehaviour
                 }
             }
         }
-        ////近距離 觸發 敵人攻擊
-        //Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 10);
-
-        ////用 自己的位置 減 敵人的位置
-        //Vector2 toVector = transform.position - colliders[i].gameObject.transform.position;
-        ////取得夾角
-        //float nowAngle = Mathf.Atan2(toVector.y, toVector.x) * Mathf.Rad2Deg;
-        ////轉90
-        //nowAngle = nowAngle - 90;
-        ////面向方向
-        //colliders[i].gameObject.transform.rotation = Quaternion.Euler(0, 0, nowAngle);
     }
+    ////玩家進入到攻擊範圍時,小怪進行攻擊
+    //public void OnTriggerEnter(Collision col)
+    //{
+    //    if (col.gameObject.tag == "Player" )
+    //    {
+    //        ani.SetBool("attacks", true);
+    //    }
+    //}
+    ////當玩家離開時,停止攻擊
+    //public void OnTriggerExit(Collision col)
+    //{
+    //    if (col.gameObject.tag == "Player")
+    //    {
+    //        ani.SetBool("attacks", false);
+    //    }
+    //}
 }
+
