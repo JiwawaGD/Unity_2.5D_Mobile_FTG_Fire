@@ -50,18 +50,23 @@ namespace WEI
             SceneManager.LoadScene("遊戲操作介紹");
         }
         /// <summary>
-        /// 前往下一關
+        /// 遊戲操作介紹場景
         /// </summary>
-        /*private void ButtonOnclick()
+        public void Game_operation_introduction()
         {
-
-            lvIndex = SceneManager.GetActiveScene().buildIndex;
-
-            lvIndex++;
-
-            SceneManager.LoadScene(lvIndex);
-
-        }*/
+            SceneManager.LoadScene("遊戲操作介紹");
+        }
+        public void Level_open()
+        {
+            SceneManager.LoadScene("關卡");
+        }
+        /// <summary>
+        /// 關卡一
+        /// </summary>
+        public void Level_one()
+        {
+            SceneManager.LoadScene("場景 1");
+        }
         /// <summary>
         /// 吉娃娃選角
         /// </summary>
