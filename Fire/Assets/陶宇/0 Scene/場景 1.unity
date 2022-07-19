@@ -926,7 +926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378328787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31, y: 0, z: -10}
+  m_LocalPosition: {x: 34.2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 600
-  cameraxLimit: {x: 0, y: 0}
+  cameraxLimit: {x: -31, y: 41}
 --- !u!1 &389124173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,10 +4780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdata: {fileID: 11400000, guid: 8bd383a1a7beb2c469dc2f389d2d8141, type: 2}
+  isUlt: 0
   isDead: 0
-  holding_left: 0
-  holding_Right: 0
-  isDefense: 0
   isGrounded: 0
 --- !u!54 &3247340299999362021
 Rigidbody:

@@ -33,7 +33,7 @@ public class scr_CameraController : MonoBehaviour
 
     void Initialize()
     {
-        cameraxLimit = gameManager.cameraxLimit;
+        cameraxLimit = gameManager.cameraLimit;
     }
 
     /// <summary>
@@ -44,6 +44,7 @@ public class scr_CameraController : MonoBehaviour
         Vector3 v_camera = transform.position;  // 0, 1.5, -10
         Vector3 v_player = player.position;     // 0, -1.5, -3
 
+        // -31 ~ 41
         v_player.x = Mathf.Clamp(v_player.x, cameraxLimit.x, cameraxLimit.y);
         v_player.y = 0;
         v_player.z = -10;

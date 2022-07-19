@@ -8,7 +8,7 @@ public class scr_GameManager : MonoBehaviour
     [SerializeField] [Header("傳送門")] GameObject portal;
 
     [Header("玩家移動左右邊界")] public Vector2 playerxLimit;
-    [Header("攝影機左右邊界")] public Vector2 cameraxLimit;
+    [Header("攝影機左右邊界")] public Vector2 cameraLimit;
 
     [SerializeField] [Header("任務是否通關")] bool isPass;
 
@@ -19,14 +19,11 @@ public class scr_GameManager : MonoBehaviour
     int passAmount; // 關卡需要擊殺小怪數量
     int killAmount; // 玩家關卡擊殺小怪數量
 
-    scr_PlayerBase playerBase;
     #endregion
 
     #region - MonoBehaviour -
     void Start()
     {
-        playerBase = FindObjectOfType<scr_PlayerBase>();
-
         Initialize();
     }
 
@@ -85,7 +82,7 @@ public class scr_GameManager : MonoBehaviour
         holding_Defense = false;
 
         playerxLimit = sceneData.playerxLimit;
-        cameraxLimit = sceneData.cameraxLimit;
+        cameraLimit = sceneData.cameraxLimit;
         passAmount = sceneData.enemyAmount;
 
         killAmount = 0;
