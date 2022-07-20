@@ -139,7 +139,7 @@ public class scr_PlayerBase : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5)) Attack();
 
         // ¨¾¿m
-        if (gameManager.holding_Defense) Defense();
+        Defense();
 
         // ²¾°Ê
         if (Input.GetKey(KeyCode.A) || gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
