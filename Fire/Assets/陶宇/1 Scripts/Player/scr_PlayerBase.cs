@@ -4,41 +4,44 @@ using UnityEngine.UI;
 public class scr_PlayerBase : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("角色資料")] scr_PlayerData playerdata;
+    [SerializeField] [Header("角色資料")] protected scr_PlayerData playerdata;
 
     float gravity;               // 地心引力
-    float moveSpeed;             // 移動速度
     float jumpHeight;            // 跳躍高度限制
     float jumpForce;             // 跳躍力道
-    float jumpTimer;             // 跳躍 - 計時器
-    float attackInterval;        // 攻擊間隔
-    float attackTimer;           // 攻擊 - 計時器
-    float hurtTimer;             // 受傷 - 計時器
-    float skillTimer;            // 技能 - 計時器
-    float ultTimer;              // 大招 - 計時器
-
-    float hp;                    // 生命值
-    float rage;                  // 怒氣值
-    float armor;                 // 護甲值
     float atk;                   // 攻擊力
-    int attackCount;             // 攻擊計數器
 
-    bool isJumping;              // 是否跳躍
-    bool isSkilling;             // 施放技能中
-
-    Button jump_btn;             // 跳躍 - 按鈕
-    Button attack_btn;           // 攻擊 - 按鈕
-    Button skill_1_btn;          // 技能1 - 按鈕
-    Button skill_2_btn;          // 技能2 - 按鈕
-    Button skill_3_btn;          // 技能3 - 按鈕
     Image hpBar;                 // 血條
     Image rageBar;               // 怒氣條
     Image armorBar;              // 護甲條
-    Vector3 moveDir;             // 移動座標
 
     Rigidbody rig;               // 剛體
-    Animator ani;                // 動畫
-    scr_GameManager gameManager;
+
+    protected float hp;                       // 生命值
+    protected float moveSpeed;                // 移動速度
+    protected float jumpTimer;                // 跳躍 - 計時器
+    protected float attackInterval;           // 攻擊間隔
+    protected float attackTimer;              // 攻擊 - 計時器
+    protected float hurtTimer;                // 受傷 - 計時器
+    protected float skillTimer;               // 技能 - 計時器
+    protected float ultTimer;                 // 大招 - 計時器
+    protected float rage;                     // 怒氣值
+    protected float armor;                    // 護甲值
+
+    protected int attackCount;                // 攻擊計數器
+
+    protected bool isJumping;                 // 是否跳躍
+    protected bool isSkilling;                // 施放技能中
+
+    protected Button jump_btn;                // 跳躍 - 按鈕
+    protected Button attack_btn;              // 攻擊 - 按鈕
+    protected Button skill_1_btn;             // 技能1 - 按鈕
+    protected Button skill_2_btn;             // 技能2 - 按鈕
+    protected Button skill_3_btn;             // 技能3 - 按鈕
+
+    protected Vector3 moveDir;                // 移動座標
+    protected scr_GameManager gameManager;    // 遊戲管理器
+    protected Animator ani;                   // 動畫
 
     [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了
@@ -103,18 +106,6 @@ public class scr_PlayerBase : MonoBehaviour
     }
 
     /// <summary>
-    /// 判斷式
-    /// </summary>
-    void Judgement()
-    {
-        if (jumpTimer >= 0.2f) isJumping = false;
-        if (skillTimer <= 0) isSkilling = false;
-        if (ultTimer <= 0) isUlt = false;
-        if (attackTimer >= attackInterval) attackCount = 0;
-        ani.SetBool("技能3 - 狀態 - Bool", isUlt);
-    }
-
-    /// <summary>
     /// 初始化
     /// </summary>
     void Initialize()
@@ -137,20 +128,6 @@ public class scr_PlayerBase : MonoBehaviour
     }
 
     /// <summary>
-    /// 按鈕事件
-    /// </summary>
-    void ButtonOnclick()
-    {
-        attack_btn.onClick.AddListener(Attack);
-        jump_btn.onClick.AddListener(SetJump);
-
-        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
-        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
-        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
-        skill_3_btn.onClick.AddListener(Ultimate);
-    }
-
-    /// <summary>
     /// 所有移動
     /// </summary>
     void Movement()
@@ -162,7 +139,7 @@ public class scr_PlayerBase : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5)) Attack();
 
         // 防禦
-        if (gameManager.holding_Defense) Defense();
+        Defense();
 
         // 移動
         if (Input.GetKey(KeyCode.A) || gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
@@ -177,25 +154,76 @@ public class scr_PlayerBase : MonoBehaviour
         // 增加下墜速度
         if (transform.position.y >= jumpHeight) rig.velocity -= new Vector3(0, gravity * Time.deltaTime, 0);
 
-        // 移動
-        // if (gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
-// if (gameManager.holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
-        
         // 測試用功能
         if (Input.GetKey(KeyCode.Space)) SetJump();
 
         // 跳躍
         if (isJumping) Jump();
     }
+
+    /// <summary>
+    /// 判斷式
+    /// </summary>
+    protected virtual void Judgement()
+    {
+        if (jumpTimer >= 0.2f) isJumping = false;
+        if (skillTimer <= 0) isSkilling = false;
+        if (attackTimer >= attackInterval) attackCount = 0;
+    }
+
+    /// <summary>
+    /// 按鈕事件
+    /// </summary>
+    protected virtual void ButtonOnclick()
+    {
+        attack_btn.onClick.AddListener(Attack);
+        jump_btn.onClick.AddListener(SetJump);
+
+        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
+        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
+        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
+    }
     #endregion
 
     #region - Methods -
+    /// <summary>
+    /// 跳躍
+    /// </summary>
+    void Jump()
+    {
+        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 60f, 0);
+    }
+
+    /// <summary>
+    /// 更新資訊
+    /// </summary>
+    void UpdateHUD()
+    {
+        hpBar.fillAmount = hp / playerdata.hp;
+        armorBar.fillAmount = armor / playerdata.armor;
+        rageBar.fillAmount = rage / playerdata.rage;
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    protected virtual void Die()
+    {
+        isDead = true;
+        ani.SetBool("移動 - Bool", false);
+        ani.SetBool("死亡 - Bool", true);
+
+        hpBar.fillAmount = 0;
+
+        this.enabled = false;
+    }
+
     /// <summary>
     /// 移動功能
     /// </summary>
     /// <param name="direction">移動座標</param>
     /// <param name="scale">物件尺寸</param>
-    void Move(Vector3 direction, Vector3 scale)
+    protected virtual void Move(Vector3 direction, Vector3 scale)
     {
         if (gameManager.holding_Defense || isSkilling) return;
 
@@ -205,9 +233,7 @@ public class scr_PlayerBase : MonoBehaviour
 
             transform.Translate(moveDir * moveSpeed * Time.deltaTime);
 
-            if (isUlt) ani.SetBool("技能3 - 移動 - Bool", true);
-
-            else ani.SetBool("移動 - Bool", true);
+            ani.SetBool("移動 - Bool", true);
 
             transform.localScale = scale;
         }
@@ -220,9 +246,9 @@ public class scr_PlayerBase : MonoBehaviour
     /// <param name="_name">技能名稱</param>
     /// <param name="_time">動畫時長</param>
     /// <param name="_cost">技能消耗</param>
-    void Skill(string _name, float _time, int _cost)
+    protected virtual void Skill(string _name, float _time, int _cost)
     {
-        if (isUlt || isSkilling) return;
+        if (isSkilling) return;
         if (rage < _cost) return;
 
         isSkilling = true;
@@ -231,23 +257,11 @@ public class scr_PlayerBase : MonoBehaviour
     }
 
     /// <summary>
-    /// 使用大招
-    /// </summary>
-    void Ultimate()
-    {
-        isUlt = true;
-
-        ultTimer = 10f;
-    }
-
-    /// <summary>
     /// 受傷
     /// </summary>
     /// <param name="damage">傷害值</param>
-    void Hurt(int damage)
+    protected virtual void Hurt(int damage)
     {
-        if (isUlt) return;
-
         // 防禦
         if (gameManager.holding_Defense && armor >= 0) armor -= damage;
 
@@ -271,18 +285,17 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 等待
     /// </summary>
-    void Idle()
+    protected virtual void Idle()
     {
         moveDir = Vector3.zero;
 
         ani.SetBool("移動 - Bool", false);
-        ani.SetBool("技能3 - 移動 - Bool", false);
     }
 
     /// <summary>
     /// 設定跳躍狀態
     /// </summary>
-    void SetJump()
+    protected virtual void SetJump()
     {
         isJumping = true;
 
@@ -290,39 +303,11 @@ public class scr_PlayerBase : MonoBehaviour
     }
 
     /// <summary>
-    /// 跳躍
-    /// </summary>
-    void Jump()
-    {
-        if (isGrounded) rig.velocity = new Vector3(0, jumpForce * Time.deltaTime * 60f, 0);
-    }
-
-    /// <summary>
-    /// 死亡
-    /// </summary>
-    void Die()
-    {
-        isDead = true;
-        ani.SetBool("移動 - Bool", false);
-        ani.SetBool("死亡 - Bool", true);
-
-        hpBar.fillAmount = 0;
-
-        this.enabled = false;
-    }
-
-    /// <summary>
     /// 攻擊
     /// </summary>
-    void Attack()
+    protected virtual void Attack()
     {
         if (isSkilling) return;
-
-        if (isUlt && attackTimer > 1.417f)
-        {
-            ani.SetTrigger("技能3 - 攻擊 - Trigger");
-            attackTimer = 0;
-        }
 
         if (attackCount == 2 && attackTimer > playerdata.attackTime[2])
         {
@@ -347,23 +332,13 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 防禦
     /// </summary>
-    void Defense()
+    protected virtual void Defense()
     {
-        if (isSkilling || isUlt) return;
+        if (isSkilling) return;
 
         ani.SetBool("防禦 - Bool", gameManager.holding_Defense);
 
         if (hurtTimer >= 6f && armor <= playerdata.armor) armor += 5;
-    }
-
-    /// <summary>
-    /// 更新資訊
-    /// </summary>
-    void UpdateHUD()
-    {
-        hpBar.fillAmount = hp / playerdata.hp;
-        armorBar.fillAmount = armor / playerdata.armor;
-        rageBar.fillAmount = rage / playerdata.rage;
     }
     #endregion
 }
