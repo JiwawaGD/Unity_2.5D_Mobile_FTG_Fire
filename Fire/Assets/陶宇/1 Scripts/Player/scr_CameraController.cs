@@ -33,7 +33,8 @@ public class scr_CameraController : MonoBehaviour
 
     void Initialize()
     {
-        cameraxLimit = gameManager.cameraLimit;
+        cameraxLimit = gameManager.sceneData.cameraxLimit;
+        Debug.Log(cameraxLimit);
     }
 
     /// <summary>
