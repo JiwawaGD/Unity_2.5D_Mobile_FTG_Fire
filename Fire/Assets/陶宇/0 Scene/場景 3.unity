@@ -527,17 +527,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166367659}
   m_CullTransparentMesh: 1
---- !u!114 &278680973 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3247340300126077745, guid: 1cfb00a9eb5e71e42bfb5a081e316d8f, type: 3}
-  m_PrefabInstance: {fileID: 3247340299848980156}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f3d57e490adb44ba8090a647c67b9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &338385991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,7 +1181,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldDefense
           m_Mode: 6
@@ -1208,7 +1197,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldDefense
           m_Mode: 6
@@ -1358,7 +1347,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldRight
           m_Mode: 6
@@ -1374,7 +1363,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldRight
           m_Mode: 6
@@ -1647,6 +1636,129 @@ MonoBehaviour:
   movable: 1
   speed: 3
   backLimit: {x: 0, y: 0}
+--- !u!1001 &919770725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038160, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038163, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_Name
+      value: "\u5F71\u5B50 Boss"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+--- !u!1 &919770726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 981122498645038163, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+  m_PrefabInstance: {fileID: 919770725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &919770727
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919770726}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03208351, y: -8.684271}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 58.514286, y: 29.257143}
+    newSize: {x: 58.514286, y: 29.257143}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.406788, y: 11.888603}
+  m_EdgeRadius: 0
+--- !u!114 &919770728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919770726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ec21fae3949234c9c47f2be2ec485c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  moveXLimit: {x: -10, y: 52}
+--- !u!50 &919770729
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919770726}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &936749180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,7 +3743,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldLeft
           m_Mode: 6
@@ -3647,7 +3759,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 278680973}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: scr_PlayerController, Assembly-CSharp
           m_MethodName: HoldLeft
           m_Mode: 6
