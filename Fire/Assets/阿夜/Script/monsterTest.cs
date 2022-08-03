@@ -11,44 +11,89 @@ public class monsterTest : MonoBehaviour
     public bool canMove;
     //計時器
     private float timeMove;
+    //每次攻擊的時間
+    private float attTime;
+    //計算攻擊的次數
+    private int attNum = 0;
+    //計算技能施放次數
+    private int skillNum;
+    //計算玩家碰到的次數
+    //private int hurtNum;
+
+    //生命值
+    private float HP = 100;
+
     //動畫
     Animator ani;
+    ////動畫時長
+    //public AnimatorClipInfo attInfo;
     //位置
     Vector3 pos;
     //要攻擊的目標
     public Transform Target;
 
+
+
+
     void Start()
     {
         pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         ani = GetComponent<Animator>();
-       
+        skillNum = 0;
+        attTime = 0;
+        //hurtNum = 0;
+
     }
+
     void Update()
     {
         timeMove += Time.deltaTime;
-        if (timeMove>=4)
+        attTime += Time.deltaTime;
+        Move();
+
+    }
+
+    void FixedUpdate()
+    {
+
+    }
+
+    /// <summary>
+    /// 移動方法
+    /// </summary>
+    void Move()
+    {
+        if (timeMove >= 4)
         {
             canMove = true;
         }
         //計算玩家與敵人的距離
         float distsance = Vector3.Distance(transform.position, Target.position);
-        //玩家與敵人的方向向量
-        Vector3 temVec = Target.position - transform.position;
-        //與玩家正前方做點積
-        float forwardDistance = Vector3.Dot(temVec, transform.forward.normalized);
-        if (forwardDistance > 0 && forwardDistance <= 10)
+        //Debug.Log(distsance);
+
+        if (Mathf.Abs(distsance) <= 3)
         {
-            float rightDistance = Vector3.Dot(temVec, transform.right.normalized);
-            if (Mathf.Abs(rightDistance) <= 3)
+            attNum++;
+            canMove = false;
+            timeMove = 0;
+            if (attTime > 1.283f)
             {
-                Debug.Log("進入攻擊範圍");
+                Attack();
             }
         }
-    }
+        //受傷
+        if (Mathf.Abs(distsance) == 0)
+        {
+            float hurtNum = HP - 10;
+            ani.SetTrigger("hurt");
+            //死亡
+            if (hurtNum ==0)
+            {
+                ani.SetBool("dead",true);
+                Destroy(this.gameObject);
+            }
+        }
 
-    void FixedUpdate()
-    {
         if (canMove)
         {
             //在x軸-3到3之間左右循環移動
@@ -86,20 +131,62 @@ public class monsterTest : MonoBehaviour
             }
         }
     }
-    ////玩家進入到攻擊範圍時,小怪進行攻擊
-    //public void OnTriggerEnter(Collision col)
+
+
+
+    /// <summary>
+    /// 攻擊方法
+    /// </summary>
+    void Attack()
+    {
+        skillNum++;
+        attTime = 0;
+        if (skillNum >= 5)
+        {
+            ani.SetTrigger("skill");
+            skillNum = 0;
+        }
+        else
+        {
+            timeMove = 0;
+            canMove = false;
+            ani.SetBool("walk", false);
+            ani.SetTrigger("attack");
+        }
+    }
+
+    ///// <summary>
+    ///// 受傷
+    ///// </summary>
+    //void hurt()
     //{
-    //    if (col.gameObject.tag == "Player" )
+    //    float distsance = vector3.distance(transform.position, target.position);
+    //    if (distsance <= 0)
     //    {
-    //        ani.SetBool("attacks", true);
+    //        float hurtnum = hp - 10;
+    //        ani.settrigger("hurt");
     //    }
     //}
-    ////當玩家離開時,停止攻擊
-    //public void OnTriggerExit(Collision col)
+
+    ///// <summary>
+    ///// 死亡
+    ///// </summary>
+    //void dead()
     //{
-    //    if (col.gameObject.tag == "Player")
+    //    ani.setbool("dead", true);
+    //}
+    ///// <summary>
+    ///// 施放技能
+    ///// </summary>
+    //void Skill()
+    //{
+    //    if (skillNum >= 5)
     //    {
-    //        ani.SetBool("attacks", false);
+    //        ani.SetTrigger("skill");
+    //        skillNum = 0;
+    //        timeMove = 0;
+    //        canMove = false;
+    //        ani.SetBool("walk", false);
     //    }
     //}
 }
