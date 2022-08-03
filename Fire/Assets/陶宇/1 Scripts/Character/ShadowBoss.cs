@@ -22,6 +22,9 @@ public class ShadowBoss : MonoBehaviour
     #region - MonoBehaviour -
     void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("ª±®a");
+        rig = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
         currentHp = maxHp;
     }
 
@@ -86,7 +89,6 @@ public class ShadowBoss : MonoBehaviour
     void Track()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        Debug.Log(distance);
 
         if (distance <= 3f) Attack();
         else if (distance <= 8f) Move();
