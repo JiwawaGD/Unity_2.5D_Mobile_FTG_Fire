@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class scr_GameManager : MonoBehaviour
@@ -7,6 +8,7 @@ public class scr_GameManager : MonoBehaviour
     [Header("場景資料")] public scr_SceneData sceneData;
     [SerializeField] [Header("傳送門")] GameObject portal;
 
+    // Limit
     [Header("玩家移動左右邊界")] public Vector2 playerxLimit;
     [Header("攝影機左右邊界")] public Vector2 cameraLimit;
 
@@ -24,10 +26,13 @@ public class scr_GameManager : MonoBehaviour
     GameObject[] enemies_Obj;   // 關卡敵人種類
     GameObject[] enemyCount;    // 持續更新 關卡敵人數量
 
+    // Event Trigger
     [HideInInspector] public bool holding_left;      // 按著往左
     [HideInInspector] public bool holding_Right;     // 按著往右
     [HideInInspector] public bool holding_Defense;   // 按著防禦
 
+    Image hud_bg;
+    [SerializeField] [Header("HUD 背景")] Sprite[] hud_sprites;
     GameObject player;
 
     #endregion
@@ -36,6 +41,8 @@ public class scr_GameManager : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("玩家");
+        Debug.Log(player.name);
+        hud_bg = GameObject.Find("Canvas/HUD/bg").GetComponent<Image>();
         enemyParent = GameObject.Find(" - Enemies - ").GetComponent<Transform>();
     }
 
@@ -106,6 +113,14 @@ public class scr_GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// 更新玩家 HUD
+    /// </summary>
+    void UpdateHUD()
+    {
+
+    }
+
+    /// <summary>
     /// 初始化
     /// </summary>
     void Init()
@@ -128,6 +143,9 @@ public class scr_GameManager : MonoBehaviour
         haveBoss = sceneData.haveBoss;
 
         isPass = false;
+
+        if (player.name.Contains("吉娃娃")) hud_bg.sprite = hud_sprites[0];
+        if (player.name.Contains("鵝")) hud_bg.sprite = hud_sprites[1];
     }
 
     /// <summary>
