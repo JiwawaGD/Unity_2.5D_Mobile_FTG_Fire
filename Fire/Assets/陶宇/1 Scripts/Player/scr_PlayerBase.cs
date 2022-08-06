@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Rigidbody))]
 public class scr_PlayerBase : MonoBehaviour
 {
     #region - Variables -
@@ -54,15 +55,15 @@ public class scr_PlayerBase : MonoBehaviour
         rig = GetComponent<Rigidbody>();
         ani = GetComponentInChildren<Animator>();
 
-        hpBar = GameObject.Find("HUD/血條").GetComponent<Image>();
-        rageBar = GameObject.Find("HUD/怒氣條").GetComponent<Image>();
-        armorBar = GameObject.Find("HUD/護甲條").GetComponent<Image>();
+        hpBar = GameObject.Find("Canvas/HUD/血條").GetComponent<Image>();
+        armorBar = GameObject.Find("Canvas/HUD/護甲條").GetComponent<Image>();
+        rageBar = GameObject.Find("Canvas/HUD/怒氣條").GetComponent<Image>();
 
-        jump_btn = GameObject.Find("跳__btn").GetComponent<Button>();
-        attack_btn = GameObject.Find("攻__btn").GetComponent<Button>();
-        skill_1_btn = GameObject.Find("技能1__Btn").GetComponent<Button>();
-        skill_2_btn = GameObject.Find("技能2__Btn").GetComponent<Button>();
-        skill_3_btn = GameObject.Find("技能3__Btn").GetComponent<Button>();
+        jump_btn = GameObject.Find("跳 - Btn").GetComponent<Button>();
+        attack_btn = GameObject.Find("攻 - Btn").GetComponent<Button>();
+        skill_1_btn = GameObject.Find("技能 1 - Btn").GetComponent<Button>();
+        skill_2_btn = GameObject.Find("技能 2 - Btn").GetComponent<Button>();
+        skill_3_btn = GameObject.Find("技能 3 - Btn").GetComponent<Button>();
 
         gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
@@ -207,7 +208,7 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 死亡
     /// </summary>
-    protected virtual void Die()
+    protected void Die()
     {
         isDead = true;
         ani.SetBool("移動 - Bool", false);

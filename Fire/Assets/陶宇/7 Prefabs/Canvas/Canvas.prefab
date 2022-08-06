@@ -246,6 +246,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7854966809960780921}
     m_Modifications:
+    - target: {fileID: 6790030357236179733, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u6280\u80FD 3 - Btn"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030357266693814, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u6280\u80FD 2 - Btn"
+      objectReference: {fileID: 0}
     - target: {fileID: 6790030357680685056, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -253,6 +261,18 @@ PrefabInstance:
     - target: {fileID: 6790030357680685056, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030357680685063, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u5DE6 - Btn"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030357681204431, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u8DF3 - Btn"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030357858308566, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u653B - Btn"
       objectReference: {fileID: 0}
     - target: {fileID: 6790030358648271886, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -262,6 +282,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6790030358648271893, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u9632 - Btn"
+      objectReference: {fileID: 0}
     - target: {fileID: 6790030358743495892, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -269,6 +293,10 @@ PrefabInstance:
     - target: {fileID: 6790030358743495892, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030358743495899, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u53F3 - Btn"
       objectReference: {fileID: 0}
     - target: {fileID: 6790030358920116048, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Pivot.x
@@ -357,6 +385,10 @@ PrefabInstance:
     - target: {fileID: 6790030358920116051, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
       propertyPath: m_Name
       value: Buttons
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790030359146795728, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}
+      propertyPath: m_Name
+      value: "\u6280\u80FD 1 - Btn"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eb8b641f583b240bfd5c0884b66b03, type: 3}

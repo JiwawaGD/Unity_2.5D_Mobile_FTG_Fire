@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 3247340300126077744}
   - component: {fileID: 4539253265236741330}
   m_Layer: 6
-  m_Name: "\u5409\u5A03\u5A03_Player"
+  m_Name: "\u5409\u5A03\u5A03 - Player"
   m_TagString: "\u73A9\u5BB6"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,10 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerdata: {fileID: 11400000, guid: f09ee41a37d9bf34385751bc21ff829e, type: 2}
+  isUlt: 0
   isDead: 0
-  holding_left: 0
-  holding_Right: 0
-  isDefense: 0
   isGrounded: 0
 --- !u!1 &3247340300214423897
 GameObject:

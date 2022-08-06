@@ -41,7 +41,6 @@ public class scr_GameManager : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("玩家");
-        Debug.Log(player.name);
         hud_bg = GameObject.Find("Canvas/HUD/bg").GetComponent<Image>();
         enemyParent = GameObject.Find(" - Enemies - ").GetComponent<Transform>();
     }
@@ -149,6 +148,14 @@ public class scr_GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// 開啟傳送門
+    /// </summary>
+    void ActivatePortal()
+    {
+        portal.SetActive(isPass);
+    }
+
+    /// <summary>
     /// 生成敵人
     /// </summary>
     void SpawnEnemy()
@@ -183,34 +190,27 @@ public class scr_GameManager : MonoBehaviour
                 break;
 
             case SpawnType.Continous:
-
                 if (player.transform.position.x >= checkPoints[0].transform.position.x) couldSpawn = true;
-
-                if (enemyCount.Length >= 8) break;
-
-                if (couldSpawn) SpawnLoop();
+                SpawnLoop(couldSpawn);
                 break;
         }
     }
 
     /// <summary>
-    /// 開啟傳送門
-    /// </summary>
-    void ActivatePortal()
-    {
-        portal.SetActive(isPass);
-    }
-
-    /// <summary>
     /// 循環生怪
     /// </summary>
-    void SpawnLoop()
+    void SpawnLoop(bool _couldSpawn)
     {
-        GameObject temp = Instantiate(enemies_Obj[0]);
+        if (enemyCount.Length >= 8) return;
 
-        temp.transform.SetParent(enemyParent);
+        if (couldSpawn && spawnTimer >= 0.8f)
+        {
+            GameObject temp = Instantiate(enemies_Obj[0]);
+            temp.transform.SetParent(enemyParent);
+            temp.transform.position = checkPoints[0].transform.position;
 
-        temp.transform.position = checkPoints[0].transform.position;
+            spawnTimer = 0;
+        }
     }
     #endregion
 }

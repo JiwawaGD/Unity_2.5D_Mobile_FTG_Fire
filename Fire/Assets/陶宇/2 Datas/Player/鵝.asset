@@ -22,15 +22,15 @@ MonoBehaviour:
   - 0.68
   - 0.78
   playerSkills:
-  - name: "\u6280\u80FD1"
+  - name: "\u6280\u80FD 1"
     time: 1.667
     damage: 10
     cost: 1
-  - name: "\u6280\u80FD2"
+  - name: "\u6280\u80FD 2"
     time: 1.583
     damage: 10
     cost: 3
-  - name: "\u6280\u80FD3"
+  - name: "\u6280\u80FD 3"
     time: 2.167
     damage: 10
     cost: 0

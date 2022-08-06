@@ -84,18 +84,15 @@ public class Jiwawa : scr_PlayerBase
         // ¯}¨¾ or ¥¼¨¾¿m
         else
         {
-            hp -= damage;
-
             if (hp > 0) ani.SetTrigger("¨ü¶Ë - Trigger");
+
+            hp -= damage;
         }
 
         hurtTimer = 0;
 
         // ¦º¤`
         if (hp <= 0) Die();
-
-        Debug.Log("hp = " + hp);
-        Debug.Log("armor = " + armor);
     }
 
     /// <summary>
