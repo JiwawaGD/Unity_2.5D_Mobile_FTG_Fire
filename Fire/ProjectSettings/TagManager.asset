@@ -7,6 +7,7 @@ TagManager:
   - "\u53EF\u4F7F\u73A9\u5BB6\u53D7\u50B7"
   - "\u73A9\u5BB6"
   - Player Weapon
+  - Enemy
   layers:
   - Default
   - TransparentFX

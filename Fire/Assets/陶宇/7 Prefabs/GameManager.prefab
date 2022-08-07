@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -44,4 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneData: {fileID: 11400000, guid: 06ea17079dfd27c489b966f6311a258c, type: 2}
-  xLimit: {x: 0, y: 0}
+  portal: {fileID: 0}
+  playerxLimit: {x: 0, y: 0}
+  cameraLimit: {x: 0, y: 0}
+  holding_left: 0
+  holding_Right: 0
+  holding_Defense: 0

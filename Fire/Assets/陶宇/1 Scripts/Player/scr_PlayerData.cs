@@ -10,6 +10,7 @@ public class scr_PlayerData : ScriptableObject
     [Header("護甲值")] public float armor;
     [Header("攻擊力")] public float atk;
     [Header("攻擊動畫時間")] public float[] attackTime = new float[3];
+    [Header("普攻icon")] public Sprite icon;
 
     [Header("技能組")] public PlayerSkill[] playerSkills = new PlayerSkill[3];
 }
@@ -18,6 +19,7 @@ public class scr_PlayerData : ScriptableObject
 public class PlayerSkill
 {
     [Header("技能名稱")] public string name;
+    [Header("技能icon")] public Sprite icon;
     [Header("技能動畫時長")] public float time;
     [Header("技能傷害")] public float damage;
     [Header("技能消耗")] public int cost;

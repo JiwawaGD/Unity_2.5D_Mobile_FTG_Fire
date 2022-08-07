@@ -26,7 +26,6 @@ public class Jiwawa : scr_PlayerBase
         skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
         skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
         skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
-
         skill_3_btn.onClick.AddListener(Ultimate);
     }
 
@@ -84,18 +83,15 @@ public class Jiwawa : scr_PlayerBase
         // 破防 or 未防禦
         else
         {
-            hp -= damage;
-
             if (hp > 0) ani.SetTrigger("受傷 - Trigger");
+
+            hp -= damage;
         }
 
         hurtTimer = 0;
 
         // 死亡
         if (hp <= 0) Die();
-
-        Debug.Log("hp = " + hp);
-        Debug.Log("armor = " + armor);
     }
 
     /// <summary>

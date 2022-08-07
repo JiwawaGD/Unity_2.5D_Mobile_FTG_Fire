@@ -14,4 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerxLimit: {x: -46, y: 57}
   cameraxLimit: {x: -31, y: 41}
-  enemyAmount: 5
+  enemies_Obj:
+  - {fileID: 8946093050057662525, guid: e44dc321d47b7dd46a21c3df1029ff7b, type: 3}
+  - {fileID: 8946093050057662525, guid: b182a165efaccd8499b8d6183c8f16c2, type: 3}
+  spawnType: 1
+  checkBools: 0101
+  checkPoints:
+  - {fileID: 3869399780498875849, guid: 011c8cacef49dd64fb975956d2562017, type: 3}
+  - {fileID: 2966688227427858740, guid: b83272d64e4b6754aa58c4ab2c0d6545, type: 3}
+  couldSpawn: 0
+  haveBoss: 0
+  passAmount: 4
