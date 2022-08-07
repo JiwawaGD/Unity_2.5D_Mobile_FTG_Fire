@@ -455,6 +455,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &337718113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283797, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269901721138283819, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+      propertyPath: m_Name
+      value: Menumanager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+--- !u!114 &337718114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1269901721138283818, guid: 9f63c06bebd096e4587f589286998257, type: 3}
+  m_PrefabInstance: {fileID: 337718113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28f5e5e16815a842ae6e618c73a0a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &356385013
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +535,7 @@ GameObject:
   - component: {fileID: 356385016}
   - component: {fileID: 356385015}
   m_Layer: 5
-  m_Name: Text
+  m_Name: "\u64AD\u653E\u901F\u5EA6Text"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -545,7 +613,7 @@ GameObject:
   - component: {fileID: 487696147}
   - component: {fileID: 487696148}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: "\u5F71\u7247\u64AD\u653E\u901F\u5EA6Slider"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +828,7 @@ GameObject:
   - component: {fileID: 822370142}
   - component: {fileID: 822370141}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: "\u64CD\u4F5C\u6559\u5B78\u756B\u5E03"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,9 +1150,8 @@ GameObject:
   - component: {fileID: 1698717638}
   - component: {fileID: 1698717637}
   - component: {fileID: 1698717636}
-  - component: {fileID: 1698717639}
   m_Layer: 5
-  m_Name: Button
+  m_Name: "\u8DF3\u904E\u64CD\u4F5C\u6559\u5B78Button"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1154,9 +1221,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1698717639}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: nextScene
+      - m_Target: {fileID: 337718114}
+        m_TargetAssemblyTypeName: WEI.MenuManager, Assembly-CSharp
+        m_MethodName: Level_open
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1204,19 +1271,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698717634}
   m_CullTransparentMesh: 1
---- !u!114 &1698717639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698717634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 733d33ec71ab44048bbb7e381b8fd5cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: "\u95DC\u5361"
 --- !u!1 &1978027580
 GameObject:
   m_ObjectHideFlags: 0
