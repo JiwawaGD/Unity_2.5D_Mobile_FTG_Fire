@@ -19,9 +19,9 @@ public class RoleChoice : MonoBehaviour
     }
     public void ScrollCalueChange()
     {
-        if (330 < canScroll.transform.position.x) figure[0].gameObject.SetActive(true);
+        if (755 < canScroll.transform.position.x) figure[0].gameObject.SetActive(true);
         else figure[0].gameObject.SetActive(false);
-        if (330 > canScroll.transform.position.x) figure[1].gameObject.SetActive(true);
+        if (755 > canScroll.transform.position.x) figure[1].gameObject.SetActive(true);
         else figure[1].gameObject.SetActive(false);
     }
 }

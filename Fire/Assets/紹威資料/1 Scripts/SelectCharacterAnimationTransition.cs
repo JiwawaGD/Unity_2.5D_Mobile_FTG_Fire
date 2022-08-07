@@ -18,6 +18,9 @@ public class SelectCharacterAnimationTransition : MonoBehaviour
         ChihuahuaSkill = Animator.StringToHash("招式一");
         ChihuahuaSkill2 = Animator.StringToHash("招式二");
         ChihuahuaSkill3 = Animator.StringToHash("招式三");
+        GooseSkill = Animator.StringToHash("招式一");
+        GooseSkill2 = Animator.StringToHash("招式二");
+        GooseSkill3 = Animator.StringToHash("招式三");
 
     }
     public void Chihuahua11()
@@ -31,5 +34,17 @@ public class SelectCharacterAnimationTransition : MonoBehaviour
     public void Chihuahua13()
     {
         ani.SetTrigger(ChihuahuaSkill3);
+    }
+    public void Goose()
+    {
+        ani.SetTrigger(GooseSkill);
+    }
+    public void Goose2()
+    {
+        ani.SetTrigger(GooseSkill2);
+    }
+    public void Goose3()
+    {
+        ani.SetTrigger(GooseSkill3);
     }
 }
