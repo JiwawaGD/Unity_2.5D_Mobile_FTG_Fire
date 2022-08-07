@@ -31,9 +31,13 @@ public class scr_GameManager : MonoBehaviour
     [HideInInspector] public bool holding_Right;     // 按著往右
     [HideInInspector] public bool holding_Defense;   // 按著防禦
 
-    Image hud_bg;
+    [SerializeField] [Header("普攻 icon")] Image attack_icon;
+    [SerializeField] [Header("技能 icon")] Image[] skill_icon = new Image[3];
     [SerializeField] [Header("HUD 背景")] Sprite[] hud_sprites;
+    Image hud_bg;
+
     GameObject player;
+    scr_PlayerData playerData;
 
     #endregion
 
@@ -41,7 +45,14 @@ public class scr_GameManager : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("玩家");
+        playerData = player.GetComponent<scr_PlayerBase>().playerdata;
+
+        attack_icon = GameObject.Find("Canvas/Basic/Buttons/攻 - Btn").GetComponent<Image>();
+        skill_icon[0] = GameObject.Find("Canvas/Basic/Buttons/技能 1 - Btn").GetComponent<Image>();
+        skill_icon[1] = GameObject.Find("Canvas/Basic/Buttons/技能 2 - Btn").GetComponent<Image>();
+        skill_icon[2] = GameObject.Find("Canvas/Basic/Buttons/技能 3 - Btn").GetComponent<Image>();
         hud_bg = GameObject.Find("Canvas/HUD/bg").GetComponent<Image>();
+
         enemyParent = GameObject.Find(" - Enemies - ").GetComponent<Transform>();
     }
 
@@ -143,8 +154,15 @@ public class scr_GameManager : MonoBehaviour
 
         isPass = false;
 
-        if (player.name.Contains("吉娃娃")) hud_bg.sprite = hud_sprites[0];
-        if (player.name.Contains("鵝")) hud_bg.sprite = hud_sprites[1];
+        if (player.name.Contains("吉娃娃"))
+        {
+            hud_bg.sprite = hud_sprites[0];
+            attack_icon.sprite = playerData.icon;
+        }
+        if (player.name.Contains("鵝")) 
+        { 
+            hud_bg.sprite = hud_sprites[1];
+        }
     }
 
     /// <summary>

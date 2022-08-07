@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class scr_PlayerBase : MonoBehaviour
 {
     #region - Variables -
-    [SerializeField] [Header("角色資料")] protected scr_PlayerData playerdata;
+    [SerializeField] [Header("角色資料")] public scr_PlayerData playerdata;
 
     float gravity;               // 地心引力
     float jumpHeight;            // 跳躍高度限制
@@ -99,11 +99,12 @@ public class scr_PlayerBase : MonoBehaviour
     /// </summary>
     void Timer()
     {
-        jumpTimer += Time.deltaTime;
-        attackTimer += Time.deltaTime;
-        hurtTimer += Time.deltaTime;
-        skillTimer -= Time.deltaTime;
-        ultTimer -= Time.deltaTime;
+        if (jumpTimer <= 2f) jumpTimer += Time.deltaTime;
+        if (attackTimer <= 5f) attackTimer += Time.deltaTime;
+        if (hurtTimer <= 8f) hurtTimer += Time.deltaTime;
+
+        if (skillTimer >= -2f) skillTimer -= Time.deltaTime;
+        if (ultTimer >= -2f) ultTimer -= Time.deltaTime;
     }
 
     /// <summary>
@@ -175,15 +176,7 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 按鈕事件
     /// </summary>
-    protected virtual void ButtonOnclick()
-    {
-        attack_btn.onClick.AddListener(Attack);
-        jump_btn.onClick.AddListener(SetJump);
-
-        skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
-        skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
-        skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
-    }
+    protected virtual void ButtonOnclick() { }
     #endregion
 
     #region - Methods -
@@ -306,29 +299,7 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 攻擊
     /// </summary>
-    protected virtual void Attack()
-    {
-        if (isSkilling) return;
-
-        if (attackCount == 2 && attackTimer > playerdata.attackTime[2])
-        {
-            ani.SetTrigger("攻擊3 - Trigger");
-            attackCount = 0;
-            attackTimer = 0;
-        }
-        else if (attackCount == 1 && attackTimer > playerdata.attackTime[1])
-        {
-            ani.SetTrigger("攻擊2 - Trigger");
-            attackCount += 1;
-            attackTimer = 0;
-        }
-        else if (attackCount == 0 && attackTimer > playerdata.attackTime[0])
-        {
-            ani.SetTrigger("攻擊1 - Trigger");
-            attackCount += 1;
-            attackTimer = 0;
-        }
-    }
+    protected virtual void Attack() { }
 
     /// <summary>
     /// 防禦
