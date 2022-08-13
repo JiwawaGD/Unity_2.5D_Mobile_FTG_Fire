@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,27 +10,30 @@ public class monsterTest : MonoBehaviour
     public float speed = 3f;
     private bool movingRight = true;
     public bool canMove;
-    //計時器
+    [Header("計時器")]
     private float timeMove;
-    //每次攻擊的時間
+    [Header("每次攻擊的時間")]
     private float attTime;
-    //計算攻擊的次數
+    [Header("計算攻擊的次數")]
     private int attNum = 0;
-    //計算技能施放次數
+    [Header("計算技能施放次數")]
     private int skillNum;
     //計算玩家碰到的次數
     //private int hurtNum;
+    private float desTime = 1f;
 
-    //生命值
+    [Header("生命值")]
     private float HP = 100;
+   
+    private float hurt ;
 
-    //動畫
+    [Header("動畫")]
     Animator ani;
-    ////動畫時長
-    //public AnimatorClipInfo attInfo;
-    //位置
+
+    [Header("位置")]
     Vector3 pos;
-    //要攻擊的目標
+
+    [Header("要攻擊的目標")]
     public Transform Target;
 
 
@@ -50,7 +54,7 @@ public class monsterTest : MonoBehaviour
         timeMove += Time.deltaTime;
         attTime += Time.deltaTime;
         Move();
-
+       
     }
 
     void FixedUpdate()
@@ -81,18 +85,7 @@ public class monsterTest : MonoBehaviour
                 Attack();
             }
         }
-        //受傷
-        if (Mathf.Abs(distsance) == 0)
-        {
-            float hurtNum = HP - 10;
-            ani.SetTrigger("hurt");
-            //死亡
-            if (hurtNum ==0)
-            {
-                ani.SetBool("dead",true);
-                Destroy(this.gameObject);
-            }
-        }
+
 
         if (canMove)
         {
@@ -134,12 +127,11 @@ public class monsterTest : MonoBehaviour
 
 
 
-    /// <summary>
-    /// 攻擊方法
-    /// </summary>
+    /// <summary> 攻擊方法</summary>
     void Attack()
     {
         skillNum++;
+        Debug.Log("技能施放倒數" + " : " + skillNum);
         attTime = 0;
         if (skillNum >= 5)
         {
@@ -151,43 +143,34 @@ public class monsterTest : MonoBehaviour
             timeMove = 0;
             canMove = false;
             ani.SetBool("walk", false);
-            ani.SetTrigger("attack");
+            ani.SetTrigger("attacksss");
         }
     }
 
-    ///// <summary>
-    ///// 受傷
-    ///// </summary>
-    //void hurt()
-    //{
-    //    float distsance = vector3.distance(transform.position, target.position);
-    //    if (distsance <= 0)
-    //    {
-    //        float hurtnum = hp - 10;
-    //        ani.settrigger("hurt");
-    //    }
-    //}
 
-    ///// <summary>
-    ///// 死亡
-    ///// </summary>
-    //void dead()
-    //{
-    //    ani.setbool("dead", true);
-    //}
-    ///// <summary>
-    ///// 施放技能
-    ///// </summary>
-    //void Skill()
-    //{
-    //    if (skillNum >= 5)
-    //    {
-    //        ani.SetTrigger("skill");
-    //        skillNum = 0;
-    //        timeMove = 0;
-    //        canMove = false;
-    //        ani.SetBool("walk", false);
-    //    }
-    //}
+    /// <summary>玩家攻擊小怪 ----小怪受傷 </summary>
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.tag =="Player")
+        {
+            Damage( );
+        }
+    }
+
+    /// <summary>受傷</summary>
+    void Damage()
+    {
+        HP += -10;
+        if (HP <=0)
+        {
+            ani.SetBool("dead", true);
+            Destroy(this.gameObject, desTime);
+        }
+        else
+        {
+            ani.SetTrigger("hurt");
+            Debug.Log("扣血-10");
+        }
+    }
 }
 
