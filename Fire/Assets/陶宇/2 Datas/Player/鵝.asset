@@ -18,21 +18,22 @@ MonoBehaviour:
   armor: 50
   atk: 10
   attackTime:
-  - 1.75
-  icon: {fileID: 21300000, guid: 93cc82e5fd919694d8c2aa44555b2a3e, type: 3}
+  - 0.7
+  hud_icon: {fileID: 21300000, guid: 11908797360115d409b6ecfd860f784d, type: 3}
+  attack_icon: {fileID: 21300000, guid: 93cc82e5fd919694d8c2aa44555b2a3e, type: 3}
   playerSkills:
   - name: "\u6280\u80FD 1"
-    icon: {fileID: 21300000, guid: a558c7fab2f126b4b988628543a1f137, type: 3}
+    icon: {fileID: 21300000, guid: 12e32430eec65044b97200c58e946b60, type: 3}
     time: 2.583
     damage: 10
     cost: 0
   - name: "\u6280\u80FD 2"
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: a558c7fab2f126b4b988628543a1f137, type: 3}
     time: 1.583
     damage: 10
     cost: 0
   - name: "\u6280\u80FD 3"
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 36b602d8f12aa904a8c960779b1cd359, type: 3}
     time: 2.167
     damage: 10
     cost: 0

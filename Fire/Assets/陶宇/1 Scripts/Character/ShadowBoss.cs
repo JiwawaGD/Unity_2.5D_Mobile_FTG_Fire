@@ -156,9 +156,10 @@ public class ShadowBoss : MonoBehaviour
 
         // attack style
         if (skillCount >= 2) StartCoroutine("Skill_02");
-        else if (attackCount >= 4) StartCoroutine("Skill_01");
-        else StartCoroutine("NormalAttack");
 
+        else if (attackCount >= 4) StartCoroutine("Skill_01");
+
+        else StartCoroutine("NormalAttack");
     }
     #endregion
 }
