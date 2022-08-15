@@ -44,8 +44,12 @@ public class Goose : scr_PlayerBase
         jump_btn.onClick.AddListener(SetJump);
 
         skill_1_btn.onClick.AddListener(() => { Skill("技能 1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
+        skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush"); });
+        skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush"); });
+
         skill_2_btn.onClick.AddListener(() => { Skill("技能 2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
         skill_2_btn.onClick.AddListener(() => { StartCoroutine("RocketAttack"); });
+
         skill_3_btn.onClick.AddListener(() => { Ultimate(playerdata.playerSkills[2].cost, playerdata.playerSkills[2].time, 8f); });
     }
 
@@ -84,12 +88,32 @@ public class Goose : scr_PlayerBase
     /// <param name="_cost"> 技能消耗 </param>
     protected override void Skill(string _name, float _time, int _cost)
     {
-        if (rage < _cost) return;
+        if (isSkilling || rage < _cost) return;
 
         ani.SetTrigger(_name);
         skillTimer = _time;
         isSkilling = true;
     }
+
+
+    /// <summary>
+    /// 往前衝
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator Rush()
+    {
+        yield return new WaitForSeconds(1.2f);
+
+        for (int i = 0; i < 20; i++)
+        {
+            transform.Translate(1, 0, 0);
+
+            yield return new WaitForSeconds(0.025f);
+
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
+        }
+    }
+
 
     /// <summary>
     /// 射火箭
