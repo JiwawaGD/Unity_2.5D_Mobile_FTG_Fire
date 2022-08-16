@@ -31,9 +31,9 @@ public class scr_GameManager : MonoBehaviour
     [HideInInspector] public bool holding_Right;     // «öµÛ©¹¥k
     [HideInInspector] public bool holding_Defense;   // «öµÛ¨¾¿m
 
-    [SerializeField] [Header("´¶§ð icon")] Image attack_icon;
     [SerializeField] [Header("§Þ¯à icon")] Image[] skill_icon = new Image[3];
-    [SerializeField] [Header("HUD ­I´º")] Sprite[] hud_sprites;
+
+    Image attack_icon;                               // ´¶§ð icon
     Image hud_bg;
 
     GameObject player;
@@ -154,15 +154,12 @@ public class scr_GameManager : MonoBehaviour
 
         isPass = false;
 
-        if (player.name.Contains("¦N«½«½"))
-        {
-            hud_bg.sprite = hud_sprites[0];
-            attack_icon.sprite = playerData.icon;
-        }
-        if (player.name.Contains("ÃZ")) 
-        { 
-            hud_bg.sprite = hud_sprites[1];
-        }
+        hud_bg.sprite = playerData.hud_icon;
+        attack_icon.sprite = playerData.attack_icon;
+
+        skill_icon[0].sprite = playerData.playerSkills[0].icon;
+        skill_icon[1].sprite = playerData.playerSkills[1].icon;
+        skill_icon[2].sprite = playerData.playerSkills[2].icon;
     }
 
     /// <summary>

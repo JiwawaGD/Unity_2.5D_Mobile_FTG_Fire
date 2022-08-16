@@ -21,7 +21,8 @@ MonoBehaviour:
   - 0.68
   - 0.68
   - 0.78
-  icon: {fileID: 21300000, guid: 205b0e8453c66404aa7e8cb8613d83be, type: 3}
+  hud_icon: {fileID: 21300000, guid: 94bc462fbaf731647bcb12b6cb5b4a8d, type: 3}
+  attack_icon: {fileID: 21300000, guid: 205b0e8453c66404aa7e8cb8613d83be, type: 3}
   playerSkills:
   - name: "\u6280\u80FD1"
     icon: {fileID: 21300000, guid: c320b38d0cc270a4a87b05d683b359f8, type: 3}

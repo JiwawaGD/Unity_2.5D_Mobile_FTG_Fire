@@ -16,7 +16,6 @@ public class scr_PlayerBase : MonoBehaviour
     Image rageBar;               // 怒氣條
     Image armorBar;              // 護甲條
 
-    Rigidbody rig;               // 剛體
 
     protected float hp;                       // 生命值
     protected float moveSpeed;                // 移動速度
@@ -33,6 +32,7 @@ public class scr_PlayerBase : MonoBehaviour
 
     protected bool isJumping;                 // 是否跳躍
     protected bool isSkilling;                // 施放技能中
+    protected bool isAttacking;               // 普攻施放中
 
     protected Button jump_btn;                // 跳躍 - 按鈕
     protected Button attack_btn;              // 攻擊 - 按鈕
@@ -43,6 +43,7 @@ public class scr_PlayerBase : MonoBehaviour
     protected Vector3 moveDir;                // 移動座標
     protected scr_GameManager gameManager;    // 遊戲管理器
     protected Animator ani;                   // 動畫
+    protected Rigidbody rig;                  // 剛體
 
     [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了
@@ -68,7 +69,7 @@ public class scr_PlayerBase : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
 
-    void Start()
+    protected virtual void Start()
     {
         Initialize();
         ButtonOnclick();
@@ -219,7 +220,9 @@ public class scr_PlayerBase : MonoBehaviour
     /// <param name="scale">物件尺寸</param>
     protected virtual void Move(Vector3 direction, Vector3 scale)
     {
-        if (gameManager.holding_Defense || isSkilling) return;
+        if (gameManager.holding_Defense ||
+            isSkilling ||
+            isAttacking) return;
 
         else
         {
