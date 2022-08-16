@@ -16,7 +16,6 @@ public class scr_PlayerBase : MonoBehaviour
     Image rageBar;               // 怒氣條
     Image armorBar;              // 護甲條
 
-    Rigidbody rig;               // 剛體
 
     protected float hp;                       // 生命值
     protected float moveSpeed;                // 移動速度
@@ -44,6 +43,7 @@ public class scr_PlayerBase : MonoBehaviour
     protected Vector3 moveDir;                // 移動座標
     protected scr_GameManager gameManager;    // 遊戲管理器
     protected Animator ani;                   // 動畫
+    protected Rigidbody rig;                  // 剛體
 
     [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了

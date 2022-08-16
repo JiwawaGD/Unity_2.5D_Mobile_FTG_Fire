@@ -4,7 +4,7 @@ using UnityEngine;
 public class Rocket : MonoBehaviour
 {
     float speed = 6000f;
-    float time = 2f;
+    float time = 1f;
 
     Rigidbody rig;
 

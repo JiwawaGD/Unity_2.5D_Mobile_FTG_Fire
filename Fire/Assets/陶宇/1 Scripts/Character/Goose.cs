@@ -45,7 +45,6 @@ public class Goose : scr_PlayerBase
 
         skill_1_btn.onClick.AddListener(() => { Skill("技能 1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
         skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush"); });
-        skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush"); });
 
         skill_2_btn.onClick.AddListener(() => { Skill("技能 2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
         skill_2_btn.onClick.AddListener(() => { StartCoroutine("RocketAttack"); });
@@ -95,13 +94,13 @@ public class Goose : scr_PlayerBase
         isSkilling = true;
     }
 
-
     /// <summary>
     /// 往前衝
     /// </summary>
-    /// <returns></returns>
     IEnumerator Rush()
     {
+        if (isUlt) yield break;
+
         yield return new WaitForSeconds(1.2f);
 
         for (int i = 0; i < 20; i++)
@@ -114,12 +113,13 @@ public class Goose : scr_PlayerBase
         }
     }
 
-
     /// <summary>
     /// 射火箭
     /// </summary>
     IEnumerator RocketAttack()
     {
+        if (isUlt) yield break;
+
         yield return new WaitForSeconds(1.9f);
 
         for (int i = 0; i < rocketPos.Length; i++) Instantiate(rocketObj, rocketPos[i]);
