@@ -15,8 +15,8 @@ MonoBehaviour:
   playerxLimit: {x: -46, y: 57}
   cameraxLimit: {x: -31, y: 41}
   enemies_Obj:
-  - {fileID: 8946093050057662525, guid: e44dc321d47b7dd46a21c3df1029ff7b, type: 3}
-  - {fileID: 8946093050057662525, guid: b182a165efaccd8499b8d6183c8f16c2, type: 3}
+  - {fileID: 9119381706685189304, guid: 9a383abd82583ce40a0f25ed809d30c6, type: 3}
+  - {fileID: 9119381706685189304, guid: 9a383abd82583ce40a0f25ed809d30c6, type: 3}
   spawnType: 1
   checkBools: 0101
   checkPoints:

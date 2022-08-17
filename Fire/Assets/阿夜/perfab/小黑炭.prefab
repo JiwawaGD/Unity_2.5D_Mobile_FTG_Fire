@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 3367090577359518378}
   - component: {fileID: 5610403220589518711}
   - component: {fileID: 3794771451150572623}
-  m_Layer: 0
+  - component: {fileID: 6426277525429023356}
+  m_Layer: 10
   m_Name: "\u5C0F\u9ED1\u70AD"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +119,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &3794771451150572623
 BoxCollider:
@@ -131,5 +132,17 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4025974, y: 1.2945724, z: 0.2}
-  m_Center: {x: 0.0075922012, y: -0.15271375, z: 0}
+  m_Size: {x: 2, y: 2.5, z: 1}
+  m_Center: {x: 0, y: -0.3, z: 0}
+--- !u!114 &6426277525429023356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119381706685189304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b9c6229b0b584686b45eca1dc6679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

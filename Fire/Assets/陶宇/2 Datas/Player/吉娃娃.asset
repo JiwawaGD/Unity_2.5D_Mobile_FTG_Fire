@@ -16,7 +16,7 @@ MonoBehaviour:
   hp: 50
   rage: 5
   armor: 50
-  atk: 10
+  atk: 5
   attackTime:
   - 0.68
   - 0.68

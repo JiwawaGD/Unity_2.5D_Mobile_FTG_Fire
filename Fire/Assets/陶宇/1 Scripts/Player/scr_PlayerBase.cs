@@ -7,15 +7,16 @@ public class scr_PlayerBase : MonoBehaviour
     #region - Variables -
     [SerializeField] [Header("角色資料")] public scr_PlayerData playerdata;
 
+    public float atk;            // 攻擊力
+    public float rage;           // 怒氣值
+
     float gravity;               // 地心引力
     float jumpHeight;            // 跳躍高度限制
     float jumpForce;             // 跳躍力道
-    float atk;                   // 攻擊力
 
     Image hpBar;                 // 血條
     Image rageBar;               // 怒氣條
     Image armorBar;              // 護甲條
-
 
     protected float hp;                       // 生命值
     protected float moveSpeed;                // 移動速度
@@ -25,7 +26,6 @@ public class scr_PlayerBase : MonoBehaviour
     protected float hurtTimer;                // 受傷 - 計時器
     protected float skillTimer;               // 技能 - 計時器
     protected float ultTimer;                 // 大招 - 計時器
-    protected float rage;                     // 怒氣值
     protected float armor;                    // 護甲值
 
     protected int attackCount;                // 攻擊計數器
