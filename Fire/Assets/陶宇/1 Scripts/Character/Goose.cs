@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Goose : scr_PlayerBase
 {
-    Transform rocketPos_1;
-    Transform rocketPos_2;
-    Transform rocketPos_3;
     [SerializeField] Transform[] rocketPos;
 
     [SerializeField] GameObject rocketObj;
 
+    int attackAniID;
+    bool isSkill_1;
+    bool isSkill_2;
+
     protected override void Start()
     {
         base.Start();
+
+        attackAniID = Animator.StringToHash("攻擊 - Trigger");
 
         rocketPos = new Transform[3];
 
@@ -31,6 +34,7 @@ public class Goose : scr_PlayerBase
         if (attackTimer >= playerdata.attackTime[0]) isAttacking = false;
         if (skillTimer <= 0) isSkilling = false;
         if (ultTimer <= 0) isUlt = false;
+        if (hurtTimer >= 6f && armor <= playerdata.armorMax) armor += 1 * Time.deltaTime;
 
         ani.SetBool("技能 3 - Bool", isUlt);
     }
@@ -44,10 +48,10 @@ public class Goose : scr_PlayerBase
         jump_btn.onClick.AddListener(SetJump);
 
         skill_1_btn.onClick.AddListener(() => { Skill("技能 1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
-        skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush"); });
+        skill_1_btn.onClick.AddListener(() => { StartCoroutine("Rush", playerdata.playerSkills[0].cost); });
 
         skill_2_btn.onClick.AddListener(() => { Skill("技能 2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
-        skill_2_btn.onClick.AddListener(() => { StartCoroutine("RocketAttack"); });
+        skill_2_btn.onClick.AddListener(() => { StartCoroutine("RocketAttack", playerdata.playerSkills[1].cost); });
 
         skill_3_btn.onClick.AddListener(() => { Ultimate(playerdata.playerSkills[2].cost, playerdata.playerSkills[2].time, 8f); });
     }
@@ -61,7 +65,7 @@ public class Goose : scr_PlayerBase
 
         if (attackTimer > playerdata.attackTime[0])
         {
-            ani.SetTrigger("攻擊 - Trigger");
+            ani.SetTrigger(attackAniID);
             isAttacking = true;
             attackTimer = 0;
         }
@@ -89,40 +93,56 @@ public class Goose : scr_PlayerBase
     {
         if (isSkilling || rage < _cost) return;
 
+        rage -= _cost;
         ani.SetTrigger(_name);
         skillTimer = _time;
         isSkilling = true;
+
+        isSkill_1 = true;
+        isSkill_2 = true;
     }
 
     /// <summary>
     /// 往前衝
     /// </summary>
-    IEnumerator Rush()
+    IEnumerator Rush(int _cost)
     {
         if (isUlt) yield break;
 
-        yield return new WaitForSeconds(1.2f);
-
-        for (int i = 0; i < 20; i++)
+        if (isSkill_1)
         {
-            transform.Translate(1, 0, 0);
+            yield return new WaitForSeconds(1.2f);
 
-            yield return new WaitForSeconds(0.025f);
+            for (int i = 0; i < 20; i++)
+            {
+                transform.Translate(1, 0, 0);
 
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
+                yield return new WaitForSeconds(0.025f);
+
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
+            }
         }
+
+        isSkill_1 = false;
+        isSkill_2 = false;
     }
 
     /// <summary>
     /// 射火箭
     /// </summary>
-    IEnumerator RocketAttack()
+    IEnumerator RocketAttack(int _cost)
     {
         if (isUlt) yield break;
 
-        yield return new WaitForSeconds(1.9f);
+        if (isSkill_2)
+        {
+            yield return new WaitForSeconds(1.9f);
 
-        for (int i = 0; i < rocketPos.Length; i++) Instantiate(rocketObj, rocketPos[i]);
+            for (int i = 0; i < rocketPos.Length; i++) Instantiate(rocketObj, rocketPos[i]);
+        }
+
+        isSkill_1 = false;
+        isSkill_2 = false;
     }
 
     /// <summary>

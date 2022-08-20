@@ -7,8 +7,7 @@ public class scr_PlayerBase : MonoBehaviour
     #region - Variables -
     [SerializeField] [Header("角色資料")] public scr_PlayerData playerdata;
 
-    public float atk;            // 攻擊力
-    public float rage;           // 怒氣值
+    string canHurt;
 
     float gravity;               // 地心引力
     float jumpHeight;            // 跳躍高度限制
@@ -45,6 +44,8 @@ public class scr_PlayerBase : MonoBehaviour
     protected Animator ani;                   // 動畫
     protected Rigidbody rig;                  // 剛體
 
+    [HideInInspector] public float atk;              // 攻擊力
+    [HideInInspector] public float rage;             // 怒氣值
     [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool isGrounded;        // 是否在地上
@@ -88,9 +89,9 @@ public class scr_PlayerBase : MonoBehaviour
         Movement_Rig();
     }
 
-    void OnTriggerEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
-        if (col.tag == "可使玩家受傷") Hurt(10);
+        if (col.gameObject.tag.Contains(canHurt)) Hurt(5);
     }
     #endregion
 
@@ -113,6 +114,8 @@ public class scr_PlayerBase : MonoBehaviour
     /// </summary>
     void Initialize()
     {
+        canHurt = "可使玩家受傷";
+
         isDead = false;
         isSkilling = false;
         isGrounded = true;
@@ -120,8 +123,8 @@ public class scr_PlayerBase : MonoBehaviour
         hp = playerdata.hp;
         armor = playerdata.armor;
         atk = playerdata.atk;
+        rage = playerdata.rage;
 
-        rage = 0f;
         gravity = 150f;
         jumpHeight = 3f;
         jumpForce = 40f;
@@ -172,6 +175,7 @@ public class scr_PlayerBase : MonoBehaviour
         if (jumpTimer >= 0.2f) isJumping = false;
         if (skillTimer <= 0) isSkilling = false;
         if (attackTimer >= attackInterval) attackCount = 0;
+        if (hurtTimer >= 6f && armor <= playerdata.armorMax) armor += 1 * Time.deltaTime;
     }
 
     /// <summary>
@@ -194,9 +198,9 @@ public class scr_PlayerBase : MonoBehaviour
     /// </summary>
     void UpdateHUD()
     {
-        hpBar.fillAmount = hp / playerdata.hp;
-        armorBar.fillAmount = armor / playerdata.armor;
-        rageBar.fillAmount = rage / playerdata.rage;
+        hpBar.fillAmount = hp / playerdata.hpMax;
+        armorBar.fillAmount = armor / playerdata.armorMax;
+        rageBar.fillAmount = rage / playerdata.rageMax;
     }
 
     /// <summary>
@@ -312,8 +316,6 @@ public class scr_PlayerBase : MonoBehaviour
         if (isSkilling) return;
 
         ani.SetBool("防禦 - Bool", gameManager.holding_Defense);
-
-        if (hurtTimer >= 6f && armor <= playerdata.armor) armor += 5;
     }
     #endregion
 }

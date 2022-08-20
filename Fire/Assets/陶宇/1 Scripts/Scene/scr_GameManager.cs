@@ -7,6 +7,7 @@ public class scr_GameManager : MonoBehaviour
     #region - Variables -
     [Header("場景資料")] public scr_SceneData sceneData;
     [SerializeField] [Header("傳送門")] GameObject portal;
+    [SerializeField] [Header("玩家生成點")] GameObject playerSpawnPoint;
 
     // Limit
     [Header("玩家移動左右邊界")] public Vector2 playerxLimit;
@@ -14,7 +15,6 @@ public class scr_GameManager : MonoBehaviour
 
     // 關卡 怪物/通關 判斷
     int passAmount;             // 關卡需要擊殺小怪數量
-    int killAmount;             // 玩家關卡擊殺小怪數量
     float spawnTimer;           // 生成計時器
     bool isPass;                // 關卡是否通關
     bool haveBoss;              // 該關卡是否有王
@@ -31,14 +31,14 @@ public class scr_GameManager : MonoBehaviour
     [HideInInspector] public bool holding_Right;     // 按著往右
     [HideInInspector] public bool holding_Defense;   // 按著防禦
 
-    [SerializeField] [Header("技能 icon")] Image[] skill_icon = new Image[3];
+    [HideInInspector] public int killAmount;         // 玩家關卡擊殺小怪數量
 
+    Image[] skill_icon = new Image[3];               // 技能 icon
     Image attack_icon;                               // 普攻 icon
     Image hud_bg;
 
     GameObject player;
     scr_PlayerData playerData;
-
     #endregion
 
     #region - MonoBehaviour -
@@ -59,16 +59,20 @@ public class scr_GameManager : MonoBehaviour
     void Start()
     {
         Init();
+        SpawnPlayer();
     }
 
     void Update()
     {
         SpawnEnemy();
         ActivatePortal();
+        UpdateEnemyCount();
+        Timer();
+    }
 
-        spawnTimer += Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.Tab)) UpdateEnemyCount();
+    void Timer()
+    {
+        if (spawnTimer < 2f) spawnTimer += Time.deltaTime;
     }
     #endregion
 
@@ -115,19 +119,9 @@ public class scr_GameManager : MonoBehaviour
     /// </summary>
     public void UpdateEnemyCount()
     {
-        killAmount++;
-
         if (haveBoss) return;
 
         if (killAmount >= passAmount) isPass = true;
-    }
-
-    /// <summary>
-    /// 更新玩家 HUD
-    /// </summary>
-    void UpdateHUD()
-    {
-
     }
 
     /// <summary>
@@ -160,6 +154,14 @@ public class scr_GameManager : MonoBehaviour
         skill_icon[0].sprite = playerData.playerSkills[0].icon;
         skill_icon[1].sprite = playerData.playerSkills[1].icon;
         skill_icon[2].sprite = playerData.playerSkills[2].icon;
+    }
+
+    /// <summary>
+    /// 生成玩家
+    /// </summary>
+    void SpawnPlayer()
+    {
+        //Instantiate(StaticField.player, playerSpawnPoint.transform);
     }
 
     /// <summary>
