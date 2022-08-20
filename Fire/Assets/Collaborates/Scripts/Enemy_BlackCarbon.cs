@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Enemy_BlackCarbon : MonoBehaviour
 {
+    string playerWeapon;
+    string playerWeaponCollider;
+    string rocket;
+
     bool movingRight;
     bool canMove;
     bool isDead;
@@ -16,13 +20,19 @@ public class Enemy_BlackCarbon : MonoBehaviour
     int skillCount;       // 計算技能施放次數
 
     Animator ani;
+    BoxCollider boxCollider;
+    Rigidbody rigidbody;
     Vector3 beginPos;
     scr_PlayerBase player;
+    scr_GameManager gameManager;
 
     void Awake()
     {
         ani = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider>();
+        rigidbody = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("玩家").GetComponent<scr_PlayerBase>();
+        gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
 
     void Start()
@@ -34,6 +44,10 @@ public class Enemy_BlackCarbon : MonoBehaviour
 
     void InitValue()
     {
+        playerWeapon = "Player Weapon";
+        playerWeaponCollider = "Player Weapon Collider";
+        rocket = "火箭";
+
         speed = 3f;
         destoryTime = 1.2f;
         hp = 10;
@@ -61,16 +75,20 @@ public class Enemy_BlackCarbon : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 碰撞觸發
-    /// </summary>
-    /// <param name="col">碰撞器</param>
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "Player Weapon")
+        if (col.tag == playerWeapon)
         {
-            Hurt(player.atk);
-            player.rage += 0.5f;
+            if (col.gameObject.name == playerWeaponCollider)
+            {
+                Hurt(player.atk);
+                player.rage += 0.5f;
+            }
+            else if (col.gameObject.name.Contains(rocket))
+            {
+                Hurt(player.playerdata.playerSkills[1].damage);
+                Destroy(col.gameObject);
+            }
         }
     }
 
@@ -88,13 +106,19 @@ public class Enemy_BlackCarbon : MonoBehaviour
     /// </summary>
     void Move()
     {
+        bool onLeft;
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (Mathf.Abs(distance) <= 3f)
+        if (Mathf.Abs(distance) <= 5f)
         {
+            if (distance <= 0) onLeft = true;
+            else onLeft = false;
+
+            transform.localScale = onLeft ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
+
             moveTimer = 0;
 
-            if (attackTimer > 1.283f) Attack();
+            if (attackTimer > 1.8f) Attack();
         }
 
         if (canMove)
@@ -158,6 +182,8 @@ public class Enemy_BlackCarbon : MonoBehaviour
         hp -= _damage;
         moveTimer = 0;
 
+        ani.SetBool("walk", false);
+
         if (hp <= 0) Dead();
 
         else ani.SetTrigger("hurt");
@@ -168,8 +194,13 @@ public class Enemy_BlackCarbon : MonoBehaviour
     /// </summary>
     void Dead()
     {
+        boxCollider.enabled = false;
+        rigidbody.useGravity = false;
+
         isDead = true;
         canMove = false;
+
+        gameManager.killAmount += 1;
 
         ani.SetBool("dead", isDead);
         Destroy(this.gameObject, destoryTime);

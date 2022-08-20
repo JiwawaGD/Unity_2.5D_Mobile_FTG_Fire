@@ -6,8 +6,11 @@ public class scr_PlayerData : ScriptableObject
     [Header("角色名稱")] public string CharactorName;
 
     [Header("生命值")] public float hp;
+    [Header("最大生命值")] public float hpMax;
     [Header("怒氣值")] public float rage;
+    [Header("最大怒氣值")] public float rageMax;
     [Header("護甲值")] public float armor;
+    [Header("最大護甲值")] public float armorMax;
     [Header("攻擊力")] public float atk;
     [Header("攻擊動畫時間")] public float[] attackTime = new float[3];
     [Header("HUD icon")] public Sprite hud_icon;

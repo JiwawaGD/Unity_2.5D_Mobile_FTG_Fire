@@ -11,6 +11,7 @@ public class Jiwawa : scr_PlayerBase
         if (skillTimer <= 0) isSkilling = false;
         if (attackTimer >= attackInterval) attackCount = 0;
         if (ultTimer <= 0) isUlt = false;
+        if (hurtTimer >= 6f && armor <= playerdata.armorMax) armor += 1 * Time.deltaTime;
 
         ani.SetBool("技能3 - 狀態 - Bool", isUlt);
     }
@@ -26,7 +27,7 @@ public class Jiwawa : scr_PlayerBase
         skill_1_btn.onClick.AddListener(() => { Skill("技能1 - Trigger", playerdata.playerSkills[0].time, playerdata.playerSkills[0].cost); });
         skill_2_btn.onClick.AddListener(() => { Skill("技能2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
         skill_3_btn.onClick.AddListener(() => { Skill("技能3 - Trigger", playerdata.playerSkills[2].time, playerdata.playerSkills[2].cost); });
-        skill_3_btn.onClick.AddListener(Ultimate);
+        skill_3_btn.onClick.AddListener(() => { Ultimate(playerdata.playerSkills[0].cost); });
     }
 
     /// <summary>
@@ -154,8 +155,10 @@ public class Jiwawa : scr_PlayerBase
     /// <summary>
     /// 使用大招
     /// </summary>
-    void Ultimate()
+    void Ultimate(int _cost)
     {
+        if (rage < _cost) return;
+
         isUlt = true;
 
         ultTimer = 10f;
