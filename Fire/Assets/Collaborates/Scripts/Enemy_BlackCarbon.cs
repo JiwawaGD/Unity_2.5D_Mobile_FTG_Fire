@@ -1,27 +1,30 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy_BlackCarbon : MonoBehaviour
 {
     string playerWeapon;
     string playerWeaponCollider;
     string rocket;
+    string babyGoose;
 
     bool movingRight;
     bool canMove;
     bool isDead;
+    bool hitByBabyGoose;
 
     float speed;
     float moveTimer;      // 移動計時器
     float attackTimer;    // 每次攻擊的時間
     float destoryTime;    // 刪除延遲
     float hp;             // 生命值
+    float hitTimer;
 
-    int attackCount;      // 計算攻擊的次數
     int skillCount;       // 計算技能施放次數
 
     Animator ani;
     BoxCollider boxCollider;
-    Rigidbody rigidbody;
+    Rigidbody rig;
     Vector3 beginPos;
     scr_PlayerBase player;
     scr_GameManager gameManager;
@@ -30,7 +33,7 @@ public class Enemy_BlackCarbon : MonoBehaviour
     {
         ani = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider>();
-        rigidbody = GetComponent<Rigidbody>();
+        rig = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("玩家").GetComponent<scr_PlayerBase>();
         gameManager = GameObject.Find("GameManager").GetComponent<scr_GameManager>();
     }
@@ -47,12 +50,12 @@ public class Enemy_BlackCarbon : MonoBehaviour
         playerWeapon = "Player Weapon";
         playerWeaponCollider = "Player Weapon Collider";
         rocket = "火箭";
+        babyGoose = "小鵝";
 
         speed = 3f;
         destoryTime = 1.2f;
-        hp = 10;
+        hp = 15;
 
-        attackCount = 0;
         skillCount = 0;
 
         movingRight = true;
@@ -62,16 +65,35 @@ public class Enemy_BlackCarbon : MonoBehaviour
     {
         Timer();
         StateCheck();
-
         Move();
+        Judgement();
     }
 
     void Timer()
     {
         if (!isDead)
         {
-            moveTimer += Time.deltaTime;
-            attackTimer += Time.deltaTime;
+            if (!hitByBabyGoose) moveTimer += Time.deltaTime;
+
+            if (attackTimer <= 2.5f) attackTimer += Time.deltaTime;
+
+            if (hitTimer <= 4f) hitTimer += Time.deltaTime;
+
+            if (hitTimer >= 3f) hitByBabyGoose = false;
+        }
+    }
+
+    void Judgement()
+    {
+        if (hitByBabyGoose)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            canMove = false;
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            canMove = true;
         }
     }
 
@@ -88,6 +110,13 @@ public class Enemy_BlackCarbon : MonoBehaviour
             {
                 Hurt(player.playerdata.playerSkills[1].damage);
                 Destroy(col.gameObject);
+            }
+            else if (col.gameObject.name.Contains(babyGoose))
+            {
+                Hurt(player.playerdata.playerSkills[2].damage);
+                hitTimer = 0;
+                moveTimer = 0;
+                hitByBabyGoose = true;
             }
         }
     }
@@ -106,23 +135,23 @@ public class Enemy_BlackCarbon : MonoBehaviour
     /// </summary>
     void Move()
     {
-        bool onLeft;
-        float distance = Vector3.Distance(transform.position, player.transform.position);
-
-        if (Mathf.Abs(distance) <= 5f)
-        {
-            if (distance <= 0) onLeft = true;
-            else onLeft = false;
-
-            transform.localScale = onLeft ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
-
-            moveTimer = 0;
-
-            if (attackTimer > 1.8f) Attack();
-        }
-
         if (canMove)
         {
+            bool onLeft;
+            float distance = Vector3.Distance(transform.position, player.transform.position);
+
+            if (Mathf.Abs(distance) <= 5f)
+            {
+                if (distance <= 0) onLeft = true;
+                else onLeft = false;
+
+                transform.localScale = onLeft ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
+
+                moveTimer = 0;
+
+                if (attackTimer > 1.8f) Attack();
+            }
+
             if (movingRight)
             {
                 transform.Translate(Vector3.right * speed * Time.deltaTime);
@@ -195,7 +224,7 @@ public class Enemy_BlackCarbon : MonoBehaviour
     void Dead()
     {
         boxCollider.enabled = false;
-        rigidbody.useGravity = false;
+        rig.useGravity = false;
 
         isDead = true;
         canMove = false;
