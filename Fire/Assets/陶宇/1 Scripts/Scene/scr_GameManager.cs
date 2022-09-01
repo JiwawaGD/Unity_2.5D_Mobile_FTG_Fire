@@ -154,6 +154,8 @@ public class scr_GameManager : MonoBehaviour
         skill_icon[0].sprite = playerData.playerSkills[0].icon;
         skill_icon[1].sprite = playerData.playerSkills[1].icon;
         skill_icon[2].sprite = playerData.playerSkills[2].icon;
+
+        Physics.IgnoreLayerCollision(6, 6);
     }
 
     /// <summary>

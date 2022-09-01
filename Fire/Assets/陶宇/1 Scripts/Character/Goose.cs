@@ -5,12 +5,18 @@ using UnityEngine;
 public class Goose : scr_PlayerBase
 {
     [SerializeField] Transform[] rocketPos;
+    [SerializeField] Transform babyGoosePos;
 
     [SerializeField] GameObject rocketObj;
+    [SerializeField] GameObject babyGooseObj;
+    BabyGoose babyGoose;
 
     int attackAniID;
     bool isSkill_1;
     bool isSkill_2;
+
+    float babyGooseSpawnTimer;
+
 
     protected override void Start()
     {
@@ -20,9 +26,22 @@ public class Goose : scr_PlayerBase
 
         rocketPos = new Transform[3];
 
+        babyGoose = babyGooseObj.GetComponent<BabyGoose>();
+
         rocketPos[0] = gameObject.transform.GetChild(3).GetComponent<Transform>();
         rocketPos[1] = gameObject.transform.GetChild(4).GetComponent<Transform>();
         rocketPos[2] = gameObject.transform.GetChild(5).GetComponent<Transform>();
+        babyGoosePos = gameObject.transform.GetChild(6).GetComponent<Transform>();
+    }
+
+    /// <summary>
+    /// 計時器
+    /// </summary>
+    protected override void Timer()
+    {
+        base.Timer();
+
+        if (babyGooseSpawnTimer <= 2) babyGooseSpawnTimer += Time.deltaTime;
     }
 
     /// <summary>
@@ -34,7 +53,10 @@ public class Goose : scr_PlayerBase
         if (attackTimer >= playerdata.attackTime[0]) isAttacking = false;
         if (skillTimer <= 0) isSkilling = false;
         if (ultTimer <= 0) isUlt = false;
+
         if (hurtTimer >= 6f && armor <= playerdata.armorMax) armor += 1 * Time.deltaTime;
+
+        SpawnBabyGoose(isUlt,faceRight);
 
         ani.SetBool("技能 3 - Bool", isUlt);
     }
@@ -53,7 +75,7 @@ public class Goose : scr_PlayerBase
         skill_2_btn.onClick.AddListener(() => { Skill("技能 2 - Trigger", playerdata.playerSkills[1].time, playerdata.playerSkills[1].cost); });
         skill_2_btn.onClick.AddListener(() => { StartCoroutine("RocketAttack", playerdata.playerSkills[1].cost); });
 
-        skill_3_btn.onClick.AddListener(() => { Ultimate(playerdata.playerSkills[2].cost, playerdata.playerSkills[2].time, 8f); });
+        skill_3_btn.onClick.AddListener(() => { Ultimate(playerdata.playerSkills[2].cost, 6f, 6f); });
     }
 
     /// <summary>
@@ -155,9 +177,28 @@ public class Goose : scr_PlayerBase
     {
         if (rage < _cost) return;
 
+        rage -= _cost;
+
         isUlt = true;
 
         skillTimer = _time;
         ultTimer = _ultTime;
+    }
+
+    /// <summary>
+    /// 生成小鵝
+    /// </summary>
+    /// <param name="_isUlt">是否大招中</param>
+    void SpawnBabyGoose(bool _isUlt, bool _faceRight)
+    {
+        if (_isUlt)
+        {
+            if (babyGooseSpawnTimer > 0.6f)
+            {
+                babyGoose.faceRight = _faceRight;
+                Instantiate(babyGooseObj, babyGoosePos);
+                babyGooseSpawnTimer = 0;
+            }
+        }
     }
 }

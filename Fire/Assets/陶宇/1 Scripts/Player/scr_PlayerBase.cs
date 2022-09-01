@@ -31,7 +31,7 @@ public class scr_PlayerBase : MonoBehaviour
 
     protected bool isJumping;                 // 是否跳躍
     protected bool isSkilling;                // 施放技能中
-    protected bool isAttacking;               // 普攻施放中
+    protected bool isAttacking;               // 普攻施放中    
 
     protected Button jump_btn;                // 跳躍 - 按鈕
     protected Button attack_btn;              // 攻擊 - 按鈕
@@ -49,6 +49,7 @@ public class scr_PlayerBase : MonoBehaviour
     [HideInInspector] public bool isUlt;             // 是否大招中
     [HideInInspector] public bool isDead;            // 死了
     [HideInInspector] public bool isGrounded;        // 是否在地上
+    public bool faceRight;
     #endregion
 
     #region - Monobehaviour -
@@ -99,7 +100,7 @@ public class scr_PlayerBase : MonoBehaviour
     /// <summary>
     /// 計時器
     /// </summary>
-    void Timer()
+    protected virtual void Timer()
     {
         if (jumpTimer <= 2f) jumpTimer += Time.deltaTime;
         if (attackTimer <= 5f) attackTimer += Time.deltaTime;
@@ -119,6 +120,7 @@ public class scr_PlayerBase : MonoBehaviour
         isDead = false;
         isSkilling = false;
         isGrounded = true;
+        faceRight = true;
 
         hp = playerdata.hp;
         armor = playerdata.armor;
@@ -148,8 +150,8 @@ public class scr_PlayerBase : MonoBehaviour
         Defense();
 
         // 移動
-        if (Input.GetKey(KeyCode.A) || gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1));
-        if (Input.GetKey(KeyCode.D) || gameManager.holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1));
+        if (Input.GetKey(KeyCode.A) || gameManager.holding_left) Move(new Vector3(-1, 0, 0), new Vector3(-1, 1, 1), false);
+        if (Input.GetKey(KeyCode.D) || gameManager.holding_Right) Move(new Vector3(1, 0, 0), new Vector3(1, 1, 1), true);
     }
 
     /// <summary>
@@ -222,7 +224,7 @@ public class scr_PlayerBase : MonoBehaviour
     /// </summary>
     /// <param name="direction">移動座標</param>
     /// <param name="scale">物件尺寸</param>
-    protected virtual void Move(Vector3 direction, Vector3 scale)
+    protected virtual void Move(Vector3 direction, Vector3 scale, bool _faceRight)
     {
         if (gameManager.holding_Defense ||
             isSkilling ||
@@ -239,6 +241,7 @@ public class scr_PlayerBase : MonoBehaviour
             transform.localScale = scale;
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
+        faceRight = _faceRight;
     }
 
     /// <summary>

@@ -35,7 +35,7 @@ public class Jiwawa : scr_PlayerBase
     /// </summary>
     /// <param name="direction">¤è¦V</param>
     /// <param name="scale">¤Ø¤o</param>
-    protected override void Move(Vector3 direction, Vector3 scale)
+    protected override void Move(Vector3 direction, Vector3 scale, bool _faceRight)
     {
         if (gameManager.holding_Defense || isSkilling) return;
 
@@ -52,6 +52,7 @@ public class Jiwawa : scr_PlayerBase
             transform.localScale = scale;
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, gameManager.playerxLimit.x, gameManager.playerxLimit.y), transform.position.y, 0);
+        faceRight = _faceRight;
     }
 
     /// <summary>
