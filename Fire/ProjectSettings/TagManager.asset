@@ -4,10 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - "\u53EF\u4F7F\u73A9\u5BB6\u53D7\u50B7"
   - "\u73A9\u5BB6"
   - Player Weapon
   - Enemy
+  - EnemyBodyCollider
+  - CarbonNATK
+  - CarbonElectricity
+  - JWWNAtk
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - Background
   - player_groundDetect
   - Enemy
-  - 
+  - EnemyAttack
   - 
   - 
   - 

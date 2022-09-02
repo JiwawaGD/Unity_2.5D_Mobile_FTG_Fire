@@ -7,7 +7,9 @@ public class scr_PlayerBase : MonoBehaviour
     #region - Variables -
     [SerializeField] [Header("角色資料")] public scr_PlayerData playerdata;
 
-    string canHurt;
+    string enemyBody;
+    string carbonNAtk;
+    string carbonSkill;
 
     float gravity;               // 地心引力
     float jumpHeight;            // 跳躍高度限制
@@ -92,7 +94,18 @@ public class scr_PlayerBase : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag.Contains(canHurt)) Hurt(5);
+        if (col.gameObject.tag.Contains(enemyBody))
+        {
+            Hurt(5);
+        }
+        else if (col.gameObject.tag.Contains(carbonNAtk))
+        {
+            Hurt(10);
+        }
+        else if (col.gameObject.tag.Contains(carbonSkill))
+        {
+            Hurt(20);
+        }
     }
     #endregion
 
@@ -115,7 +128,9 @@ public class scr_PlayerBase : MonoBehaviour
     /// </summary>
     void Initialize()
     {
-        canHurt = "可使玩家受傷";
+        enemyBody = "EnemyBodyCollider";
+        carbonNAtk = "CarbonNATK";
+        carbonSkill = "CarbonElectricity";
 
         isDead = false;
         isSkilling = false;

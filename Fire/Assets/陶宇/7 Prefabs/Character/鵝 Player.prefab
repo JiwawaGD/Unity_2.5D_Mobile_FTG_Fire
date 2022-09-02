@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 6965629033305263241}
   - component: {fileID: 3238054680222650959}
   m_Layer: 6
-  m_Name: Player Weapon Collider
+  m_Name: "\u9D5D\u666E\u653B\u78B0\u649E\u5668"
   m_TagString: Player Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747679152972947089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.11, y: -0.43, z: 0}
+  m_LocalPosition: {x: 0.11000061, y: -0.43000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 584851326209596416}

@@ -17,9 +17,9 @@ MonoBehaviour:
   hpMax: 50
   rage: 0
   rageMax: 5
-  armor: 30
+  armor: 50
   armorMax: 50
-  atk: 3
+  atk: 2
   attackTime:
   - 0.7
   hud_icon: {fileID: 21300000, guid: 11908797360115d409b6ecfd860f784d, type: 3}
@@ -28,15 +28,15 @@ MonoBehaviour:
   - name: "\u5F80\u524D\u885D"
     icon: {fileID: 21300000, guid: 12e32430eec65044b97200c58e946b60, type: 3}
     time: 2.583
-    damage: 20
+    damage: 10
     cost: 1
   - name: "\u706B\u7BAD"
     icon: {fileID: 21300000, guid: a558c7fab2f126b4b988628543a1f137, type: 3}
     time: 1.583
-    damage: 20
+    damage: 30
     cost: 3
   - name: "\u8DF3\u821E"
     icon: {fileID: 21300000, guid: 36b602d8f12aa904a8c960779b1cd359, type: 3}
     time: 2.167
-    damage: 1
-    cost: 0
+    damage: 4
+    cost: 5
