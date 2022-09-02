@@ -19,7 +19,7 @@ MonoBehaviour:
   rageMax: 5
   armor: 30
   armorMax: 50
-  atk: 5
+  atk: 6
   attackTime:
   - 0.68
   - 0.68
@@ -30,15 +30,15 @@ MonoBehaviour:
   - name: "\u69CC\u4E0B\u53BB"
     icon: {fileID: 21300000, guid: c320b38d0cc270a4a87b05d683b359f8, type: 3}
     time: 1.667
-    damage: 10
+    damage: 5
     cost: 1
   - name: "\u5410\u820C\u982D"
     icon: {fileID: 21300000, guid: 56907e50a220f8948836b3bd717ada11, type: 3}
     time: 1.583
-    damage: 10
+    damage: 15
     cost: 3
   - name: "\u8B8A\u5927"
     icon: {fileID: 21300000, guid: 0e746a62e6061d94b970a87f3c5020b3, type: 3}
     time: 2.167
-    damage: 10
+    damage: 0
     cost: 5

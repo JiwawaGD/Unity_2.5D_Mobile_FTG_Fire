@@ -4,9 +4,11 @@ using System.Collections;
 public class Enemy_BlackCarbon : MonoBehaviour
 {
     string playerWeapon;
-    string playerWeaponCollider;
     string rocket;
     string babyGoose;
+    string normalAtk;
+    string hardAtk;
+    string tongueAtk;
 
     bool movingRight;
     bool canMove;
@@ -48,9 +50,11 @@ public class Enemy_BlackCarbon : MonoBehaviour
     void InitValue()
     {
         playerWeapon = "Player Weapon";
-        playerWeaponCollider = "Player Weapon Collider";
         rocket = "¤õ½b";
         babyGoose = "¤pÃZ";
+        normalAtk = "´¶§ð¸I¼²¾¹";
+        hardAtk = "«ãºV¸I¼²¾¹";
+        tongueAtk = "¦ÞÀY¸I¼²¾¹";
 
         speed = 3f;
         destoryTime = 1.2f;
@@ -101,14 +105,19 @@ public class Enemy_BlackCarbon : MonoBehaviour
     {
         if (col.tag == playerWeapon)
         {
-            if (col.gameObject.name == playerWeaponCollider)
+            if (col.gameObject.name.Contains(normalAtk))
             {
                 Hurt(player.atk);
                 player.rage += 0.5f;
             }
-            else if (col.gameObject.name.Contains(rocket))
+            else if (col.gameObject.name.Contains(rocket) || col.gameObject.name.Contains(hardAtk))
             {
                 Hurt(player.playerdata.playerSkills[1].damage);
+                Destroy(col.gameObject);
+            }
+            else if (col.gameObject.name.Contains(tongueAtk))
+            {
+                Hurt(player.playerdata.playerSkills[2].damage);
                 Destroy(col.gameObject);
             }
             else if (col.gameObject.name.Contains(babyGoose))
@@ -118,6 +127,7 @@ public class Enemy_BlackCarbon : MonoBehaviour
                 moveTimer = 0;
                 hitByBabyGoose = true;
             }
+
         }
     }
 
@@ -135,23 +145,23 @@ public class Enemy_BlackCarbon : MonoBehaviour
     /// </summary>
     void Move()
     {
+        bool onLeft;
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+
+        if (Mathf.Abs(distance) <= 5f)
+        {
+            if (distance <= 0) onLeft = true;
+            else onLeft = false;
+
+            transform.localScale = onLeft ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
+
+            moveTimer = 0;
+
+            if (attackTimer > 1.8f) Attack();
+        }
+
         if (canMove)
         {
-            bool onLeft;
-            float distance = Vector3.Distance(transform.position, player.transform.position);
-
-            if (Mathf.Abs(distance) <= 5f)
-            {
-                if (distance <= 0) onLeft = true;
-                else onLeft = false;
-
-                transform.localScale = onLeft ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
-
-                moveTimer = 0;
-
-                if (attackTimer > 1.8f) Attack();
-            }
-
             if (movingRight)
             {
                 transform.Translate(Vector3.right * speed * Time.deltaTime);

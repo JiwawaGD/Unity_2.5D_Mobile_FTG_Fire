@@ -156,6 +156,8 @@ public class scr_GameManager : MonoBehaviour
         skill_icon[2].sprite = playerData.playerSkills[2].icon;
 
         Physics.IgnoreLayerCollision(6, 6);
+        Physics.IgnoreLayerCollision(10, 10);
+        Physics.IgnoreLayerCollision(10, 11);
     }
 
     /// <summary>
@@ -181,7 +183,7 @@ public class scr_GameManager : MonoBehaviour
     {
         if (isPass) return;
 
-        enemyCount = GameObject.FindGameObjectsWithTag("Enemy");
+        enemyCount = GameObject.FindGameObjectsWithTag("EnemyBodyCollider");
 
         switch (spawnType)
         {
