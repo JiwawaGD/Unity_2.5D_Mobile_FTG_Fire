@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb41308ea020cb4ca8bef633c63e431, type: 3}
+  m_Name: "\u5409\u5A03\u5A03"
+  m_EditorClassIdentifier: 
+  CharactorName: "\u5409\u5A03\u5A03"
+  hp: 50
+  hpMax: 50
+  rage: 0
+  rageMax: 5
+  armor: 30
+  armorMax: 50
+  atk: 6
+  attackTime:
+  - 0.68
+  - 0.68
+  - 0.78
+  hud_icon: {fileID: 21300000, guid: 94bc462fbaf731647bcb12b6cb5b4a8d, type: 3}
+  attack_icon: {fileID: 21300000, guid: 205b0e8453c66404aa7e8cb8613d83be, type: 3}
+  playerSkills:
+  - name: "\u69CC\u4E0B\u53BB"
+    icon: {fileID: 21300000, guid: c320b38d0cc270a4a87b05d683b359f8, type: 3}
+    time: 1.667
+    damage: 5
+    cost: 1
+  - name: "\u5410\u820C\u982D"
+    icon: {fileID: 21300000, guid: 56907e50a220f8948836b3bd717ada11, type: 3}
+    time: 1.583
+    damage: 15
+    cost: 3
+  - name: "\u8B8A\u5927"
+    icon: {fileID: 21300000, guid: 0e746a62e6061d94b970a87f3c5020b3, type: 3}
+    time: 2.167
+    damage: 10
+    cost: 5
