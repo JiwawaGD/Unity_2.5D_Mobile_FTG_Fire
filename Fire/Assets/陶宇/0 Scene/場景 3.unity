@@ -1033,6 +1033,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038161, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_Size.x
+      value: 13.714286
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038161, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_Size.y
+      value: 13.714286
+      objectReference: {fileID: 0}
+    - target: {fileID: 981122498645038161, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 76acbf8f2ee5e8846825720f0160a350, type: 3}
+    - target: {fileID: 981122498645038161, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 981122498645038163, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
       propertyPath: m_Name
       value: "\u5F71\u5B50 Boss"
@@ -1044,48 +1060,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 981122498645038163, guid: c2e58dfd306f84b499bc3beda4c7689c, type: 3}
   m_PrefabInstance: {fileID: 919770725}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &919770727
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919770726}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.03208351, y: -0.8}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 58.514286, y: 29.257143}
-    newSize: {x: 58.514286, y: 29.257143}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.406788, y: 11.888603}
-  m_EdgeRadius: 0
---- !u!114 &919770728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919770726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36ec21fae3949234c9c47f2be2ec485c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  moveXLimit: {x: -10, y: 52}
-  maxHp: 0
-  currentHp: 0
 --- !u!50 &919770729
 Rigidbody2D:
   serializedVersion: 4
