@@ -8,9 +8,10 @@ TagManager:
   - Player Weapon
   - Enemy
   - EnemyBodyCollider
+  - JWWNAtk
+  - EnemyAttack
   - CarbonNATK
   - CarbonElectricity
-  - JWWNAtk
   layers:
   - Default
   - TransparentFX
