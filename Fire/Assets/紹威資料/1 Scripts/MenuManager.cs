@@ -60,6 +60,10 @@ namespace WEI
         {
             SceneManager.LoadScene("關卡");
         }
+        public void RoleSelection()
+        {
+            SceneManager.LoadScene("角色選擇");
+        }
         /// <summary>
         /// 關卡一
         /// </summary>
