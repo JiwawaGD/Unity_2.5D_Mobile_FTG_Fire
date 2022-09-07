@@ -7,8 +7,14 @@ public class SelectCharacterAnimationTransition : MonoBehaviour
     [Header("動畫控制器")] Animator ani;
     Animation anim;
 
-    int ChihuahuaSkill, ChihuahuaSkill2, ChihuahuaSkill3;
-    int GooseSkill, GooseSkill2, GooseSkill3;
+    [Header("吉娃娃招式庫")]
+    int ChihuahuaSkill,
+        ChihuahuaSkill2, 
+        ChihuahuaSkill3;
+    [Header("醜鵝招式庫")]
+    int GooseSkill,
+        GooseSkill2, 
+        GooseSkill3;
 
     void Start()
     {

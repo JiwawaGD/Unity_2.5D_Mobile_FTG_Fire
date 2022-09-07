@@ -55,3 +55,16 @@ The following packages were added:
   com.unity.cinemachine@2.5.0
   com.unity.render-pipelines.universal@7.3.1
   com.unity.shadergraph@7.3.1
+
+=== Tue Sep  6 09:27:35 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.9.0 to 1.17.0
+  com.unity.ide.visualstudio from version 2.0.11 to 2.0.16
+  com.unity.ide.vscode from version 1.2.4 to 1.2.5
+  com.unity.render-pipelines.universal from version 7.3.1 to 10.9.0
+  com.unity.shadergraph from version 7.3.1 to 10.9.0
+  com.unity.test-framework from version 1.1.29 to 1.1.31
