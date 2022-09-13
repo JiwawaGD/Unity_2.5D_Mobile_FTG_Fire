@@ -168,6 +168,11 @@ public class scr_GameManager : MonoBehaviour
         //Instantiate(StaticField.player, playerSpawnPoint.transform);
     }
 
+    void PlayerDead()
+    { 
+    
+    }
+
     /// <summary>
     /// ¶}±Ò¶Ç°eªù
     /// </summary>

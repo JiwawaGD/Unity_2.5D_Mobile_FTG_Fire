@@ -24,14 +24,17 @@ EditorBuildSettings:
     path: "Assets/\u7D39\u5A01\u8CC7\u6599/0 Scene/\u89D2\u8272\u9078\u64C7.unity"
     guid: 7bf673d307711954bb6428bfbbfd7454
   - enabled: 1
-    path: "Assets/Collaborates/0 Scenes/\u9078\u64C7\u95DC\u5361.unity"
-    guid: 8b0897739a00be44caf380fc85bbaaa8
-  - enabled: 1
     path: "Assets/Collaborates/0 Scenes/\u5834\u666F 1.unity"
     guid: 7e66fb964add40f46acb094bc03b35fe
   - enabled: 1
+    path: "Assets/\u7D39\u5A01\u8CC7\u6599/0 Scene/\u95DC\u5361 1.unity"
+    guid: 2e485c348159f0140bad84a3cad864a9
+  - enabled: 1
     path: "Assets/Collaborates/0 Scenes/\u5834\u666F 2.unity"
     guid: 85aaec2f998d84547b140db12a07b4ea
+  - enabled: 1
+    path: "Assets/\u7D39\u5A01\u8CC7\u6599/0 Scene/\u95DC\u5361 2.unity"
+    guid: f6ff14bf1d1fcaa49bed9da8c1a96d75
   - enabled: 1
     path: "Assets/Collaborates/0 Scenes/\u5834\u666F 3.unity"
     guid: 66fe88a9f4072e649a3726e4661012ae

@@ -7,10 +7,10 @@ namespace WEI
     public class MenuManager : MonoBehaviour
     {
         public Button mybutton;
-        public GameObject Gwawa;
-        public GameObject Gwawaimage;
-        public GameObject MatchstickMen;
-        public GameObject Goose;
+        //public GameObject Gwawa;
+        //public GameObject Gwawaimage;
+        //public GameObject MatchstickMen;
+        //public GameObject Goose;
         [Header("無法離開畫面")]
         public GameObject juck;
         [Header("分辨率物件")]
@@ -56,10 +56,16 @@ namespace WEI
         {
             SceneManager.LoadScene("遊戲操作介紹");
         }
+        /// <summary>
+        /// 前往 關卡
+        /// </summary>
         public void Level_open()
         {
             SceneManager.LoadScene("關卡");
         }
+        /// <summary>
+        /// 前往角色選取
+        /// </summary>
         public void RoleSelection()
         {
             SceneManager.LoadScene("角色選擇");
@@ -70,53 +76,39 @@ namespace WEI
         public void Level_one()
         {
             SceneManager.LoadScene("場景 1");
+            
         }
-        /// <summary>
-        /// 吉娃娃選角
-        /// </summary>
-        public void GwawaSetting()
-        {
-            if (Gwawa != null)
-            {
-                //menugwawaa.StartGwawaM();
-                Animator animator = Gwawa.GetComponent<Animator>();
-                if (animator != null)
-                {
-                    bool isOpen = animator.GetBool("Touch");
-                    animator.SetBool("Touch", !isOpen);
-                }
-            }
-        }
-        /// <summary>
-        /// 火柴人選角
-        /// </summary>
-        public void MatchstickMenSetting()
-        {
-            if (MatchstickMen != null)
-            {
-                Animator animator = MatchstickMen.GetComponent<Animator>();
-                if (animator != null)
-                {
-                    bool isOpen = animator.GetBool("Touch");
-                    animator.SetBool("Touch", !isOpen);
-                }
-            }
-        }
-        /// <summary>
-        /// 醜鵝選角
-        /// </summary>
-        public void GooseSetting()
-        {
-            if (Goose != null)
-            {
-                Animator animator = Goose.GetComponent<Animator>();
-                if (animator != null)
-                {
-                    bool isOpen = animator.GetBool("Touch");
-                    animator.SetBool("Touch", !isOpen);
-                }
-            }
-        }
+        ///// <summary>
+        ///// 吉娃娃選角
+        ///// </summary>
+        //public void GwawaSetting()
+        //{
+        //    if (Gwawa != null)
+        //    {
+        //        //menugwawaa.StartGwawaM();
+        //        Animator animator = Gwawa.GetComponent<Animator>();
+        //        if (animator != null)
+        //        {
+        //            bool isOpen = animator.GetBool("Touch");
+        //            animator.SetBool("Touch", !isOpen);
+        //        }
+        //    }
+        //}
+        ///// <summary>
+        ///// 醜鵝選角
+        ///// </summary>
+        //public void GooseSetting()
+        //{
+        //    if (Goose != null)
+        //    {
+        //        Animator animator = Goose.GetComponent<Animator>();
+        //        if (animator != null)
+        //        {
+        //            bool isOpen = animator.GetBool("Touch");
+        //            animator.SetBool("Touch", !isOpen);
+        //        }
+        //    }
+        //}
         /// <summary>
         /// 遊戲畫面設定
         /// </summary>
@@ -160,6 +152,10 @@ namespace WEI
                 SetScreenResolution(activeScreenResIndex);
             }
         }
+        /// <summary>
+        /// 音效
+        /// </summary>
+        /// <param name="volume"></param>
         public void SetVolune(float volume)
         {
             audioMixer.SetFloat("MasterVolume", volume);

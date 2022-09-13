@@ -1917,17 +1917,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db3efbf9093a0584c9893a6ffb190466, type: 3}
---- !u!114 &1733502564 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1269901721138283818, guid: db3efbf9093a0584c9893a6ffb190466, type: 3}
-  m_PrefabInstance: {fileID: 1733502563}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b28f5e5e16815a842ae6e618c73a0a18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1769146489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2154,7 @@ GameObject:
   - component: {fileID: 2000696506}
   - component: {fileID: 2000696505}
   - component: {fileID: 2000696507}
+  - component: {fileID: 2000696508}
   m_Layer: 5
   m_Name: "\u4E0B\u4E00\u95DC"
   m_TagString: Untagged
@@ -2273,9 +2263,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1733502564}
-        m_TargetAssemblyTypeName: WEI.MenuManager, Assembly-CSharp
-        m_MethodName: Level_one
+      - m_Target: {fileID: 2000696508}
+        m_TargetAssemblyTypeName: SystemChooseLevel, Assembly-CSharp
+        m_MethodName: ChooseLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2285,6 +2275,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2000696508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000696503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becf33a0c33a5254e99c3eb30cdfa991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 6
 --- !u!1 &2085169478
 GameObject:
   m_ObjectHideFlags: 0
