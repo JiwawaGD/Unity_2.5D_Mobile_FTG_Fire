@@ -165,7 +165,7 @@ public class scr_GameManager : MonoBehaviour
     /// </summary>
     void SpawnPlayer()
     {
-        //Instantiate(StaticField.player, playerSpawnPoint.transform);
+        Instantiate(StaticField.player, playerSpawnPoint.transform);
     }
 
     void PlayerDead()

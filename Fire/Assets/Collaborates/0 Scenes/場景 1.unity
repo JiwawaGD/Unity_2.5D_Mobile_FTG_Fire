@@ -695,13 +695,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405656441}
     m_Modifications:
+    - target: {fileID: 629963414, guid: 4ef49707b88cf7347932e2d0f2ead7df, type: 3}
+      propertyPath: faceRight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 584851326165929484, guid: 4ef49707b88cf7347932e2d0f2ead7df, type: 3}
       propertyPath: m_Name
       value: "\u9D5D Player"
       objectReference: {fileID: 0}
     - target: {fileID: 584851326165929484, guid: 4ef49707b88cf7347932e2d0f2ead7df, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 584851326165929487, guid: 4ef49707b88cf7347932e2d0f2ead7df, type: 3}
       propertyPath: m_RootOrder

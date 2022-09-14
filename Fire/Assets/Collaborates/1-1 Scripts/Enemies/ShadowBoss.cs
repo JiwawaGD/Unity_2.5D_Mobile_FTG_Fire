@@ -13,9 +13,9 @@ public class ShadowBoss : MonoBehaviour
 
     int attackCount;
     int skillCount;
-
+    
     Animator ani;
-    Rigidbody2D rig;
+    Rigidbody rig;
     GameObject player;
     #endregion
 
@@ -23,7 +23,7 @@ public class ShadowBoss : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("ª±®a");
-        rig = GetComponent<Rigidbody2D>();
+        rig = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
         currentHp = maxHp;
     }

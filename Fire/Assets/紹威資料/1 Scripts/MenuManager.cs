@@ -6,7 +6,8 @@ namespace WEI
 {
     public class MenuManager : MonoBehaviour
     {
-        public Button mybutton;
+        [Header("∂}©l¡‰")]
+        public Button startButton;
         //public GameObject Gwawa;
         //public GameObject Gwawaimage;
         //public GameObject MatchstickMen;
@@ -39,7 +40,7 @@ namespace WEI
         }
         public void Start()
         {
-            mybutton = GetComponent<Button>();
+            startButton = GetComponent<Button>();
             //mybutton.onClick.AddListener(ButtonOnclick);
         }
         /// <summary>

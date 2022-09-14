@@ -25,11 +25,6 @@ public class RoleChoice : MonoBehaviour
     {
         //Debug.Log(canScroll.transform.position.x);
     }
-    public void ScrollCalueChange()
-    {
-        //ChangeGewawa();
-        //ChandeGoose();
-    }
 
     public void ChandeGoose()
     {

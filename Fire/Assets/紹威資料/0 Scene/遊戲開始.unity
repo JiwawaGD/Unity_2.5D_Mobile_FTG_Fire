@@ -5202,6 +5202,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24100000, guid: 34c8c682844332d4480e82a8092a5e20, type: 2}
     - target: {fileID: 1269901721138283818, guid: db3efbf9093a0584c9893a6ffb190466, type: 3}
+      propertyPath: startButton
+      value: 
+      objectReference: {fileID: 258532741}
+    - target: {fileID: 1269901721138283818, guid: db3efbf9093a0584c9893a6ffb190466, type: 3}
       propertyPath: resolutioinToggles.Array.data[0]
       value: 
       objectReference: {fileID: 931893485}
