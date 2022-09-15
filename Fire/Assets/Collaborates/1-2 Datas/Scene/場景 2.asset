@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 2966688227427858740, guid: b83272d64e4b6754aa58c4ab2c0d6545, type: 3}
   couldSpawn: 0
   haveBoss: 0
-  passAmount: 4
+  passAmount: 3

@@ -289,7 +289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3247340300126077749, guid: 1cfb00a9eb5e71e42bfb5a081e316d8f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3247340300126077750, guid: 1cfb00a9eb5e71e42bfb5a081e316d8f, type: 3}
       propertyPath: m_RootOrder
@@ -784,11 +784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1089062052536311038, guid: 28a0adaf4d7c70d4aadc6480968c3038, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5441233430742914177, guid: 28a0adaf4d7c70d4aadc6480968c3038, type: 3}
       propertyPath: sceneBuildIndex
-      value: 5
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28a0adaf4d7c70d4aadc6480968c3038, type: 3}

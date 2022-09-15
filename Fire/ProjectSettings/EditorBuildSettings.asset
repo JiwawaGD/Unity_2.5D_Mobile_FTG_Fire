@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Collaborates/0 Scenes/\u5834\u666F 3.unity"
     guid: 66fe88a9f4072e649a3726e4661012ae
+  - enabled: 1
+    path: "Assets/\u7D39\u5A01\u8CC7\u6599/0 Scene/\u7D50\u675F.unity"
+    guid: a479253d685f320488e829b4d696def3
   m_configObjects: {}
