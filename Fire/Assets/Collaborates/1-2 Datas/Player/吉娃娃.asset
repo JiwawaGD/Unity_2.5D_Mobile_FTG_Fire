@@ -17,7 +17,7 @@ MonoBehaviour:
   hpMax: 50
   rage: 0
   rageMax: 5
-  armor: 30
+  armor: 50
   armorMax: 50
   atk: 6
   attackTime:

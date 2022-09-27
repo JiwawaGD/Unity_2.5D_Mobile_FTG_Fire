@@ -13,10 +13,15 @@ public class ShadowBoss : MonoBehaviour
 
     int attackCount;
     int skillCount;
-    
+
+    bool hasAttack = true;
+    bool hasDie = false;
+
     Animator ani;
     Rigidbody rig;
     GameObject player;
+    SpriteRenderer sr;
+    Collider coll;
     #endregion
 
     #region - MonoBehaviour -
@@ -25,17 +30,23 @@ public class ShadowBoss : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("ª±®a");
         rig = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        coll = GetComponent<Collider>();
         currentHp = maxHp;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Track();
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player Weapon") Hurt(1);
+        if (hasDie)
+            return;
+
+        if (col.gameObject.CompareTag("Player Weapon"))
+            Hurt(1);
     }
     #endregion
 
@@ -46,11 +57,15 @@ public class ShadowBoss : MonoBehaviour
     /// <returns>animation time</returns>
     IEnumerator NormalAttack()
     {
+        hasAttack = false;
+
         ani.SetTrigger("Attack - Trigger");
 
         attackCount++;
 
-        yield return new WaitForSeconds(2.917f);
+        yield return new WaitForSeconds(3.5f);
+
+        hasAttack = true;
     }
 
     /// <summary>
@@ -59,13 +74,17 @@ public class ShadowBoss : MonoBehaviour
     /// <returns>animation time</returns>
     IEnumerator Skill_01()
     {
+        hasAttack = false;
+
         ani.SetTrigger("Skill 01 - Trigger");
 
         attackCount = 0;
 
         skillCount++;
 
-        yield return new WaitForSeconds(2.917f);
+        yield return new WaitForSeconds(3.5f);
+
+        hasAttack = true;
     }
 
     /// <summary>
@@ -74,11 +93,15 @@ public class ShadowBoss : MonoBehaviour
     /// <returns>animation time</returns>
     IEnumerator Skill_02()
     {
+        hasAttack = false;
+
         ani.SetTrigger("Skill 02 - Trigger");
 
         skillCount = 0;
 
-        yield return new WaitForSeconds(6.250f);
+        yield return new WaitForSeconds(7f);
+
+        hasAttack = true;
     }
     #endregion
 
@@ -90,9 +113,12 @@ public class ShadowBoss : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distance <= 3f) Attack();
-        else if (distance <= 8f) Move();
-        else Idle();
+        if (distance <= 10f && hasAttack)
+            Attack();
+        else if (distance <= 30f && hasAttack)
+            Move();
+        else if (distance >= 30f)
+            Idle();
     }
 
     /// <summary>
@@ -101,8 +127,6 @@ public class ShadowBoss : MonoBehaviour
     void Idle()
     {
         rig.velocity = Vector3.zero;
-
-        ani.SetBool("Move - Bool", false);
     }
 
     /// <summary>
@@ -110,18 +134,12 @@ public class ShadowBoss : MonoBehaviour
     /// </summary>
     void Move()
     {
-        if (transform.position.x <= moveXLimit.x || transform.position.x >= moveXLimit.y) Idle();
-
+        if ((transform.position.x - player.transform.position.x) < 0)
+            rig.velocity = new Vector3(1, 0, 0) * Time.deltaTime * moveSpeed;
         else
-        {
-            if ((transform.position.x - player.transform.position.x) < 0) rig.velocity = new Vector3(1, 1, 1) * Time.deltaTime * moveSpeed;
+            rig.velocity = new Vector3(-1, 0, 0) * Time.deltaTime * moveSpeed;
 
-            else rig.velocity = new Vector3(-1, 1, 1) * Time.deltaTime * moveSpeed;
-
-            ani.SetBool("Move - Bool", true);
-
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, moveXLimit.x, moveXLimit.y), transform.position.y, 0);
-        }
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, moveXLimit.x, moveXLimit.y), transform.position.y, 0);
     }
 
     /// <summary>
@@ -134,7 +152,8 @@ public class ShadowBoss : MonoBehaviour
 
         ani.SetTrigger("Hurt - Trigger");
 
-        if (currentHp <= 0) Die();
+        if (currentHp <= 0)
+            Die();
     }
 
     /// <summary>
@@ -142,9 +161,13 @@ public class ShadowBoss : MonoBehaviour
     /// </summary>
     void Die()
     {
-        this.enabled = false;
-
         ani.SetBool("Dead - Bool", true);
+
+        hasDie = true;
+        coll.enabled = false;
+        rig.useGravity = false;
+
+        this.enabled = false;
     }
 
     /// <summary>
@@ -152,14 +175,20 @@ public class ShadowBoss : MonoBehaviour
     /// </summary>
     void Attack()
     {
-        rig.velocity = Vector3.zero;
+        rig.velocity = new Vector3(0, 0, 0);
+
+        if ((transform.position.x - player.transform.position.x) < 0)
+            sr.flipX = true;
+        else
+            sr.flipX = false;
 
         // attack style
-        if (skillCount >= 2) StartCoroutine("Skill_02");
-
-        else if (attackCount >= 4) StartCoroutine("Skill_01");
-
-        else StartCoroutine("NormalAttack");
+        if (skillCount >= 2)
+            StartCoroutine("Skill_02");
+        else if (attackCount >= 4)
+            StartCoroutine("Skill_01");
+        else
+            StartCoroutine("NormalAttack");
     }
     #endregion
 }
