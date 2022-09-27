@@ -59,7 +59,7 @@ public class scr_BackgroundMove : MonoBehaviour
             }
             // «á´º
             else if (!movable)
-            {   
+            {
                 target.x = Mathf.Clamp(target.x, backLimit.x, backLimit.y);
                 target.y = 2.4f;
                 target.z = 0;
